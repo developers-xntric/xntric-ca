@@ -112,17 +112,15 @@ export function DigitalFashionSection() {
               {/* Connecting Generations A to Z Through Immersive Digital Style and */}
               {/* Play */}
               <span className="text-end md:text-start tracking-wider md:tracking-wide w-full ml-[20px] lg:ml-[170px] 2xl:ml-[180px]">
-                Connecting Generations
+                Connect With the
               </span>
               <span className="text-start tracking-wider md:tracking-wide">
-                A to Z Through
+                Next Generation
               </span>
               <span className="text-start tracking-wider md:tracking-wide  ml-[20px] md:ml-[100px]">
-                Digital Style
+                of Players
               </span>
-              <span className="text-start tracking-wider md:tracking-wide">
-                and Play
-              </span>
+              
             </h2>
           </div>
           <div className="justify-center lg:justify-end relative top-20 right-20 2xl:right-10 xl:flex hidden">
@@ -213,10 +211,7 @@ export function DigitalFashionSection() {
                   </svg>
                 </div>
                 <p className="text-[17px] md:text-[25px] opacity-70 tracking-widest font-light md:text-left text-center">
-                  We drive real impact with live streams, creator partnerships,
-                  and high performance ads that move the needle. Our strategies
-                  build thriving communities think chat, feedback loops, and UGC
-                  challenges, Amplified through Discord and in game events.
+                 From measurable live streams and creator partnerships to high-performing ads that drive business results, we go bigger. From chat, surveys, and UGC campaigns to Discord distribution and in-game activations, we build massive, engaged gaming communities. We get results by developing strategies and tactics that are smarter and deeper than our competitors.
                 </p>
               </div>
             </div>
@@ -260,8 +255,8 @@ export function DigitalFashionSection() {
               </div>
               <CardContent
                 number="01"
-                title="BRANDED WORLD"
-                subtitle="Design immersive, native experiences that keep players coming back. ​"
+                title="Engaging Game Experiences"
+                subtitle="That is, create narrative-based interactive worlds with native platform appeal that will fascinate and entertain audiences, encouraging them to explore, engage with and return for new and exciting game experiences.​"
                 icon={<BrandedWorldIcon />}
                 description="Create deeply immersive and native gaming environments that captivate players and encourage repeat engagement."
               />
@@ -335,9 +330,8 @@ export function DigitalFashionSection() {
               </div>
               <CardContent
                 number="02"
-                title="Community
-AMPLIFICATION​"
-                subtitle="Amplification: Spark conversations, feedback, and viral UGC. ​​"
+                title="Community Momentum​"
+                subtitle="We empower players to be advocates through scaled, informed conversations, in-the-wild feedback loops, and user-generated content to create organic reach in gaming communities and drive virality.​​"
                 icon={<AmplificationIcon />}
                 description="Ignite dynamic conversations and encourage authentic player feedback to fuel vibrant, organic growth."
               />
@@ -366,8 +360,8 @@ AMPLIFICATION​"
               </div>
               <CardContent
                 number="03"
-                title="Discord Engagement​"
-                subtitle="Build loyalty where your audience already hangs out. ​"
+                title="Discord Community Building​"
+                subtitle="We create discord relationships where they matter most. With live experiences, special drops, and continuous conversation, we build communities that are tailored to your players.​"
                 icon={<DiscordIcon />}
                 description="Cultivate player loyalty by actively engaging your audience on Discord—the platform where they naturally gather."
               />

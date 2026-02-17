@@ -18,46 +18,32 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "App Store Optimization for iOS & Google Play",
+  title: "App Store Optimization (ASO) Services Canada | Boost Downloads ",
   description:
-    "Improve app rankings and downloads with Xntric’s App Store Optimization, crafted to maximize visibility on iOS and Google Play for your target audience.",
+    "Maximize your app's organic growth with expert ASO services in Canada. We optimize for iOS & Android to improve rankings, conversion, and user retention in 2026. ",
 };
 const faqItems: { question: string; answer: string }[] = [
   {
-    question: "How many years have you served in the UAE market?",
-    answer: `VPS hosting splits a physical server into several separate virtual servers using special software called a hypervisor.`,
+    question: "Why Do I Need ASO Services?",
+    answer: `Without optimization, even strong apps remain invisible. ASO improves discoverability, rankings, and organic installs.`,
   },
   {
     question:
-      "How do wireframing and prototyping enhance the UI/UX design process?",
-    answer: `Prototyping and wireframing provide much of the basis for the user experience design
-process. Prototypes provide interactive elements to designs produced from wireframes,
-therefore illustrating the structure of the product. Participating in this process enables
-stakeholders to see the final result and verify if the design satisfies user expectations
-before to start of development.`,
+      "Can You Guarantee Top Rankings?",
+    answer: `No ethical agency can guarantee rankings. We focus on proven optimization strategies that consistently improve visibility and performance.`,
   },
   {
     question:
-      "What are the benefits of conducting a UX audit for your website or app?",
+      "How Long Does ASO Take to Show Results?",
     answer:
-      "A UX audit evaluates the usability and functionality of your digital product. Identifying pain points in the user journey. Improving accessibility and navigation. Enhancing overall user satisfaction. A UX audit ensures your website or app meets modern UI/UX design standards.",
+      "Initial improvements can appear within weeks, but sustainable growth typically develops over 8–12 weeks, depending on competition.",
   },
   {
-    question: "How can responsive web design improve user experience?",
+    question: "Does ASO Work for Both iOS and Android?",
     answer:
-      "Whether the screen of any device is little or large, responsive web design will make your site seem fantastic. An integral component of user interface and user experience design services, this approach guarantees consistent appearance and operation across all devices, therefore enhancing the user&#39;s experience.",
+      "Yes. We tailor strategies specifically for Apple App Store and Google Play algorithms.",
   },
-  {
-    question:
-      "What is a design system audit, and why is it essential for consistent branding?",
-    answer:
-      "Design system audits of all your present design components help to ensure excellent brand recognition and usability. It looks for issues, streamlines procedures, and helps to maintain the visual language of your digital assets consistent—all of which are crucial for credibility and acknowledgement.",
-  },
-  {
-    question: "How do UI/UX design services impact e-commerce success?",
-    answer:
-      "Effective UI/UX design services play a major role in e-commerce success by Simplifying navigation and checkout processes. Enhancing product presentation. Building trust through intuitive interfaces. By keeping an eye on the user needs, UI/UX designers help increase conversions along with ensuring customer loyalty in online stores.",
-  },
+
 ];
 
 const cards = [
@@ -97,27 +83,27 @@ const defaultServices: Service[] = [
   {
     imgSrc: "/service-inner/c5.png",
     title: "iOS Optimization",
-    description: "Optimization specifically for Apple App Store. ",
+    description: "Platform-specific optimization aligned with Apple’s ranking algorithms and metadata structure. ",
   },
   {
     imgSrc: "/service-inner/c3.png",
     title: "Android/Google Play Optimization",
-    description: " ASO for Play Store visibility.",
+    description: " Comprehensive ASO strategies designed for Google Play visibility and conversion improvement.",
   },
   {
     imgSrc: "/service-inner/c4.png",
-    title: "ASO for Gaming Apps",
-    description: "Boost discoverability in highly competitive gaming markets.",
+    title: "Gaming App ASO",
+    description: "Specialized strategies for highly competitive gaming categories, including keyword clusters and creative experimentation.",
   },
   {
     imgSrc: "/service-inner/c3.png",
     title: "New App Launch Optimization ",
-    description: "Prep and strategy for launching your first app. ",
+    description: "Pre-launch research, keyword mapping, and positioning strategy to maximize early traction. ",
   },
   {
     imgSrc: "/service-inner/c1.png",
     title: "Cross-Market Localization",
-    description: "Multilingual listings for global audiences.",
+    description: "Multilingual app listings adapted for global audiences, cultural nuances, and regional search behavior.",
   },
 ];
 
@@ -184,33 +170,33 @@ function page() {
         <YearsAwwards
           awwards={Awwards}
           bgImage={false}
-          title="While deeply honored by industry recognition, we remain grounded in our core principles and research-driven approach"
+          title="We are proud of the recognition we’ve received within the industry, and we stay committed to our foundational values and a strategy rooted in data-driven research."
           isServices={true}
         />
         <DigitalProducts
-          leftText="From startups to global brands, we don’t just optimize your app store presence. we back every strategy with deep market research, user insights, and competitor analysis to build app visibility and downloads that last."
-          mainHeading="ASO That Goes Beyond Keywords A 360° Approach for Sustainable App Growth"
-          highlightWords={["360° Approach"]}
+          leftText="From startups to global enterprises, we leverage data, user psychology, and market intelligence to design sustainable strategies for profitable long-term app growth. Our App Store Optimization strategy is aimed at long-term keyword discoverability, optimizing conversion potential, and, most importantly, injecting real organic growth."
+          mainHeading="ASO That Builds Visibility Installs That Drive Growth"
+          highlightWords={["Builds Visibility"]}
           buttonText="LET'S TALK"
         />
         <ScrollCardsSection
-          text="Beautiful apps often conceal hidden flaws. Poor keyword reach, low conversion, and weak ratings. We turn these puzzles into practical solutions that increase visibility, downloads, and user trust through data-driven strategies. "
+          text="Behind many beautifully designed apps are hidden performance gaps, limited keyword visibility, low tap-through rates, weak metadata, or underperforming creative assets. We uncover what’s holding your app back and transform those gaps into scalable growth opportunities. "
           headingClassName="max-w-[80%]"
-          heading="FROM COMPLEX <span style='color: #00AA71'>APP CHALLENGES</span> TO CLEAR RESULTS "
+          heading="Turning App Challenges into  <span style='color: #00AA71'>Scalable Growth</span> TO CLEAR RESULTS "
           cardsData={cards}
         />
         <SolutionCarousel />
         <NewGreen
           bg={false}
-          text="Maximize <span style='color: #00AA71'> Organic Installs,</span> Schedule Your Free ASO Consultation Now!"
+          text="<span style='color: #00AA71'>Technology</span> That Supports Performance"
           buttonText="Book your Free audit"
         />
-        <ServicesOffer services={defaultServices} />
+        <ServicesOffer services={defaultServices} subtext="We deliver end-to-end App Store Optimization solutions tailored to your growth stage and industry"/>
         <TechStackCarousel />
         <NewOurProcess steps={steps7} />
         <NewGreen text="Ready to Rank Higher?" buttonText="Let's Talk" />
         <NewFaqs faqs={faqItems} />
-        <BigIdeas line={false} />
+        <BigIdeas line={false} mainText="Let’s Build Your Growth Engine" />
         <ContactForm />
       </div>
     </>

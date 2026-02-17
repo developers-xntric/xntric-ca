@@ -16,9 +16,9 @@ import NewFaqs from "@/components/services/new-faqs";
 import { Metadata } from "next";
 import Script from "next/script";
 export const metadata: Metadata = {
-  title: "Website Development & Design Services | Xntric",
+  title: "Website Development Services in Canada | Custom Web Design",
   description:
-    "Create stunning, responsive websites with Xntric’s development services, built to match your brand’s vision and deliver a seamless online experience.",
+    "Leading website development services in Canada. We build fast, accessible, and high-converting websites tailored to grow your business. Get a free quote today! ",
 };
 
 const schemaData = {
@@ -86,22 +86,24 @@ function page() {
         <YearsAwwards
           awwards={Awwards}
           bgImage={false}
-          title="While deeply honored by industry recognition, we remain grounded in our core principles and research-driven approach"
+          title="Partner with a website development company in Canada that blends creativity with technology. Contact us today to start your next digital project."
         />
-        <DigitalProducts />
-        <ScrollCardsSection />
-        <SolutionCarousel />
+        <DigitalProducts leftText="We don’t just build, we maintain. Ensure long-term performance and security with our maintenance plans. As a top website development company in Canada, we build custom, scalable, and high-performing websites that help businesses grow online. From corporate to eCommerce, we turn ideas into digital success." />
+        <ScrollCardsSection text="In the digital era, your website defines how the world sees your brand. As a trusted website development company in Canada, we specialize in building visually stunning, user-focused, and performance-driven websites that make an impact. Our goal is simple, to help your business stand out, connect with customers, and grow online." heading="Transform Your <span style='color: #00AA71'>Online Presence</span> with Custom Web Development "/>
+        <SolutionCarousel para="As an experienced website development company in Canada, our focus is on building responsive, secure, and scalable websites tailored to your unique goals. 
+" />
         <NewGreen
           isPopupOpen={true}
           bg={false}
           text='Where Innovation Meets <span style="color: #00AA71">Research-Driven</span> Development'
         />
-        <ServicesOffer />
+        <ServicesOffer  heading={"Custom Website Development Services"} subtext="Your business deserves a website that reflects your unique identity. Our website development services go beyond templates, we build from the ground up. Each website is developed with precision, keeping user experience, speed, and performance at its core.
+" />
         <TechStackCarousel />
-        <NewOurProcess steps={steps} />
+        <NewOurProcess steps={steps} para="We believe in a transparent and collaborative process that ensures clarity, creativity, and success at every stage." />
         <NewGreen isPopupOpen={true} />
-        <NewFaqs faqs={faqItems} />
-        <BigIdeas line={false} />
+        <NewFaqs faqs={faqItems}  />
+        <BigIdeas line={false} mainText="Let’s Build Your Digital Future" />
         <ContactForm />
       </div>
     </>

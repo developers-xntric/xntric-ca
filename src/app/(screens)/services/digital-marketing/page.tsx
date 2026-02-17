@@ -18,9 +18,9 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Services to Drive Growth | Xntric",
+  title: "Digital Marketing Services in Canada | AI-Driven Growth ",
   description:
-    "Drive measurable growth with Xntric’s digital marketing services, from SEO and SEM to social media and content strategies tailored for lasting business impact.",
+    "Transform your brand with expert digital marketing services in Canada. We specialize in AI-powered SEO, performance PPC, and user-centric web design. Get a free audit!",
 };
 
 const defaultServices: Service[] = [
@@ -28,7 +28,7 @@ const defaultServices: Service[] = [
     imgSrc: "/service-inner/c5.png",
     title: "Full-Funnel Growth Campaigns",
     description:
-      " From awareness to conversion, integrating paid, organic & email.",
+      " From awareness to conversion and retention, we build integrated strategies for paid, organic, and email in a single funnel.",
   },
   {
     imgSrc: "/service-inner/c3.png",
@@ -38,12 +38,12 @@ const defaultServices: Service[] = [
   {
     imgSrc: "/service-inner/c4.png",
     title: "Lead Generation Campaigns",
-    description: "B2B/B2C lead magnets, gated content, forms, and flows.",
+    description: "B2B/B2C lead magnets, gated content, forms, paid social lead campaigns, and flows.",
   },
   {
     imgSrc: "/service-inner/c3.png",
     title: "Email & Retention Marketing",
-    description: "Lifecycle emails, abandoned cart flows, newsletters.",
+    description: "Lifecycle emails, abandoned cart flows, welcome sequences , newsletters.",
   },
   {
     imgSrc: "/service-inner/c1.png",
@@ -85,40 +85,39 @@ const cards = [
 
 const faqItems: { question: string; answer: string }[] = [
   {
-    question: "How many years have you served in the UAE market?",
-    answer: `VPS hosting splits a physical server into several separate virtual servers using special software called a hypervisor.`,
+    question: "What exactly is a digital marketing service?",
+    answer: `A digital marketing service is a professional strategy used to reach your customers through online channels. At Xntric, this includes everything from appearing at the top of Google searches (SEO) and running targeted social media ads, to creating high-converting websites that turn Canadian browsers into buyers.`,
   },
   {
     question:
-      "How do wireframing and prototyping enhance the UI/UX design process?",
-    answer: `Prototyping and wireframing provide much of the basis for the user experience design
-process. Prototypes provide interactive elements to designs produced from wireframes,
-therefore illustrating the structure of the product. Participating in this process enables
-stakeholders to see the final result and verify if the design satisfies user expectations
-before to start of development.`,
+      "How do I identify a successful digital marketing agency?",
+    answer: `A great agency doesn't just promise "likes" they promise growth. Look for Clear reporting on lead costs and conversions, An understanding of the Canadian consumer landscape, They don't offer "cookie-cutter" packages but instead build a strategy around your specific business goals.
+`,
   },
   {
     question:
-      "What are the benefits of conducting a UX audit for your website or app?",
+      "Would my business actually benefit from digital marketing?",
     answer:
-      "A UX audit evaluates the usability and functionality of your digital product. Identifying pain points in the user journey. Improving accessibility and navigation. Enhancing overall user satisfaction. A UX audit ensures your website or app meets modern UI/UX design standards.",
-  },
-  {
-    question: "How can responsive web design improve user experience?",
-    answer:
-      "Whether the screen of any device is little or large, responsive web design will make your site seem fantastic. An integral component of user interface and user experience design services, this approach guarantees consistent appearance and operation across all devices, therefore enhancing the user&#39;s experience.",
+      "If your customers use a smartphone or a computer to find services, the answer is yes. Whether you are a local service provider in Ontario or a national B2B firm, digital marketing allows you to target specific demographics, track every dollar spent, and compete with much larger companies on a level playing field.",
   },
   {
     question:
-      "What is a design system audit, and why is it essential for consistent branding?",
+      "What are the most effective types of digital marketing for Canadian businesses?",
     answer:
-      "Design system audits of all your present design components help to ensure excellent brand recognition and usability. It looks for issues, streamlines procedures, and helps to maintain the visual language of your digital assets consistent—all of which are crucial for credibility and acknowledgement.",
+      "While there are many methods, we focus on the the most ROI in the North American market like Search Engine Optimization, Pay-Per-Click, Social Media Marketing, Content & Email Marketing ",
   },
   {
-    question: "How do UI/UX design services impact e-commerce success?",
+    question: "How long does it take to see results from these services?",
     answer:
-      "Effective UI/UX design services play a major role in e-commerce success by Simplifying navigation and checkout processes. Enhancing product presentation. Building trust through intuitive interfaces. By keeping an eye on the user needs, UI/UX designers help increase conversions along with ensuring customer loyalty in online stores.",
+      "It depends on the service. Paid Ads (PPC) can generate leads within 24 to 48 hours of launching. SEO and Organic Social are long-term investments that typically show significant momentum within 3 to 6 months. We provide a roadmap so you know exactly when to expect a return on your investment.",
   },
+  {
+    question:
+      "Can digital marketing help with local lead generation?",
+    answer:
+      "Absolutely. We specialize in Local SEO and Geo-targeted Ads. This means we can ensure your business shows up specifically for people in your city or province (e.g., 'Digital Marketing Toronto' or 'Best Plumber in Vancouver'), ensuring you don't waste your budget on audiences that can't visit your location.",
+  },
+  
 ];
 
 const schemaData = {
@@ -187,13 +186,13 @@ function page() {
           title="While deeply honored by industry recognition, we remain grounded in our core principles and research-driven approach"
         />
         <DigitalProducts
-          leftText="We combine thorough market research with cutting-edge digital tactics to craft marketing solutions that resonate with your audience and maximize ROI across every channel."
+          leftText="Xntric combines data & analytics, creativity, and technology to break through the clutter of today's digital marketing landscape and drive business growth. As a full-service Digital Marketing Agency Canada, we scale your campaigns and maximize ROI across every channel."
           mainHeading="Marketing That Moves Beyond the Surface A 360° Strategy Backed by Research and Results"
           highlightWords={["360° Strategy Backed"]}
         />
         <ScrollCardsSection
-          heading="Turn Data Into Your <span style='color: #00AA71'>Competitive</span> Edge"
-          text="Our analytics-driven approach identifies where your campaigns fall short, boosts click-through rates by up to 50%, lowers cost per lead by 30%, and drives 3x more conversions.  Delivering measurable growth."
+          heading=" <span> Transform insights into style='color: #00AA71'>Competitive</span> Advantage"
+          text="By uncovering performance gaps, improving targeting, and identifying opportunities for optimization through a data-first approach, we drive scalable, measurable business growth that increases click-through rates by up to 50%, lowers the cost per lead by 30%, and delivers up to 3X more conversions."
           headingClassName="max-w-[90%] tracking-wide"
           cardsData={cards}
         />
@@ -203,11 +202,11 @@ function page() {
           text="Navigate the <span style='color: #00AA71'>Digital Maze</span> with Precision"
           buttonText="Book your consultation"
         />
-        <ServicesOffer services={defaultServices} />
+        <ServicesOffer services={defaultServices} heading={"Our Core Digital Marketing Services"} />
         <TechStackCarousel />
         <NewOurProcess steps={steps4} />
         <NewGreen
-          text="Step Out of the Noise Lead with Strategy."
+          text="Rise Above the Noise. Lead with Strategy."
           buttonText="let's talk"
         />
         <NewFaqs faqs={faqItems} />

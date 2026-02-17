@@ -31,22 +31,22 @@ const defaultServices: Service[] = [
     {
         imgSrc: "/service-inner/c5.png",
         title: "CUSTOM WEBSITE DEVELOPMENT",
-        description: "Pixel-perfect, goal-focused websites from scratch.",
+        description: "Tailored websites built for your brand, optimized for SEO, and powered for performance.",
     },
     {
         imgSrc: "/service-inner/c3.png",
-        title: "E-COMMERCE DEVELOPMENT",
-        description: "Conversion-optimized stores with seamless UX and inventory management.",
+        title: "E-COMMERCE DEVELOPMENT IN CANADA",
+        description: "We develop high-performing, secure, and scalable eCommerce platforms on Shopify, WooCommerce, and Magento.",
     },
     {
         imgSrc: "/service-inner/c4.png",
-        title: "WEB PORTALS & DASHBOARDS",
-        description: "Internal platforms, CRM dashboards, and more—built for performance.",
+        title: "CORPORATE & PORTFOLIO WEBSITES:",
+        description: "Sleek and responsive websites that position your brand as a leader in its industry.",
     },
     {
         imgSrc: "/service-inner/c3.png",
-        title: "CMS DEVELOPMENT",
-        description: "Custom WordPress, Webflow, or headless CMS that's easy to manage.",
+        title: "CONTENT MANAGEMENT SYSTEMS (CMS)",
+        description: "Empower your team to manage content easily with WordPress, Drupal, or custom-built CMS solutions.",
     },
     {
         imgSrc: "/service-inner/c1.png",
@@ -55,8 +55,8 @@ const defaultServices: Service[] = [
     },
     {
         imgSrc: "/service-inner/c5.png",
-        title: "CUSTOM WEBSITE DEVELOPMENT",
-        description: "Pixel-perfect, goal-focused websites from scratch.",
+        title: "WEB APPLICATION DEVELOPMENT",
+        description: "Powerful web apps built using the latest technologies and frameworks.",
     },
 ];
 

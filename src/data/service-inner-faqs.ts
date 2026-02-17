@@ -1,7 +1,8 @@
 export const faqItems: { question: string; answer: string }[] = [
     {
-        question: "How many years have you served in the UAE market?",
-        answer: `VPS hosting splits a physical server into several separate virtual servers using special software called a hypervisor.`,
+        question: "How big is your web development company?",
+        answer: `We’re a full-scale website development agency with a diverse team of designers, developers, and digital strategists delivering projects across Canada and beyond.
+`,
     },
     {
         question:
@@ -10,24 +11,24 @@ export const faqItems: { question: string; answer: string }[] = [
     },
     {
         question:
-            "What are the benefits of conducting a UX audit for your website or app?",
+            "What is your website development process like?",
         answer:
-            "A UX audit evaluates the usability and functionality of your digital product. Identifying pain points in the user journey. Improving accessibility and navigation. Enhancing overall user satisfaction. A UX audit ensures your website or app meets modern UI/UX design standards.",
+            "Our headquarters are in Canada, but we also collaborate with clients worldwide, including the UAE and Europe.",
     },
     {
-        question: "How can responsive web design improve user experience?",
+        question: "How much does a website cost in Toronto?",
         answer:
-            "Whether the screen of any device is little or large, responsive web design will make your site seem fantastic. An integral component of user interface and user experience design services, this approach guarantees consistent appearance and operation across all devices, therefore enhancing the user&#39;s experience.",
+            "The cost varies depending on project scope. A simple website may start around CAD 2,000, while custom and eCommerce projects can go higher.",
     },
     {
         question:
-            "What is a design system audit, and why is it essential for consistent branding?",
+            "What eCommerce development platforms do you work with?",
         answer:
-            "Design system audits of all your present design components help to ensure excellent brand recognition and usability. It looks for issues, streamlines procedures, and helps to maintain the visual language of your digital assets consistent—all of which are crucial for credibility and acknowledgement.",
+            "We specialize in Shopify, WooCommerce, Magento, and custom PHP-based platforms.",
     },
     {
-        question: "How do UI/UX design services impact e-commerce success?",
+        question: "Do you offer website maintenance plans?",
         answer:
-            "Effective UI/UX design services play a major role in e-commerce success by Simplifying navigation and checkout processes. Enhancing product presentation. Building trust through intuitive interfaces.",
+            "Yes, we offer tailored maintenance plans to ensure your website remains updated, secure, and optimized.",
     },
 ];

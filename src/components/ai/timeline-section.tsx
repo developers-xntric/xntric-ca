@@ -17,25 +17,25 @@ interface TimelineStep {
 const timelineSteps: TimelineStep[] = [
   {
     id: 1,
-    title: "Define Clear Business Goals",
+    title: "Establish clear business objectives",
     description:
-      "Identify the specific challenges or opportunities AI will address. Set measurable objectives like improving efficiency, enhancing customer experience, or increasing revenue to ensure focused and impactful AI adoption.",
+      "Be clear about your objectives. Identify what problems you want the AI to address or what opportunities you wish to pursue. Your AI strategy should be measurable through key performance indicators (KPIs), including improving operational efficiency, improving customer experience, and raising revenue and profit.",
     image: "/ai/tl-new-2.svg",
     browserText: "Analyzing your requirements...",
   },
   {
     id: 2,
-    title: "Prepare and Organize Quality Data",
+    title: "Structure and Strengthen Your Data",
     description:
-      "Gather, clean, and structure your data to feed accurate and relevant information into AI models. High-quality, accessible data is the foundation for reliable AI insights and predictions.",
+      "AI is only as good as the data behind it. Collect, clean, and organize your data to ensure accuracy and accessibility. When data is organized and of high quality, it is a necessary property for gaining sound insights, accurate predictions, and confident decisions.",
     image: "/ai/tl-new-2.svg",
     browserText: "Crafting your design...",
   },
   {
     id: 3,
-    title: "Deploy Responsibly with Change Management and Governance",
+    title: "Implement with Governance and Change Leadership",
     description:
-      "Integrate AI solutions carefully into your workflows, involving key stakeholders and training teams to embrace the change. Establish governance to ensure ethical, transparent, and compliant AI usage.",
+      "Involve AI early, train your people well, and adapt internal processes to ensure the best fit within your organization. Create governance frameworks to ensure responsible, transparent, and compliant AI use.",
     image: "/ai/tl-new-2.svg",
     browserText: "Generating your design...",
   },
@@ -132,11 +132,11 @@ export default function TimelineSection(): JSX.Element {
   const TitleBlock = (): JSX.Element => (
     <div className="lg:mb-8">
       <p className="pt-20 text-[#00AA71] text-[26px] md:text-[30px] font-medium mb-2 tracking-wide" style={{letterSpacing:"2px", textTransform:"capitalize"}}>
-        AI implementation
+        Our AI Capabilities
       </p>
       <h2 className="text-[30px] xl:text-[50px] 2xl:text-[52px] font-semibold leading-[0.9] tracking-wide uppercase">
-        SIMPLE STEPS,
-        <br /> POWERFULL RESULS
+        Effective steps,
+        <br /> Concrete Results
       </h2>
     </div>
   );
@@ -190,7 +190,7 @@ export default function TimelineSection(): JSX.Element {
             }} className="text-[22px] max-w-[400px] xl:text-[27px] 2xl:text-[28px] font-medium leading-7 tracking-wide mb-2">
                       {step.title}
                     </h3>
-                    <p className="text-[13px] 2xl:text-[16px] leading-[20px] font-light sm:max-w-[410px] lg:max-w-[350px] 2xl:max-w-[410px] tracking-widest text-[#FFFFFF80]">
+                    <p className="text-[13px] 2xl:text-[14px] leading-[20px] font-light sm:max-w-[410px] lg:max-w-[350px] 2xl:max-w-[410px] tracking-widest text-[#FFFFFF80]">
                       {step.description}
                     </p>
                   </div>

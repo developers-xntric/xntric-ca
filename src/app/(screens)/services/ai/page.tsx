@@ -12,9 +12,9 @@ import { Awwards } from "@/data/awwards";
 import { Metadata } from "next";
 import Script from "next/script";
 export const metadata: Metadata = {
-  title: "AI Services for Smarter Business Solutions",
+  title: "AI Integration Services Canada | Automate & Scale with AI ",
   description:
-    "Unlock efficiency and innovation with Xntric’s AI services, from automation and analytics to intelligent business solutions for the digital era.",
+    "Transform your operations with expert AI integration services in Canada. We embed custom AI agents and machine learning into your workflows for maximum ROI.",
 };
 
 const schemaData = {
@@ -78,7 +78,7 @@ const AIPage = () => {
         </div>
         <YearsAwwards
           awwards={Awwards}
-          title="While deeply honored by industry recognition, we remain grounded in our core principles and research-driven approach."
+          title="We combine consulting expertise with hands-on AI engineering to deliver end-to-end solutions."
         />
         <TimelineSection />
         <AIFourSection />

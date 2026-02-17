@@ -5,7 +5,7 @@ const AIFourSection = () => {
       <div className="max-w-7xl w-[90%] mx-auto">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-start gap-5 lg:gap-6 mb-12">
-          <p className="text-[#898999] text-[13.521px] lg:text-sm tracking-widest">[ OUR SOLUTIONS ]</p>
+          <p className="text-[#898999] text-[13.521px] lg:text-sm tracking-widest">[ Our Powerful AI Solutions  ]</p>
           <h3
             className="text-[30px] xl:text-5xl font-semibold leading-9 xl:leading-[50px] lg:max-w-[40%] relative bottom-3 tracking-wide"
             style={{
@@ -36,7 +36,7 @@ const AIFourSection = () => {
             <div className="p-6">
               <h4 className="text-white text-[22px] font-semibold mb-2 tracking-wider leading-7">Workflow Automation</h4>
               <p className="text-[#A9A9A9] text-[13px] 2xl:text-[16px] leading-[18px] lg:leading-6 tracking-widest max-w-[80%]">
-                Let AI handle repetitive tasks, so your team can focus on high-impact work.
+               Ditch the time-consuming, rule-based processes from any department and let AI take care of approval, and reporting, leaving your team free to focus on what's really important for your business.
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@ const AIFourSection = () => {
             <div className="p-6">
               <h4 className="text-white text-[22px] font-semibold mb-2 tracking-wider leading-7">AI Chatbots & Virtual Assistants</h4>
               <p className="text-[#A9A9A9] text-[13px] 2xl:text-[16px] leading-[18px] lg:leading-6 tracking-widest max-w-[80%]">
-                Enhance customer experience with 24/7 AI driven support.
+                Keep your customers engaged 24 hours a day. Our conversational AI chatbots handle customer inquiries, book appointments, and provide instant customer support, improving response times and reducing workloads.
               </p>
             </div>
           </div>
@@ -60,7 +60,7 @@ const AIFourSection = () => {
             <div className="p-6">
               <h4 className="text-white text-[22px] font-semibold mb-2 tracking-wider leading-7">Personalized AI Marketing</h4>
               <p className="text-[#A9A9A9] text-[13px] 2xl:text-[16px] leading-[18px] lg:leading-6 tracking-widest max-w-[80%]">
-                Send smarter messages at the right moment with AI.
+                Use AI to learn and predict your audience's behavior. Target the right people with the right message at the right time. Smart marketing automation via email campaigns, retargeting ads.
               </p>
             </div>
           </div>
@@ -72,7 +72,7 @@ const AIFourSection = () => {
             <div className="p-6">
               <h4 className="text-white text-[22px] font-semibold mb-2 tracking-wider leading-7">CRM Automation</h4>
               <p className="text-[#A9A9A9] text-[13px] 2xl:text-[16px] leading-[18px] lg:leading-6 tracking-widest max-w-[80%]">
-                Capture, qualify, and route leads, focusing only on the right prospects automatically.
+               Automatic lead capture, scoring, and routing: An AI-based smart lead management system identifies high-value leadsto focus on business opportunities.
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@ const AIFourSection = () => {
             <div className="p-6">
               <h4 className="text-white text-[22px] font-semibold mb-2 tracking-wider leading-7">Custom AI Integrations</h4>
               <p className="text-[#A9A9A9] text-[13px] 2xl:text-[16px] leading-[18px] lg:leading-6 tracking-widest max-w-[80%]">
-                Seamlessly integrate AI into your existing business systems.
+              Integrate AI with your existing systems (CRM, ERP, marketing software, dashboard, etc.). Our integrations become a part of your landscape so that information can flow smoothly.
               </p>
             </div>
           </div>

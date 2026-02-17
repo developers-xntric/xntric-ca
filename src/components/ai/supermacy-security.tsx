@@ -16,11 +16,10 @@ export default function SupremacySecurity() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Supremacy of security
+            Uncrackable Security 
           </h3>
           <p className="self-stretch text-center max-w-[500px] mx-auto justify-center text-[#a9a9a9] text-[14px] lg:text-[20px] font-light tracking-wider font-futuru leading-[20px] lg:leading-[25px]">
-            Advanced protection to keep your data, transactions, and business
-            secure from threats and breaches.
+            Our AI services come with uncompromising, uncrackable security to protect what matters most.
           </p>
         </div>
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-[1500px] mx-auto w-[95%] lg:w-[90%] py-10">
@@ -43,8 +42,8 @@ export default function SupremacySecurity() {
                     Role-Based Control
                   </h3>
                   <p className="w-[173.95px] justify-center text-[#7b7c8c] lg:max-w-[80%] text-[14px] lg:text-[16px] tracking-wider font-normal font-futuru lg:leading-5 leading-4 mt-2">
-                    Limits data access to
-                    authorized users.
+                    Information should be accessible, who have been granted access according to role.
+
                   </p>
                 </div>
               </div>
@@ -64,9 +63,7 @@ export default function SupremacySecurity() {
                     AI Fraud Detection
                   </h3>
                   <p className="justify-center text-[#7b7c8c] lg:max-w-[80%] text-[14px] lg:text-[16px] tracking-wider font-normal font-futuru lg:leading-5 leading-4 mt-2">
-                    Stops suspicious transactions
-
-                    instantly.
+                   Detect and prevent suspicious activity in real-time using smart monitoring
                   </p>
                 </div>
               </div>
@@ -86,7 +83,7 @@ export default function SupremacySecurity() {
                     Secure Cloud
                   </h3>
                   <p className=" justify-center text-[#7b7c8c] lg:max-w-[80%] text-[14px] lg:text-[16px] tracking-wider font-normal font-futuru lg:leading-5 leading-4 mt-2">
-                    Ensures safety with backups  and compliance.
+                 Your systems will be protected by encrypted cloud environments.
                   </p>
                 </div>
               </div>
@@ -106,7 +103,7 @@ export default function SupremacySecurity() {
                     End-to-End Encryption
                   </h3>
                   <p className=" justify-center text-[#7b7c8c] lg:max-w-[80%] text-[14px] lg:text-[16px] tracking-wider font-normal font-futuru lg:leading-5 leading-4 mt-2">
-                    Keeps data secure from  unauthorized access.
+                   Protect your data in transit from unauthorized disclosure, and maintain data's confidentiality.
                   </p>
                 </div>
               </div>

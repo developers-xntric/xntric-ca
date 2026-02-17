@@ -189,7 +189,7 @@ export default function TechStackSection() {
           }}
           className="text-4xl lg:text-5xl font-bold mb-16 lg:mb-10 text-center md:text-start"
         >
-          What we offer <span className="text-emerald-400">with AI</span>
+          What Do Our <span className="text-emerald-400">AI Experts Offer? </span>
         </h2>
 
         <div

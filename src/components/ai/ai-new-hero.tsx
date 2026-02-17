@@ -32,19 +32,18 @@ export default function AINewHero() {
               <div className="space-y-2 md:space-y-20">
                 {/* Main Heading */}
                 <div className="md:space-y-2">
-                  <h1 className="text-[33px] md:text-5xl lg:text-[75px] 2xl:text-[90px] font-bold leading-9 md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-[#3BE29A]">
+                  <h1 className="text-[27px] md:text-5xl lg:text-[70px] 2xl:text-[85px] font-bold leading-9 md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-[#3BE29A] uppercase">
                     {" "}
-                    WELCOME TO XNTRIC{" "}
+                   Where Intelligence Meets Impact{" "}
                   </h1>
-                  <h2 className="text-[25px] relative bottom-1 md:bottom-0 md:text-2xl lg:text-[52px] 2xl:text-[72px] font-light text-white/90 tracking-widest ml-[20px] md:ml-[45px]">
-                    BUILT WITH AI
+                  <h2 className="text-[23px] relative bottom-1 md:bottom-0 md:text-2xl lg:text-[48px] 2xl:text-[68px] font-light text-white/90 tracking-widest ml-[20px] md:ml-[45px] uppercase">
+                   AI Consulting Services in Canada
                   </h2>
                 </div>
                 {/* Description */}
                 <p className="text-gray-300 text-[12px] md:text-lg lg:text-xl max-w-[250px] md:max-w-[420px] leading-relaxed tracking-wider">
-                  A result-focused design partner to help you automate
-                  workflows, optimize operations, and scale faster with AI
-                  solutions.
+                 At Xntric, we deliver strategic and implementation-driven AI solutions that go beyond experimentation. We build systems that create measurable business impact. 
+
                 </p>
               </div>
             </div>

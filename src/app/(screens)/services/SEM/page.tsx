@@ -17,45 +17,41 @@ import { steps9 } from "@/data/our-process";
 import { Metadata } from "next";
 import Script from "next/script";
 export const metadata: Metadata = {
-  title: "SEM Services for High-Impact Paid Campaigns",
+  title: " PPC Services in Canada | High-ROI Google & Meta Ads",
   description:
-    "Achieve higher ROI with Xntric’s SEM services, creating data-driven paid ad campaigns that reach the right audience at the right moment.",
+    "Drive instant leads with expert PPC services in Canada. We specialize in AI-powered Google Ads, Meta Ads, and LinkedIn campaigns with transparent ROI reporting.",
 };
 const faqItems: { question: string; answer: string }[] = [
   {
-    question: "How many years have you served in the UAE market?",
-    answer: `VPS hosting splits a physical server into several separate virtual servers using special software called a hypervisor.`,
+    question: "Who Owns Our Ad Accounts?",
+    answer: `You do. We ensure full ownership and administrative access to your Google Ads account at all times.`,
   },
   {
     question:
-      "How do wireframing and prototyping enhance the UI/UX design process?",
-    answer: `Prototyping and wireframing provide much of the basis for the user experience design
-process. Prototypes provide interactive elements to designs produced from wireframes,
-therefore illustrating the structure of the product. Participating in this process enables
-stakeholders to see the final result and verify if the design satisfies user expectations
-before to start of development.`,
+      "Who Pays the Media Fees?",
+    answer: `You pay Google directly for media spend. We charge a separate management fee for our services.`,
   },
   {
     question:
-      "What are the benefits of conducting a UX audit for your website or app?",
+      "Do You Have a Minimum Term?",
     answer:
-      "A UX audit evaluates the usability and functionality of your digital product. Identifying pain points in the user journey. Improving accessibility and navigation. Enhancing overall user satisfaction. A UX audit ensures your website or app meets modern UI/UX design standards.",
+      "We typically recommend a 3-month engagement to allow proper optimization, but we remain flexible based on client needs.",
   },
   {
-    question: "How can responsive web design improve user experience?",
+    question: "How Much Do You Charge to Be Our PPC Agency?",
     answer:
-      "Whether the screen of any device is little or large, responsive web design will make your site seem fantastic. An integral component of user interface and user experience design services, this approach guarantees consistent appearance and operation across all devices, therefore enhancing the user&#39;s experience.",
+      "Pricing depends on ad spend, campaign complexity, and business objectives. We provide customized proposals after an initial consultation.",
   },
   {
     question:
-      "What is a design system audit, and why is it essential for consistent branding?",
+      "Do You Offer Free Audits?",
     answer:
-      "Design system audits of all your present design components help to ensure excellent brand recognition and usability. It looks for issues, streamlines procedures, and helps to maintain the visual language of your digital assets consistent—all of which are crucial for credibility and acknowledgement.",
+      "Yes. We offer complimentary PPC audits to identify performance gaps and growth opportunities.",
   },
   {
-    question: "How do UI/UX design services impact e-commerce success?",
+    question: "Do You Guarantee Results?",
     answer:
-      "Effective UI/UX design services play a major role in e-commerce success by Simplifying navigation and checkout processes. Enhancing product presentation. Building trust through intuitive interfaces. By keeping an eye on the user needs, UI/UX designers help increase conversions along with ensuring customer loyalty in online stores.",
+      "We guarantee strategic execution, transparency, and data-driven optimization.",
   },
 ];
 
@@ -183,7 +179,7 @@ function page() {
           title="While deeply honored by industry recognition, we remain grounded in our core principles and research-driven approach"
         />
         <DigitalProducts
-          leftText="We combine in-depth market analysis with cutting-edge SEM tactics to create campaigns that resonate. Our holistic approach uncovers hidden opportunities and continuously optimizes performance, turning search traffic into loyal customers."
+          leftText="As an experienced Google Ads agency, we understand that every business is different. That's why we tailor our campaigns to your goals. Always relevant, always measurable. Our search engine marketing company provides search engine marketing services to clients in the healthcare, legal, real estate, SaaS, eCommerce, education, and professional verticals. All campaigns are custom-based on industry competition, target audience, and the conversion cycle."
           mainHeading="Search Marketing Built on Research and Results A 360° Strategy for Sustainable Growth"
           highlightWords={["360° Strategy"]}
           buttonText="LET'S TALK"
@@ -198,7 +194,7 @@ function page() {
         <NewGreen
           buttonText="Book Your Consultation"
           bg={false}
-          text="Cut through the noise and <span style='color: #00AA71'>reach your ideal customers</span> with precision targeting"
+          text="Break through the competition and connect with your ideal customers through highly precise, data-driven targeting."
         />
         <ServicesOffer services={defaultServices} />
         <TechStackCarousel />

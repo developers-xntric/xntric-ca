@@ -18,9 +18,9 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "SEO Services to Improve Rankings & Visibility",
+  title: "SEO Services in Canada | Rank on Google & AI Engines",
   description:
-    "Improve app rankings and downloads with Xntric’s App Store Optimization, crafted to maximize visibility on iOS and Google Play for your target audience.",
+    "Drive growth with performance-led SEO services in Canada. We optimize for traditional search & AI overviews to increase your visibility and ROI. Get a free audit!",
 };
 const faqItems: { question: string; answer: string }[] = [
   {
@@ -94,24 +94,24 @@ const cards = [
 const defaultServices: Service[] = [
   {
     imgSrc: "/service-inner/c5.png",
-    title: "Local SEO & GBP Management ",
-    description: "Ranking on Google Maps and local search. ",
+    title: "Technical SEO Projects",
+    description: "This focuses on the foundation of your website.",
   },
   {
     imgSrc: "/service-inner/c3.png",
-    title: "Technical SEO Projects ",
+    title: "On-Page SEO and Content-Driven Strategy",
     description:
-      "Site speed, indexing, mobile-friendliness, and Core Web Vitals. ",
+      "This is where we directly influence what search engines see.",
   },
   {
     imgSrc: "/service-inner/c4.png",
-    title: "eCommerce SEO",
-    description: "For online stores needing product visibility.",
+    title: "Local SEO Agency & GBP Management",
+    description: "We manage your Google Business Profile (GBP), ensure consistent NAP (Name, Address, Phone number) data across the web",
   },
   {
     imgSrc: "/service-inner/c3.png",
-    title: "Content-Driven SEO",
-    description: "Blogs, articles, and resources designed to rank.",
+    title: "Enterprise & eCommerce SEO",
+    description: "We manage large-scale SEO campaigns across multiple domains or regions.",
   },
   {
     imgSrc: "/service-inner/c1.png",
@@ -173,31 +173,31 @@ function page() {
           rightImage="/service-inner/s1.png"
           heading="Data-Driven Decisions for Organic Growth"
           headingClassName="lg:max-w-[90%] 2xl:max-w-[70%]"
-          para="Optimize with Intelligence Claim Your Free Data-Driven SEO Audit!"
+          para="Are you searching for reliable and results-oriented seo services in Canada? You've found the solution."
         />
         <YearsAwwards
           awwards={Awwards}
           bgImage={false}
-          title="While deeply honored by industry recognition, we remain grounded in our core principles and research-driven approach"
+          title="Partner with our leading seo agency in canada and experience measurable growth. Stop guessing and start growing with the best seo services in canada available."
         />
         <DigitalProducts
-          leftText="We don’t just optimize keywords. we analyze, strategize, and execute based on deep insights to deliver SEO that drives traffic, engagement, and growth."
-          mainHeading="SEO That Works From Every Aspect A 360° APPROACH to Digital Visibility"
-          highlightWords={["A 360°", "APPROACH"]}
+          leftText="In a crowded online space, partnering with a specialized seo company canada is the critical factor that determines your success. We analyze, strategize, and execute based on deep data insights to deliver SEO ."
+          mainHeading="Technical SEO Projects for Foundational Strength"
+          highlightWords={["SEO Projects"]}
         />
         <ScrollCardsSection
-          heading="Precision SEO Data That <span style='color:#00AA71;'>Drives Real Growth</span>"
+          heading="Why Choose Our SEO <span style='color:#00AA71;'>Company Canada Experts?</span>"
           headingClassName="max-w-[80%] tracking-wide"
-          text="From spotting barriers to doubling local leads and tripling organic traffic, our data-driven SEO strategies deliver results you can measure. Recognized for excellence, we turn complex analytics into your competitive advantage"
+          text="As a leading seo company in Canada, we offer transparent reporting and focus purely on high-ROI activities, differentiating us from other seo agencies in Canada. See the difference an intelligent, results-oriented seo service partnership can make."
           cardsData={cards}
         />
-        <SolutionCarousel />
+        <SolutionCarousel para="We are recognized as a leading seo agency in Canada because we fuse advanced analytics with ethical, forward-thinking execution. Our commitment is to build strategies that withstand Google's frequent algorithm updates, ensuring your investment yields long-term, compounding results. This dedication to durable growth is why clients trust us as the best seo company in Canada." />
         <NewGreen
           isPopupOpen={true}
           bg={false}
           text="Build a Strong <span style='color: #00AA71'>Online Foundation</span>. Book Your Free SEO Audit"
         />
-        <ServicesOffer services={defaultServices} />
+        <ServicesOffer services={defaultServices} subtext="Our comprehensive suite of seo service in Canada covers the three main pillars of search engine optimization: Technical, On-Page, and Off-Page." />
         <TechStackCarousel />
         <NewOurProcess steps={steps2} />
         <NewGreen

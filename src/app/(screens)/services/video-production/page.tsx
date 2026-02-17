@@ -18,45 +18,42 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Professional Creative Production Services | Xntric",
+  title: "Video Production Services Canada | High-Impact Brand Films",
   description:
-    "From video shoots to creative visuals, Xntric offers high-quality production services that tell your brand story with impact and cinematic precision.",
+    "Scale your brand with expert video production services in Canada. We specialize in high-ROI social content, corporate films, and AI-powered video editing.",
 };
+
 const faqItems: { question: string; answer: string }[] = [
   {
-    question: "How many years have you served in the UAE market?",
-    answer: `VPS hosting splits a physical server into several separate virtual servers using special software called a hypervisor.`,
+    question: "What does full-service video production include?",
+    answer: `We handle the entire journey from concept to delivery. This includes "The Creative Stuff" (scripting, storyboarding, and strategy), "The Production" (filming with professional crews, lighting, and sound), and "Post-Production" (editing, color grading, and sound design). You bring the goal; we bring the finished film.`,
   },
   {
     question:
-      "How do wireframing and prototyping enhance the UI/UX design process?",
-    answer: `Prototyping and wireframing provide much of the basis for the user experience design
-process. Prototypes provide interactive elements to designs produced from wireframes,
-therefore illustrating the structure of the product. Participating in this process enables
-stakeholders to see the final result and verify if the design satisfies user expectations
-before to start of development.`,
+      "How much does it cost to produce a video in Canada?",
+    answer: `Video costs vary based on complexity, but most professional Canadian corporate projects range between $5,000 and $20,000. Short Social Clips: $2,500 – $5,000 Brand Films/Corporate Videos: $10,000 – $25,000 We provide transparent, fixed-price quotes so there are no "hidden fees" for gear or travel once the project starts.`,
   },
   {
     question:
-      "What are the benefits of conducting a UX audit for your website or app?",
+      "How long does the production process actually take?",
     answer:
-      "A UX audit evaluates the usability and functionality of your digital product. Identifying pain points in the user journey. Improving accessibility and navigation. Enhancing overall user satisfaction. A UX audit ensures your website or app meets modern UI/UX design standards.",
+      "A typical project takes 4 to 8 weeks. Phase 1(Pre- pro): 1–2 weeks for scripting and planning. Phase 2(Production): 1–3 days of actual filming. Phase 3(Post - pro): 2–4 weeks for editing and revisions.Need it faster ? We offer 'Rush Delivery' options for time - sensitive launches.",
   },
   {
-    question: "How can responsive web design improve user experience?",
+    question: "What if I need to make changes? How many revisions are included?",
     answer:
-      "Whether the screen of any device is little or large, responsive web design will make your site seem fantastic. An integral component of user interface and user experience design services, this approach guarantees consistent appearance and operation across all devices, therefore enhancing the user&#39;s experience.",
+      "We want you to love the final result. Our standard contracts include two rounds of major revisions at the editing stage. This allows you to give feedback on the flow, music, and text to ensure the final version perfectly aligns with your brand.",
   },
   {
     question:
-      "What is a design system audit, and why is it essential for consistent branding?",
+      "Do you help with scriptwriting and creative ideas?",
     answer:
-      "Design system audits of all your present design components help to ensure excellent brand recognition and usability. It looks for issues, streamlines procedures, and helps to maintain the visual language of your digital assets consistent—all of which are crucial for credibility and acknowledgement.",
+      "Yes! Most of our clients come to us with a problem, not a script. We specialize in creative strategy helping you find the right story to tell, writing the script, and planning the visuals so your video actually converts viewers into customers.",
   },
   {
-    question: "How do UI/UX design services impact e-commerce success?",
+    question: "Can I see your previous work or talk to a past client?",
     answer:
-      "Effective UI/UX design services play a major role in e-commerce success by Simplifying navigation and checkout processes. Enhancing product presentation. Building trust through intuitive interfaces. By keeping an eye on the user needs, UI/UX designers help increase conversions along with ensuring customer loyalty in online stores.",
+      "Absolutely. We take pride in our portfolio. You can view our latest Canadian showreel and case studies directly on our 'Work' page. We can also provide industry-specific references from past clients upon request to give you peace of mind.",
   },
 ];
 
@@ -111,12 +108,12 @@ const defaultServices: Service[] = [
   {
     imgSrc: "/service-inner/c3.png",
     title: "Product Photography",
-    description: " eCommerce, food, fashion, or flat lays. ",
+    description: "Creating stunning new lifestyle, flat lay, and editorial imagery for eCommerce",
   },
   {
     imgSrc: "/service-inner/c1.png",
     title: "Motion Graphics & Explainers",
-    description: "Animated videos that simplify complex products/services.",
+    description: "An animation-based form of storytelling to simplify complex ideas.",
   },
 ];
 
@@ -176,9 +173,9 @@ function page() {
           imageclassName="xl:w-[740px] 2xl:w-[1150px] xl:right-12 2xl:right-[23%]"
           rightImage="/service-inner/s7.png"
           heading="Stories That Move Audiences "
-          para="Ready to Create a TVC That Stands Out? Book Your Free Consultation Today! "
+          para="Ready to produce a TVC that commands attention and drives impact?"
           headingClassName="lg:max-w-[80%] 2xl:max-w-[60%]"
-          buttonText="Book your Consultation!"
+          buttonText="Book Your Consultation Today."
         />
         <YearsAwwards
           awwards={Awwards}
@@ -186,14 +183,14 @@ function page() {
           title="While deeply honored by industry recognition, we remain grounded in our core principles and research-driven approach"
         />
         <DigitalProducts
-          leftText="From concept to final cut, we research deeply and craft videos that resonate, engage, and convert. delivering content that drives real business impact."
-          mainHeading="Video Production Beyond the Frame A 360° Process for Powerful Storytelling"
+          leftText="We combine research, storytelling, and performance strategy to create videos that communicate with the heart and drive business outcomes. Every frame counts. Every message is calculated."
+          mainHeading="Video Production Beyond the Frame A 360° Process Built for Powerful Storytelling"
           buttonText="LET'S TALK"
           highlightWords={["Powerful Storytelling"]}
         />
         <ScrollCardsSection
           heading="Where Data <span style='color: #00AA71'>DRIVES</span> Every Frame"
-          text="We don’t just produce videos. We deliver measurable impact. From 95% client satisfaction to a 25% boost in brand reach, our data-driven approach ensures your content performs across every platform"
+          text="Our videos don't just inform; they have a measurable impact. Our data-driven approach to marketing means that we keep your content optimized across every social platform, allowing for 95% client satisfaction and 25% more brand reach."
           headingClassName="max-w-[70%]"
           cardsData={cards}
         />

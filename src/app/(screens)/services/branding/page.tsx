@@ -18,32 +18,28 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Branding Services to Build a Powerful Brand Identity",
+  title: "Branding Services in Canada | Strategic Brand Identity ",
   description:
-    "Build a powerful, recognizable brand identity with Xntric’s expert branding services, designed to inspire trust, attract customers, and leave a lasting mark.",
+    "Elevate your business with the leading branding services in Canada. From logo design to full brand strategy, we build identities that drive growth and loyalty.",
 };
 const faqItems: { question: string; answer: string }[] = [
   {
-    question: "How many years have you served in the UAE market?",
-    answer: `VPS hosting splits a physical server into several separate virtual servers using special software called a hypervisor.`,
+    question: "How much does branding cost in Canada?",
+    answer: `Branding costs in Canada vary widely depending on the project's scope. A foundational identity project (logo, color, typography) for a startup might range from $5,000 to $15,000. A full-scale project involving deep market research, verbal strategy, and comprehensive brand guidelines for a mid-sized company often falls between $25,000 and $75,000+.`,
   },
   {
     question:
-      "How do wireframing and prototyping enhance the UI/UX design process?",
-    answer: `Prototyping and wireframing provide much of the basis for the user experience design
-process. Prototypes provide interactive elements to designs produced from wireframes,
-therefore illustrating the structure of the product. Participating in this process enables
-stakeholders to see the final result and verify if the design satisfies user expectations
-before to start of development.`,
+      "What are the branding agencies in Canada?",
+    answer: `The landscape of branding companies in Canada includes boutique design studios, large integrated marketing firms, and specialized strategy agencies. Xntric falls into the specialized strategy category, focusing on data-driven design and measurable business results over pure creative volume.`,
   },
   {
     question:
-      "What are the benefits of conducting a UX audit for your website or app?",
+      "How to choose a branding agency in Canada?",
     answer:
-      "A UX audit evaluates the usability and functionality of your digital product. Identifying pain points in the user journey. Improving accessibility and navigation. Enhancing overall user satisfaction. A UX audit ensures your website or app meets modern UI/UX design standards.",
+      "To choose the right agency, look for three things: A Proven Process (Do they prioritize research?) Relevant Portfolio (Have they succeeded in a similar challenge?) Cultural Fit (Do they understand the nuances of the Canadian market?). Price should be secondary to the quality of the strategic process.",
   },
   {
-    question: "How can responsive web design improve user experience?",
+    question: "What is your agency's step-by-step branding process?",
     answer:
       "Whether the screen of any device is little or large, responsive web design will make your site seem fantastic. An integral component of user interface and user experience design services, this approach guarantees consistent appearance and operation across all devices, therefore enhancing the user&#39;s experience.",
   },
@@ -54,9 +50,9 @@ before to start of development.`,
       "Design system audits of all your present design components help to ensure excellent brand recognition and usability. It looks for issues, streamlines procedures, and helps to maintain the visual language of your digital assets consistent—all of which are crucial for credibility and acknowledgement.",
   },
   {
-    question: "How do UI/UX design services impact e-commerce success?",
+    question: "How long does a typical full-scale branding project take?",
     answer:
-      "Effective UI/UX design services play a major role in e-commerce success by Simplifying navigation and checkout processes. Enhancing product presentation. Building trust through intuitive interfaces. By keeping an eye on the user needs, UI/UX designers help increase conversions along with ensuring customer loyalty in online stores.",
+      "A typical, full-scale branding project usually takes between 8 to 14 weeks. This timeline accounts for crucial phases like market research (4 weeks), concept exploration and client feedback (4 weeks), and final asset creation/governance documentation (2-4 weeks).",
   },
 ];
 const cards = [
@@ -95,27 +91,27 @@ const defaultServices: Service[] = [
     imgSrc: "/service-inner/c5.png",
     title: "Corporate Branding",
     description:
-      "For businesses building trust and recognition at a company level. ",
+      "For businesses building trust and recognition at a company level, focusing on mission, vision, and core values to attract top talent and enterprise clients. ",
   },
   {
     imgSrc: "/service-inner/c3.png",
     title: "Startup & Product Branding ",
-    description: "For new businesses or product launches needing an identity. ",
+    description: "For new businesses or product launches needing an identity that cuts through the noise. We build memorable names, visual identities, and launch strategies.",
   },
   {
     imgSrc: "/service-inner/c4.png",
-    title: "Leadership Branding",
-    description: "For executives or founders who need a personal brand.",
+    title: "Personal Branding for Leaders",
+    description: "We help executives and founders craft a compelling personal branding narrative that enhances their professional reputation and reinforces the company's vision. We understand the specific needs of personal branding Canada professionals face.",
   },
   {
     imgSrc: "/service-inner/c3.png",
     title: "Event & Campaign Branding",
-    description: "For short-term activations or one-off events. ",
+    description: "For short-term activations or one-off events that require a memorable, high-impact temporary visual and messaging identity.",
   },
   {
     imgSrc: "/service-inner/c1.png",
     title: "Brand Systems & Guidelines",
-    description: "For scaling teams or agencies requiring consistent design. ",
+    description: "For scaling teams or partner branding companies in Canada requiring clear, comprehensive brand books, asset libraries, and guidelines to ensure consistent design implementation across all platforms. ",
   },
 ];
 
@@ -177,37 +173,37 @@ function page() {
           rightImage="/service-inner/branding.png"
           heading="Stand Out by Speaking Directly"
           headingClassName="lg:max-w-[90%] 2xl:max-w-[65%]"
-          para="Connect Deeply with Your Audience. Build a Brand That Truly Speaks Their Language."
+          para="The Strategic Branding Agency in Canada That Connects and Converts"
         />
         <YearsAwwards
           awwards={Awwards}
           bgImage={false}
-          title="While deeply honored by industry recognition, we remain grounded in our core principles and research-driven approach"
+          title="While deeply honored by industry recognition, we remain grounded in our core principles and a research-driven approach."
         />
         <DigitalProducts
           isWidth={true}
-          leftText="Our process starts with deep research and user understanding, then translates insights into compelling brand stories and visuals. The result? Brands that engage users meaningfully and deliver measurable business growth."
+          leftText="Most brands miss critical gaps that hold them back from true impact. We identify these brand blind spots and leverage them to unlock breakthroughs. We don't guess; we measure the impact of identity and strategy. We approach each project with a holistic mindset, combining creative thinking, human-centered design, and strategic market knowledge."
           mainHeading="360° Branding That Speaks, Connects, and Converts"
           highlightWords={["Speaks, Connects"]}
         />
         <ScrollCardsSection
-          heading="From Brand <span style='color:#00AA71'>Blind spots</span> to Breakthroughs "
+          heading="Comprehensive <span style='color:#00AA71'>Branding Services</span> in Canada "
           headingClassName="max-w-[75%] tracking-wide"
-          text="Most brands miss critical gaps that hold them back from true impact. We identify 80% of those gaps, double your brand recall, boost trust by 60%, and triple engagement. Turning insights into measurable growth "
+          text="From foundational strategy to final asset creation, we provide a full suite of branding services in Canada to ensure your identity is built for longevity and impact.  Our dedication to client success makes us the best branding agency in Canada for businesses ready to scale."
           cardsData={cards}
         />
         <SolutionCarousel />
         <NewGreen
           bg={false}
-          text="Create a Brand That <span style='color: #00AA71'>Resonates</span> and Stands Apart  "
+          text="Build an Unforgettable Brand That <span style='color: #00AA71'>Dominates</span> Your Category  "
           buttonText="Book your Consultation"
         />
         <ServicesOffer services={defaultServices} />
         <TechStackCarousel />
         <NewOurProcess steps={steps3} />
         <NewGreen
-          text="Turn Heads with a Brand That Resonates"
-          buttonText="Let's talk"
+          text="Forge an Identity That Connects Deeply and Converts Consistently"
+          buttonText="Lets talk"
         />
         <NewFaqs faqs={faqItems} />
         <BigIdeas line={false} />

@@ -10,8 +10,8 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Game Marketing Solutions to Boost Engagement",
-  description: "Power up your game’s reach with Xntric’s marketing strategies, helping developers engage players, increase downloads, and boost revenue worldwide.",
+  title: "Game Marketing Services in Canada | Video Game Marketing Agency",
+  description: "Xntric is a leading video game marketing agency that delivers influencer strategy, community growth, and performance-driven results, based on its past successes.",
 };
 const GameMarketing = () => {
   return (

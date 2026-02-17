@@ -271,8 +271,8 @@ const mobileSlides: MobileSlide[] = slides.flatMap((slide, index) => [
       <NewGreen
         bg={false}
         isPopupOpen={true}
-        text='Ready to Engage Millions? Start Your <span style="color: #00AA71">Custom Game Campaign</span> Today!'
-        buttonText="BOOK A FREE CONSULTATION"
+        text='Ready to Reach Millions of Players? Launch Your <span style="color: #00AA71">Custom Game Campaign</span> Today!'
+        buttonText="Book Your Free Strategy Consultation Now."
       />
 
       <div

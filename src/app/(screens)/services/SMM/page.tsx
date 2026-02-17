@@ -18,46 +18,42 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Social Media Marketing to Grow Your Brand",
+  title: "Social Media Marketing Services Canada | Grow Your Community",
   description:
-    "Build and grow your brand online with Xntric’s social media marketing services, crafting content strategies that engage and convert audiences.",
+    "Transform your social presence with expert services in Canada. We specialize in high-impact video, social search optimization, and data-driven community growth.",
 };
 
 const faqItems: { question: string; answer: string }[] = [
   {
-    question: "How many years have you served in the UAE market?",
-    answer: `VPS hosting splits a physical server into several separate virtual servers using special software called a hypervisor.`,
+    question: "Which social media platform is popular in Canada?",
+    answer: `Popular social media platforms in Canada include Instagram, Facebook, TikTok, LinkedIn, and YouTube. Platforms most relevant to your target audience and sector should be considered.`,
   },
   {
     question:
-      "How do wireframing and prototyping enhance the UI/UX design process?",
-    answer: `Prototyping and wireframing provide much of the basis for the user experience design
-process. Prototypes provide interactive elements to designs produced from wireframes,
-therefore illustrating the structure of the product. Participating in this process enables
-stakeholders to see the final result and verify if the design satisfies user expectations
-before to start of development.`,
+      "What is the 5-3-2 rule for social media?",
+    answer: `The 5-3-2 rule recommends a sharing ratio of five curated posts, three original posts, and two personal or engaging posts to maintain a balance in the content shared with the audience.`,
   },
   {
     question:
-      "What are the benefits of conducting a UX audit for your website or app?",
+      "How much does social media handling cost in Canada?",
     answer:
-      "A UX audit evaluates the usability and functionality of your digital product. Identifying pain points in the user journey. Improving accessibility and navigation. Enhancing overall user satisfaction. A UX audit ensures your website or app meets modern UI/UX design standards.",
+      "Depending on campaign size, platforms, and the level of service, Canadian social media marketing companies typically charge between CAD 1,500 and CAD 10,000+ per month.",
   },
   {
-    question: "How can responsive web design improve user experience?",
+    question: "How much do social media consultants cost?",
     answer:
-      "Whether the screen of any device is little or large, responsive web design will make your site seem fantastic. An integral component of user interface and user experience design services, this approach guarantees consistent appearance and operation across all devices, therefore enhancing the user&#39;s experience.",
+      "Fees for consultants may be hourly rates of between CAD 75-250 or monthly retainers based on their experience.",
   },
   {
     question:
-      "What is a design system audit, and why is it essential for consistent branding?",
+      "What are SMO services?",
     answer:
-      "Design system audits of all your present design components help to ensure excellent brand recognition and usability. It looks for issues, streamlines procedures, and helps to maintain the visual language of your digital assets consistent—all of which are crucial for credibility and acknowledgement.",
+      "Social Media Optimization (SMO) is the act of optimizing social media profiles, pages, hashtags, content, and engagement to increase visibility and authority.",
   },
   {
-    question: "How do UI/UX design services impact e-commerce success?",
+    question: "What are the benefits of SMO?",
     answer:
-      "Effective UI/UX design services play a major role in e-commerce success by Simplifying navigation and checkout processes. Enhancing product presentation. Building trust through intuitive interfaces. By keeping an eye on the user needs, UI/UX designers help increase conversions along with ensuring customer loyalty in online stores.",
+      "SMO improves brand visibility, increases user engagement, builds online reputation, and drives website traffic.",
   },
 ];
 
@@ -97,22 +93,22 @@ const defaultServices: Service[] = [
   {
     imgSrc: "/service-inner/c5.png",
     title: "Monthly Content Management",
-    description: "Ongoing posts, reels, captions, and scheduling.",
+    description: "Steady, planned content builds sustainable growth.",
   },
   {
     imgSrc: "/service-inner/c3.png",
     title: "Reels & Video-Focused Growth",
-    description: "Short-form content strategies to drive visibility.",
+    description: "Our Canadian social media marketing team specializes in short-form video and creates scroll-stopping content.",
   },
   {
     imgSrc: "/service-inner/c4.png",
     title: "Personal Brand Management ",
-    description: "Content creation and engagement for public figures. ",
+    description: "To be the authority. Executives, founders, and public figures need to be seen as the authority in their niche.",
   },
   {
     imgSrc: "/service-inner/c3.png",
     title: "Campaign-Based Social Strategy",
-    description: "For product launches, events, or limited-time campaigns.",
+    description: "As one of the top social media agencies in Canada, we source, brief and manage the right creators for your brand values.",
   },
   {
     imgSrc: "/service-inner/c1.png",
@@ -180,7 +176,7 @@ function page() {
           rightImage="/service-inner/s6.png"
           heading="Stop Guessing Start Growing"
           headingClassName="lg:max-w-[100%] 2xl:max-w-[60%]"
-          para="Break Free from the Noise Lead Your Market with a Strategic SMM Consultation!"
+          para="We combine creativity with precision to ensure your brand doesn’t just participate in conversations; it leads them."
           buttonText="FREE SMM AUDIT"
         />
         <YearsAwwards
@@ -190,14 +186,14 @@ function page() {
         />
         <DigitalProducts
           leftText="From startups to global brands, we deliver social media campaigns built on deep research and data insights, crafting content and strategies that resonate with your audience and drive measurable results."
-          mainHeading="Social Media Marketing, Not Just Posts A 360° Strategy for Real Engagement and Growth"
+          mainHeading="Social Media Marketing Beyond Posting. A 360° Strategy Built for Meaningful Engagement and Sustainable Growth."
           buttonText="LET'S TALK"
           highlightWords={["360° Strategy"]}
         />
         <ScrollCardsSection
           heading="FROM SOCIAL CLUTTER TO <span style='color: #00AA71'>CLEAR CONVERSIONS</span>"
           headingClassName="max-w-[90%] tracking-wide"
-          text="Social media is crowded and noisy, but most campaigns miss the mark. We leverage data and proven strategies to boost engagement rates, expand your reach, and convert followers into paying customers "
+          text="Unlike other Canadian social media marketing services, we run campaigns based on measurable KPIs like engagement rate, click-through rate, conversion rate, and return on investment."
           cardsData={cards}
         />
         <SolutionCarousel />
@@ -205,10 +201,10 @@ function page() {
           isPopupOpen={true}
           showSocialLinks={true}
           bg={false}
-          text="Rise Above the Noise, Lead with a <span style='color: #00AA71'>Winning Strategy</span>"
+          text="Social Platforms Are Saturated, But <span style='color: #00AA71'>Data Cuts Through Chaos</span>"
           buttonText="Book your Free audit"
         />
-        <ServicesOffer services={defaultServices} />
+        <ServicesOffer services={defaultServices} heading={"Our Social Media Marketing Services"} />
         <TechStackCarousel />
         <NewOurProcess steps={steps5} />
         <NewGreen

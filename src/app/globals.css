@@ -1,0 +1,672 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Futuru";
+  src: url("/fonts/Futura/WOFF2/Futuru-Medium.woff2") format("woff2"),
+    url("/fonts/Futura/WOFF/Futuru-Medium.woff") format("woff"),
+    url("/fonts/Futura/OTF/Futuru-Medium.otf") format("opentype"),
+    url("/fonts/Futura/TTF/Futuru-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futuru";
+  src: url("/fonts/Futura/WOFF2/Futuru-Bold.woff2") format("woff2"),
+    url("/fonts/Futura/WOFF/Futuru-Bold.woff") format("woff"),
+    url("/fonts/Futura/OTF/Futuru-Bold.otf") format("opentype"),
+    url("/fonts/Futura/TTF/Futuru-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futuru";
+  src: url("/fonts/Futura/WOFF2/Futuru-Regular.woff2") format("woff2"),
+    url("/fonts/Futura/WOFF/Futuru-Regular.woff") format("woff"),
+    url("/fonts/Futura/OTF/Futuru-Regular.otf") format("opentype"),
+    url("/fonts/Futura/TTF/Futuru-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futuru";
+  src: url("/fonts/Futura/WOFF2/Futuru-Semibold.woff2") format("woff2"),
+    url("/fonts/Futura/WOFF/Futuru-Semibold.woff") format("woff"),
+    url("/fonts/Futura/OTF/Futuru-Semibold.otf") format("opentype"),
+    url("/fonts/Futura/TTF/Futuru-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futuru";
+  src: url("/fonts/Futura/WOFF2/Futuru-Extrabold.woff2") format("woff2"),
+    url("/fonts/Futura/WOFF/Futuru-Extrabold.woff") format("woff"),
+    url("/fonts/Futura/OTF/Futuru-Extrabold.otf") format("opentype"),
+    url("/fonts/Futura/TTF/Futuru-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futuru";
+  src: url("/fonts/Futura/WOFF2/Futuru-Extralight.woff2") format("woff2"),
+    url("/fonts/Futura/WOFF/Futuru-Extralight.woff") format("woff"),
+    url("/fonts/Futura/OTF/Futuru-Extralight.otf") format("opentype"),
+    url("/fonts/Futura/TTF/Futuru-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futuru";
+  src: url("/fonts/Futura/WOFF2/Futuru-Light.woff2") format("woff2"),
+    url("/fonts/Futura/WOFF/Futuru-Light.woff") format("woff"),
+    url("/fonts/Futura/OTF/Futuru-Light.otf") format("opentype"),
+    url("/fonts/Futura/TTF/Futuru-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futuru";
+  src: url("/fonts/Futura/WOFF2/Futuru-Thin.woff2") format("woff2"),
+    url("/fonts/Futura/WOFF/Futuru-Thin.woff") format("woff"),
+    url("/fonts/Futura/OTF/Futuru-Thin.otf") format("opentype"),
+    url("/fonts/Futura/TTF/Futuru-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: "Futuru", "Space Grotesk";
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 24 9.8% 10%;
+    --primary-foreground: 60 9.1% 97.8%;
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+    --primary: 60 9.1% 97.8%;
+    --primary-foreground: 24 9.8% 10%;
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 24 5.7% 82.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.carousel-slide.previous {
+  transform: translateX(-100%);
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+}
+
+.carousel-pagination {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.carousel-dot.active {
+  background-color: white;
+}
+
+#rotate {
+  animation: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#section-5-service-li:hover {
+  transition: color 2s ease;
+
+  .service,
+  .arrow {
+    color: #3be29a;
+  }
+}
+
+.btn {
+  background-color: #6200ea;
+  /* Button background color */
+  color: white;
+  /* Text color */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Padding around the button */
+  font-size: 24px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  position: relative;
+  /* Position relative for absolute children */
+}
+
+.ides {
+  box-shadow: -10px 4.036px 103.64px 0px rgba(59, 226, 154, 0.80);
+}
+
+.letter {
+  display: inline-block;
+  /* Allows transformation effects */
+  transition: transform 0.001s ease;
+  /* Quick transition for transform */
+}
+
+.btn:hover .letter:nth-child(odd) {
+  transform: translateY(-5px);
+  /* Move odd letters up */
+}
+
+.btn:hover .letter:nth-child(even) {
+  transform: translateY(5px);
+  /* Move even letters down */
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 80px;
+  border-radius: 2rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card .row .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card .row .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+.card.selected {
+  width: 600px;
+}
+
+.card.selected .description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes glowingBorder {
+  0% {
+    border-color: rgba(14, 122, 80, 0.2);
+    box-shadow: 0 0 5px rgba(14, 122, 80, 0.2);
+  }
+
+  50% {
+    border-color: rgba(14, 122, 80, 0.8);
+    box-shadow: 0 0 15px rgba(14, 122, 80, 0.8);
+  }
+
+  100% {
+    border-color: rgba(14, 122, 80, 0.2);
+    box-shadow: 0 0 5px rgba(14, 122, 80, 0.2);
+  }
+}
+
+#center-carousel {
+  width: 870px;
+  height: 561px;
+}
+
+@media (max-width: 1280px) {
+  #center-carousel {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #center-carousel {
+    width: 600px;
+  }
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.front-side {
+  backface-visibility: hidden;
+}
+
+.relative {
+  transition: transform 0.7s ease-in-out;
+}
+
+#hovchange:hover {
+  #hovchangedecs {
+    color: #3be29a;
+    transition: all 0.5s ease;
+  }
+
+  #hovchangeimg {
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+  }
+}
+
+:root {
+  --size: 140vw;
+  --sunskin: #02630e;
+}
+
+
+.main {
+  width: 300vw;
+  height: 100vh;
+  background-color: var(--zinc-950);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#root {
+  width: 300vw;
+  height: 360vh;
+  position: relative;
+  bottom: 35%;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+}
+
+.layer1 {
+  animation: 20s linear rotate infinite;
+  transform-origin: 66% 40%;
+  background: repeating-conic-gradient(from 360deg at 50% 50%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 248, 176, 0.46) 3.96%,
+      rgba(69, 168, 255, 0) 8.33%,
+      rgba(69, 168, 255, 0) 8.33%) 69.5% 37.7% / 17.2% 17.2% no-repeat,
+    radial-gradient(ellipse at 50% 50%,
+      rgb(176, 255, 179) 0%,
+      rgba(69, 168, 255, 0) 47.22%) 74.1% 35.6% / 33.6% 36.6% no-repeat;
+}
+
+.layer2 {
+  animation: 20s linear rotate infinite reverse;
+  transform-origin: 66% 40%;
+  background: radial-gradient(ellipse at 50% 50%,
+      rgba(69, 168, 255, 0) 20%,
+      var(--zinc-950) 29%) 77.4% 33.8% / 40% 40% no-repeat,
+    repeating-conic-gradient(from 360deg at 50% 50%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(176, 255, 189, 0.51) 2.64%,
+      rgba(69, 168, 255, 0) 5.56%,
+      rgba(69, 168, 255, 0) 5.56%) 69.5% 37.7% / 17.2% 17.2% no-repeat;
+}
+
+.layer3 {
+  animation: 20s linear rotate infinite;
+  background: repeating-conic-gradient(from 355deg at 50% 50%,
+      rgba(203, 219, 205, 0) 0%,
+      rgba(178, 255, 69, 0.26) 8.1%,
+      rgba(69, 168, 255, 0) 16.67%,
+      rgba(69, 168, 255, 0) 16.67%) 0 0 / 100% 100% no-repeat;
+}
+
+.layer4 {
+  animation: 20s linear rotate infinite reverse;
+  background: repeating-conic-gradient(from 355deg at 50% 50%,
+      rgba(113, 217, 110, 0) 0%,
+      rgba(240, 244, 241, 0.26) 2.86%,
+      rgba(69, 168, 255, 0) 5.88%,
+      rgba(69, 168, 255, 0) 5.88%) 0% 0% / 100% 100% no-repeat;
+}
+
+.layer5 {
+  animation: 40s linear rotate infinite;
+  background: repeating-conic-gradient(from 360deg at 50% 50%,
+      rgba(144, 227, 155, 0) 0%,
+      rgba(78, 255, 69, 0.26) 6.62%,
+      rgba(69, 168, 255, 0) 7.69%,
+      rgba(69, 168, 255, 0) 7.69%) 0% 0% / 100% 100% no-repeat;
+}
+
+.layer6 {
+  background: radial-gradient(ellipse at 50% 50%,
+      rgba(238, 243, 235, 0.27) 0%,
+      rgba(69, 168, 255, 0) 63.54%) 50% 72% / 5.8% 5.8% no-repeat,
+    radial-gradient(ellipse at 50% 50%,
+      rgba(69, 168, 255, 0) 40.28%,
+      rgba(163, 255, 220, 0.05) 52.43%,
+      rgba(69, 168, 255, 0) 63.54%) 50% 74% / 10% 15% no-repeat,
+    radial-gradient(ellipse at 50% 50%,
+      rgba(254, 254, 254, 0.55) 0%,
+      rgba(69, 168, 255, 0) 63.54%) 50% 72% / 3.4% 3.4% no-repeat,
+    radial-gradient(ellipse at 50% 60%,
+      rgba(233, 249, 233, 0.2) 0%,
+      rgba(69, 168, 255, 0) 66.67%) 50% 75% / 25.6% 25.6% no-repeat,
+    radial-gradient(ellipse at 50% 50%,
+      var(--zinc-950) 26%,
+      rgba(69, 168, 255, 0) 26.4%) 50% 85% / 100% 100% no-repeat,
+    radial-gradient(ellipse at 50% 50%,
+      rgba(148, 255, 162, 0.04) 0%,
+      rgba(69, 168, 255, 0) 69.79%) 50% 86% / 100% 100% no-repeat,
+    radial-gradient(ellipse at 50% 50%,
+      rgba(163, 177, 168, 0.11) 0%,
+      rgba(69, 168, 255, 0) 52.43%) 50% 85% / 100% 100% no-repeat,
+    radial-gradient(ellipse at 51% 49%,
+      rgba(69, 168, 255, 0) 23.96%,
+      var(--zinc-950) 40.63%) 50% 85% / 100% 100% no-repeat,
+    repeating-conic-gradient(from 0deg at 50% 50%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(69, 255, 81, 0.14) 11.04%,
+      rgba(69, 168, 255, 0) 20%,
+      rgba(69, 168, 255, 0) 20%) 50% 85% / 100% 100% no-repeat,
+    radial-gradient(ellipse at 52% 100%,
+      rgba(69, 168, 255, 0) 23.96%,
+      var(--zinc-950) 34.03%) 50% 85% / 100% 100% no-repeat,
+    radial-gradient(ellipse at 50% 50%,
+      rgba(169, 255, 147, 0.29) 28%,
+      rgba(69, 168, 255, 0) 30%) 50% 85% / 100% 100% no-repeat;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(350deg);
+  }
+}
+
+/* From https://css.glass */
+.grayDiv {
+
+  /* background: rgba(108, 101, 101, 0.32); */
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(108, 101, 101, 0.26); */
+}
+
+@keyframes ballHitAnimation {
+  0% {
+    transform: scale(0) translateY(-10px);
+    /* Start small and slightly above */
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.1) translateY(20px);
+    /* "Hit the ground" and bounce slightly */
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+    /* Settle back into place */
+    opacity: 1;
+  }
+}
+
+
+.prose {
+  color: white;
+}
+.prose strong {
+  color: #00aa71; /* highlight your bold text in green */
+}
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+  margin-top: 0.05rem;
+}
+.prose li {
+  margin-bottom: 0.02rem;
+}
+.prose p {
+  margin: 0.5rem 0;
+}
+
+
+@keyframes ballLeaveAnimation {
+  0% {
+    transform: scale(1) translateY(0);
+    /* Start at full size */
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.1) translateY(20px);
+    /* Bounce up slightly */
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0) translateY(-10px);
+    /* Shrink and go slightly up */
+    opacity: 0;
+  }
+}
+
+.swiper-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #666666;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.swiper-dot-active {
+  background-color: #00AA71;
+  box-shadow: 0 0 10px #00AA71;
+  opacity: 1;
+}
+  
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Optional styles for fade-in effect */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+}
+
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.gradient-text-service-inner {
+  font-family: 'Futuru', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 7px 0;
+  text-transform: uppercase;
+  background: linear-gradient(87deg, #FFF 2.5%, #3BE29A 45.42%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  white-space: pre-line;
+}

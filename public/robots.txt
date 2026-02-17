@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://xntric.me
+
+# Sitemaps
+Sitemap: https://xntric.me/sitemap.xml

@@ -24,39 +24,35 @@ export const metadata: Metadata = {
 };
 const faqItems: { question: string; answer: string }[] = [
   {
-    question: "How many years have you served in the UAE market?",
-    answer: `VPS hosting splits a physical server into several separate virtual servers using special software called a hypervisor.`,
+    question: "What is an SEO service and what does SEO actually do?",
+    answer: `An SEO service is a professional offering that helps businesses improve their visibility in organic (non-paid) search engine results pages (SERPs). SEO actually does two main things: it makes your website easily discoverable and intelligible to search engine bots (like Googlebot), and it ensures the content is relevant and high-quality for human users, driving targeted traffic to your site.`,
   },
   {
     question:
-      "How do wireframing and prototyping enhance the UI/UX design process?",
-    answer: `Prototyping and wireframing provide much of the basis for the user experience design
-process. Prototypes provide interactive elements to designs produced from wireframes,
-therefore illustrating the structure of the product. Participating in this process enables
-stakeholders to see the final result and verify if the design satisfies user expectations
-before to start of development.`,
+      "What are the three types of SEO services?",
+    answer: `The three primary types of seo services are: 1. Technical SEO, 2. On-Page SEO, 3. Off-Page SEO`,
   },
   {
     question:
-      "What are the benefits of conducting a UX audit for your website or app?",
+      "How does SEO increase traffic and conversion?",
     answer:
-      "A UX audit evaluates the usability and functionality of your digital product. Identifying pain points in the user journey. Improving accessibility and navigation. Enhancing overall user satisfaction. A UX audit ensures your website or app meets modern UI/UX design standards.",
+      "SEO increases traffic by improving your website's ranking for relevant keywords, meaning more users see your link and click on it. It increases conversion by ensuring the traffic you receive is highly qualified (users searching specifically for your product/service) and by optimizing the landing pages for user experience (UX) to guide them toward a desired action (e.g., purchase, inquiry).",
   },
   {
-    question: "How can responsive web design improve user experience?",
+    question: "How Does SEO Help Your Business?",
     answer:
-      "Whether the screen of any device is little or large, responsive web design will make your site seem fantastic. An integral component of user interface and user experience design services, this approach guarantees consistent appearance and operation across all devices, therefore enhancing the user&#39;s experience.",
+      "SEO is one of the most cost-effective and sustainable digital marketing channels. It helps your business by: increasing brand awareness and authority, generating higher quality leads, reducing reliance on paid advertising, and establishing long-term organic growth.",
   },
   {
     question:
-      "What is a design system audit, and why is it essential for consistent branding?",
+      "How much do SEO services typically cost? / How much does SEO cost in Canada? / How much does it cost for SEO services in Canada?",
     answer:
-      "Design system audits of all your present design components help to ensure excellent brand recognition and usability. It looks for issues, streamlines procedures, and helps to maintain the visual language of your digital assets consistent—all of which are crucial for credibility and acknowledgement.",
+      "The cost for SEO services in Canada varies widely based on the scope, scale, and competitiveness of your industry. Packages can range from $500 CAD per month for basic local optimization to $5,000+ CAD per month for enterprise-level or highly competitive national campaigns. We offer custom pricing after a free initial audit to ensure you only pay for the services your business truly needs.",
   },
   {
-    question: "How do UI/UX design services impact e-commerce success?",
+    question: "How soon can I see results for SEO services in Canada?",
     answer:
-      "Effective UI/UX design services play a major role in e-commerce success by Simplifying navigation and checkout processes. Enhancing product presentation. Building trust through intuitive interfaces. By keeping an eye on the user needs, UI/UX designers help increase conversions along with ensuring customer loyalty in online stores.",
+      "SEO is a marathon, not a sprint. While technical and on-page fixes can show improvement in rankings within 4–8 weeks, meaningful, sustained results like significant traffic increases and higher-value keyword rankings typically take 4 to 6 months or longer. Our long-term strategies deliver lasting growth.",
   },
 ];
 

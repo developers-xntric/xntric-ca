@@ -182,7 +182,7 @@ export const steps6 = [
   {
     number: "01",
     title: "Creative Planning ",
-    description: "Concept development, storyboard, shot lists. ",
+    description: "Concept development, storyboarding, and visual direction.",
     icon: "/service-inner/process-icon-1.svg",
     bgImage: "/service-inner/process-1.svg",
     bgColor: "bg-gray-900",
@@ -191,7 +191,7 @@ export const steps6 = [
     number: "02",
     title: "Pre-Production ",
     description:
-      "Scriptwriting, casting, location & equipment prep.",
+      "Write scripts, find casting, scout locations, and obtain equipment.",
     icon: "/service-inner/process-icon-2.svg",
     bgImage: "/service-inner/process-2.svg",
     bgColor: "bg-gray-800",
@@ -199,7 +199,7 @@ export const steps6 = [
   {
     number: "03",
     title: "Shoot Day",
-    description: "Filming, photography, direction, live edits. ",
+    description: "Professional filming, direction, photography, and live coordination.",
     icon: "/service-inner/process-icon-3.svg",
     bgImage: "/service-inner/process-3.svg",
     bgColor: "bg-gray-700",
@@ -207,7 +207,7 @@ export const steps6 = [
   {
     number: "04",
     title: "Post-Production & Delivery",
-    description: "Editing, color grading, sound, final cut delivery.",
+    description: "Editing, color grading, sound design, motion graphics, and final mastering.",
     icon: "/service-inner/process-icon-4.svg",
     bgImage: "/service-inner/process-4.svg",
     bgColor: "bg-emerald-500",

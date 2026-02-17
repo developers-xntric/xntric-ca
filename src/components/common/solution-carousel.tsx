@@ -37,7 +37,7 @@ const cardSets: CardSet[] = [
       strategy: {
         title: "Strategy That Drives Impact",
         description:
-          "We dive deep into data, audience insights, and market trends to shape smart digital strategies. Every move is purposeful built to drive growth and measurable results.",
+          "By leveraging data, audience psychology, and market dynamics, we create smart growth strategies and pull off deliberate, structured campaigns with measurable success at each turn",
       },
       media: {
         type: "video",
@@ -46,7 +46,7 @@ const cardSets: CardSet[] = [
       results: {
         title: "Results That Speak",
         description:
-          "We dive deep into data, audience insights, and market trends to shape smart digital strategies. Every move is purposeful built to drive growth and measurable results.",
+          "We build performance, we don't promise it. Your scalability, your optimization, your brand equity, all driven by us.",
 
         imageSrc: "/HomePage/image1.png",
       },
@@ -177,7 +177,7 @@ export default function SolutionCarousel({ isPadding = false, para }: { isPaddin
   // Initialize animation when component mounts
   useEffect(() => {
     if (typeof window === "undefined") return;
-    
+
     // Preload videos first
     preloadVideos();
   }, []);
@@ -185,7 +185,7 @@ export default function SolutionCarousel({ isPadding = false, para }: { isPaddin
   // Trigger animation when videos are loaded
   useEffect(() => {
     if (!videosLoaded) return;
-    
+
     if (typeof window === "undefined") return;
     const container = containerRef.current;
     const cards = cardsRef.current.filter(Boolean) as HTMLDivElement[];

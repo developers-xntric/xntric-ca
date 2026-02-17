@@ -11,7 +11,7 @@ const services = [
     id: 1,
     title: "Branding",
     description:
-      "We create impactful brand identities that differentiate your business and connect with your audience.",
+      "Strategic brand positioning, visual identity systems, and communication frameworks that create lasting impressions.",
     image: "/HomePage/service-branding.png",
     link: "/services/branding",
   },
@@ -19,7 +19,7 @@ const services = [
     id: 2,
     title: "UI/UX",
     description:
-      "Empower teams with integrated workflows, saving time and boosting collaboration.",
+      "Human-centered digital experiences that enhance usability, engagement, and conversion.",
     image: "/HomePage/service-ui-ux.svg",
     link: "/services/UI-UX-Design",
   },
@@ -27,7 +27,7 @@ const services = [
     id: 3,
     title: "Web Development",
     description:
-      "Adapt to growth with a modular ERP that evolves with your business size.",
+      "Custom-built websites and platforms engineered for performance, scalability, and security.",
     image: "/HomePage/service-webdev.svg",
     link: "/services/website-development",
   },
@@ -35,7 +35,7 @@ const services = [
     id: 4,
     title: "App Development",
     description:
-      "Make informed decisions with comprehensive dashboards and instant access to critical data.",
+      "Robust and intuitive applications designed to elevate user interaction and digital accessibility.",
     image: "/HomePage/service-appdev.svg",
     link: "/services/mobile-application",
   },
@@ -43,7 +43,7 @@ const services = [
     id: 5,
     title: "SEO",
     description:
-      "Make informed decisions with comprehensive dashboards and instant access to critical data.",
+      "Data-backed SEO strategies that increase visibility, authority, and sustainable organic growth.",
     image: "/HomePage/service-seo.svg",
     link: "/services/seo",
   },
@@ -66,11 +66,11 @@ export default function NewServiceList() {
           {/* Header */}
           <div className="lg:gap-6 gap-4 flex flex-col items-center lg:items-start">
             <h2 className="uppercase text-[24px] md:text-[40px] lg:text-[50px] xl:text-[55px] text-white font-semibold leading-[26px] md:leading-[50px]">
-              Services <span className="text-[#00AA71]">we</span> provide
+              Services <span className="text-[#00AA71]">we</span> offer
             </h2>
             <p className="self-stretch opacity-70 text-center lg:text-start lg:justify-start lg:w-[65%] text-white text-[15px]  md:text-xl tracking-widest font-extralight font-futuru leading-[20px] md:leading-[27px]">
-              We approach each project with a holistic mindset combining
-              creative thinking, human centered design, and technical excellence
+              We offer integrated digital solutions designed for modern brands.
+
             </p>
           </div>
 

@@ -22,8 +22,8 @@ function Section6() {
       <div className="2xl:max-w-[1740px] mx-auto w-[90%]">
         <div className="flex max-w-[100%] lg:max-w-[900px] xl:max-w-[1000px] flex-col md:flex-row justify-between items-start mt-4">
           <div className="text-white md:text-left text-center uppercase xl:pr-52 text-[24px] md:text-[40px] lg:text-[50px] xl:text-[55px] font-semibold font-['futuru'] leading-[26px] md:leading-[45px] lg:leading-[60px]">
-            We uplift <span className="text-[#00AA71]">brands</span>, fueling
-            their rise to success
+            From Identity <span className="text-[#00AA71]">To Influence </span>We Craft Brands That Rise Above The Noise
+
           </div>
         </div>
       </div>

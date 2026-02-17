@@ -113,7 +113,7 @@ export default function Services() {
             href="/services/branding/"
             title="Branding"
             subHeading="FROM <span style='color: #00AA71'>MARKET INSIGHTS</span> TO MEANINGFUL BRANDS"
-            description="A strong brand is built on understanding. We uncover hidden opportunities through research and craft digital identities that speak directly to your audience turning insights into brands that perform and endure."
+            description="Strong brands are discovered, not designed. Our digital marketing services in Canada deliver brand strategy that connects your identity to your audience's psychology and the competitive landscape."
             button="Explore More"
             imageUrl="/Careers/careers1.webm"
             cardsData={CardsData1}
@@ -122,8 +122,8 @@ export default function Services() {
           <DevelopmentCard
             href="/services/UI-UX-Design/"
             title="UI/UX Design"
-            subHeading="FROM <span style='color: #00AA71'>SURFACE DESIGN</span> TO STRATEGIC IMPACT"
-            description="Too many digital products rely on trends, not truths. We go beyond the surfaceevery pixel, flow, and feature is grounded in real user research and rigorous testing. No more wasted effort on what “might” work. We validate, refine, and build experiences that solve real problems and drive measurable growth."
+            subHeading="FROM <span style='color: #00AA71'>SURFACE DESIGN</span> TO CALCULATED SURFACE"
+            description="Digital products fail without user insights and testing. Our Canadian digital marketing services help with user research, usability testing, and behavioral analytics to identify the right experiences that convert."
             button="Explore More"
             imageUrl="/Careers/careers.webm"
             textAlign="right"
@@ -134,7 +134,7 @@ export default function Services() {
             href="/services/website-development/"
             title="Web Development"
             subHeading="FROM CODE TO <span style='color: #00AA71'>COMPETITIVE </span> EDGE"
-            description="Too many sites are just digital brochures. We build digital engines. Every click, scroll, and transition is designed to perform optimized through research, testing, and iterative thinking. No more “maybe this works.” We engineer with precision to deliver measurable business impact."
+            description="Your website should be a business engine, not a brochure. That's why our digital marketing services in Canada include developing high-performing, scalable, lightning-fast, and SEO-friendly websites to drive your business goals."
             button="Explore More"
             imageUrl="/service/3.webm"
             cardsData={CardsData3}
@@ -144,7 +144,7 @@ export default function Services() {
             href="/services/mobile-application/"
             title="Mobile App development"
             subHeading="FROM <span style='color: #00AA71'>STRATEGY</span> TO MOBILE SUCCESS"
-            description="Mobile apps need clarity and scale. We turn deep research and industry expertise into mobile solutions that secure data, empower teams, and transform complex operations into streamlined workflows."
+            description="Digital marketing services in Canada include custom mobile app development services based on research-driven architecture to meet three mobile must-haves: simplicity, security, and scalability."
             button="Explore More"
             imageUrl="/service/service-sect6.webm"
             textAlign="right"
@@ -155,7 +155,7 @@ export default function Services() {
             href="/services/seo/"
             title="Search Engine Optimization"
             subHeading="FROM <span style='color: #00AA71'>DATA DEPTHS</span> TO SEO Performance"
-            description="Too many SEO strategies rely on guesswork or surface-level fixes. We dig deep researching your market, analyzing your audience, and backing every decision with solid data. This is how we build SEO campaigns that don’t just rank but drive real, measurable growth. "
+            description="SEO campaigns are typically trial and error, but our digital marketing services in Canada focus on clever keyword research, technical audits, and content strategy for long-term SEO success. "
             button="Explore More"
             imageUrl="/Careers/careers1.webm"
             cardsData={CardsData5}
@@ -166,7 +166,7 @@ export default function Services() {
             title="Search Engine Marketing"
             subHeading="FROM <span style='color: #00AA71'>AD SPEND</span> TO SMART RETURNS"
             imageUrl="/Careers/careers.webm"
-            description="Too many campaigns burn budgets chasing the wrong clicks. We cut through the noise every dollar is spent with intent, guided by search trends, competitive analysis, and continuous testing. No more hoping for results. We engineer SEM campaigns that drive real business outcomes."
+            description="Paid campaigns need constant monitoring and tweaking. Our SEM campaigns will drive your search engine performance and offer you the best ROI among digital marketing services in Canada."
             button="Explore More"
             textAlign="right"
             cardsData={CardsData6}
@@ -175,8 +175,8 @@ export default function Services() {
           <DevelopmentCard
             href="/services/app-store-optimization/"
             title="App Store Optimization"
-            subHeading="FROM <span style='color: #00AA71'>DATA GAPS</span> TO STRATEGIC APP GROWTH"
-            description="Too many apps rely on guesswork and generic tactics that fail to move the needle. We’ve seen it all poor keyword targeting, weak conversion, and stagnant downloads. Our 360° approach starts with deep research and analysis."
+            subHeading="<span style='color: #00AA71'>DATA GAPS</span> A Calculated Approach to App Growth"
+            description="Apps must be scalable. The Canadian digital marketers can assist you in growing your visibility and downloads in app stores through ASO."
             button="Explore More"
             imageUrl="/service/3.webm"
             cardsData={CardsData7}
@@ -185,8 +185,8 @@ export default function Services() {
           <DevelopmentCard
             href="/services/video-production/"
             title="Production"
-            subHeading="FROM <span style='color: #00AA71'>RESEARCH INSIGHTS</span> TO DIGITAL SUCCESS"
-            description="Too many digital products launch without a solid foundation. We dive deep uncovering market needs, analyzing user behavior, and validating concepts before building. The result? Products that don’t just look good but deliver measurable growth and lasting impact. "
+            subHeading="<span style='color: #00AA71'>Visual Language</span> Influence Of Turning Research"
+            description="Visual storytelling builds trust. Our production services complement our Canadian digital marketing services with media assets designed to improve your brand's perception in the market. "
             button="Explore More"
             textAlign="right"
             imageUrl="/service/service-sect6.webm"
@@ -196,8 +196,8 @@ export default function Services() {
           <DevelopmentCard
             href="/services/SMM/"
             title="Social Media Marketing"
-            subHeading="ROM <span style='color: #00AA71'>SOCIAL COMPLEXITY</span> TO CLEAR RESULTS "
-            description="Too many brands post without purpose. We set ourselves apart by researching your market inside and out, analyzing audience behavior, and delivering tailored social strategies that build loyalty and drive ROI. Our full-circle process turns social media from noise into your strongest growth channel."
+            subHeading="FROM <span style='color: #00AA71'>SOCIAL COMPLEXITY</span> TO CLEAR RESULTS "
+            description="Random posting won't cut it! Our social media experts create engagement-driven plans to improve conversions and ROI. Explore our digital marketing services in Canada."
             button="Explore More"
             imageUrl="/Careers/careers1.webm"
             cardsData={CardsData9}
@@ -207,7 +207,7 @@ export default function Services() {
             href="/services/digital-marketing/"
             title="Digital Marketing"
             subHeading="FROM <span style='color: #00AA71'>RESEARCH TO RESULTS</span> A FULL-CIRCLE APPROACH"
-            description="Many digital campaigns miss the mark because they skip the groundwork. We set ourselves apart by combining rigorous research with smart strategies to build digital products that deliver measurable outcomes."
+            description="Our digital marketing services in Canada combine branding, content, paid media, SEO and analytics into one integrated growth-driving ecosystem."
             button="Explore More"
             textAlign="right"
             imageUrl="/Careers/careers.webm"

@@ -227,10 +227,10 @@ export default function MapSection() {
         {/* Header */}
         <div className="text-center mb-44 md:mb-36 2xl:mb-40">
           <h2 className="text-[22px] lg:text-[35px] xl:text-[50px] font-extralight text-white leading-[24px]">
-            Crafting Digital Success
+            Globally Renowned and Successful
           </h2>
           <h2 className="text-[30px] lg:text-[60px] xl:text-[90px] uppercase text-[#00AA71] font-semibold">
-            ACROSS CONTINENTS
+            Global Presence
           </h2>
           <p className="text-[#FFFFFF] tracking-wider font-extralight text-[14px] mx-4 md:mx-0 lg:text-[16px] xl:text-[20px]">
             Identity, Communication and Experiences for brands with a 2.0

@@ -87,10 +87,11 @@ export default function ContactForm({
         <h2 className="text-white text-[16px] md:text-[40px] font-medium  leading-[36px] md:leading-[85px] uppercase">
           Start Your{" "}
           <span className="text-[#00AA71] ">
-            360° Journey
+            360° 
           </span>{" "}
-          with Us!
+          Growth Journey
         </h2>
+      
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-12 font-futuru ">

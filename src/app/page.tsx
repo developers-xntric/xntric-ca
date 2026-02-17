@@ -1,38 +1,19 @@
+import ContactForm from "@/components/common/contact-form";
+import FeaturedBlogs from "@/components/common/featured-blogs";
+import SolutionCarousel from "@/components/common/solution-carousel";
+import YearsAwwards from "@/components/common/YearsAwwards";
 import Hero from "@/components/HomePage/Hero";
+import MapSection from "@/components/HomePage/Map";
+import NewServiceList from "@/components/HomePage/NewServiceList";
+import Section6 from "@/components/HomePage/Section6";
 import { Awwards } from "@/data/awwards";
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
 import Script from "next/script";
 
-const SolutionCarousel = dynamic(
-  () => import("@/components/common/solution-carousel"),
-  { ssr: false }
-);
-const FeaturedBlogs = dynamic(
-  () => import("@/components/common/featured-blogs"),
-  { ssr: false }
-);
-const NewServiceList = dynamic(
-  () => import("@/components/HomePage/NewServiceList"),
-  { ssr: false }
-);
-const MapSection = dynamic(() => import("@/components/HomePage/Map"), {
-  ssr: false,
-});
-const YearsAwwards = dynamic(() => import("@/components/common/YearsAwwards"), {
-  ssr: false,
-});
-const Section6 = dynamic(() => import("@/components/HomePage/Section6"), {
-  ssr: false,
-});
-const ContactForm = dynamic(() => import("@/components/common/contact-form"), {
-  ssr: false,
-});
-
 export const metadata: Metadata = {
-  title: "Xntric – Creative Digital Marketing & Innovation Agency",
+  title: "Digital Marketing Agency in Canada | Data-Driven Growth",
   description:
-    "Innovative digital solutions in marketing, branding, and development to help brands stand out, connect with audiences, and grow in today’s fast-paced world.",
+    " Partner with a top digital marketing agency in Canada. We scale brands through AI-powered SEO, performance PPC, and custom digital strategies. Book a free audit!",
 };
 
 const schemaData = {
@@ -60,11 +41,6 @@ const schemaData = {
     areaServed: "UAE",
     availableLanguage: "English",
   },
-  // "sameAs": [
-  //   "https://www.facebook.com/PlenumTech",
-  //   "https://twitter.com/PlenumTech",
-  //   "https://www.linkedin.com/company/plenum-tech-solutions"
-  // ],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.5",
@@ -76,8 +52,6 @@ const schemaData = {
   openingHours: "Mo-Fr 09:00-18:00",
   additionalType: "https://schema.org/TechnologyBusiness",
 };
-
-
 
 
 export default function Home() {

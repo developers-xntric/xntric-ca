@@ -76,11 +76,10 @@ export default function ContactForm({
   return (
     <div
       id="form"
-      className={`w-full xl:max-w-[1050px] max-w-[90%] ${
-        isPaddingTop ? "pb-20" : "py-16"
-      } mx-auto`}
+      className={`w-full xl:max-w-[1050px] max-w-[90%] ${isPaddingTop ? "pb-20" : "py-16"
+        } mx-auto`}
     >
-    
+
       <div className="text-center md:mb-24 mb-12 mx-auto md:max-w-[100%]  ">
         <p className="text-white text-[15px] md:text-[18px] md:mb-5 mb-3 ">
           Let &apos;s get started
@@ -232,9 +231,8 @@ export default function ContactForm({
         </div>
         {statusMessage && (
           <p
-            className={`text-center text-sm ${
-              isSuccess ? "text-green-400" : "text-red-600"
-            }`}
+            className={`text-center text-sm ${isSuccess ? "text-green-400" : "text-red-600"
+              }`}
           >
             {statusMessage}
           </p>
@@ -262,9 +260,8 @@ interface InterestOptionProps {
 function InterestOption({ label, selected, onClick }: InterestOptionProps) {
   return (
     <div
-      className={`flex items-center gap-2 p-2 ${
-        label === "Branding" ? "mt-8 md:mt-0" : ""
-      } rounded cursor-pointer`}
+      className={`flex items-center gap-2 p-2 ${label === "Branding" ? "mt-8 md:mt-0" : ""
+        } rounded cursor-pointer`}
       onClick={onClick}
     >
       <div className="w-6 h-6 rounded-[8px] border border-[#333333] flex items-center justify-center">

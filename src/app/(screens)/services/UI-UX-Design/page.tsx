@@ -18,50 +18,42 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "UI/UX Design Services for Engaging Experiencesa",
+  title: "UI UX Design Services in Canada for Digital Products",
   description:
-    "Enhance user engagement with Xntric’s UI/UX design services, blending functionality and creativity for beautiful, intuitive, and seamless digital experiences.",
+    "Elevate your digital presence with expert UI UX design services in Canada. Xntric delivers high-conversion, user-centric interfaces. Start your project today!",
 };
 
 const faqItems: { question: string; answer: string }[] = [
   {
-    question: "What defines a good UI/UX designer in UAE?",
-    answer: `One who has both technical knowledge and artistic skills is the best UI/UX designer in
-Dubai. They are acquainted with design technologies like Figma, Adobe XD, and
-Sketch in addition to local and worldwide trends in design. At first, they give customer
-requirements first importance. Important skills also include working in groups and being
-able to change with the times in the sector.`,
+    question: "How do you handle designs for Canada’s bilingual audience?",
+    answer: `We offer a strategic approach to bilingual design, primarily focusing on English and French user interfaces. This includes accommodating differences in content length (French content often requires more space), ensuring accurate translation and localization of interface elements, and maintaining visual consistency across both language versions within the user experience (UX) and user interface (UI).`,
   },
   {
     question:
-      "How do wireframing and prototyping enhance the UI/UX design process?",
-    answer: `Prototyping and wireframing provide much of the basis for the user experience design
-process. Prototypes provide interactive elements to designs produced from wireframes,
-therefore illustrating the structure of the product. Participating in this process enables
-stakeholders to see the final result and verify if the design satisfies user expectations
-before to start of development.`,
+      "Do you work with startups in Canada?",
+    answer: `Absolutely. We have specialized services, including Design Sprints for MVPs and foundational UI/UX design services, tailored specifically to help Canadian startups validate their concepts quickly, attract early investment, and launch with a strong, user-centric product.`,
   },
   {
     question:
-      "What are the benefits of conducting a UX audit for your website or app?",
+      "What industries do you serve in Canada?",
     answer:
-      "A UX audit evaluates the usability and functionality of your digital product. Identifying pain points in the user journey. Improving accessibility and navigation. Enhancing overall user satisfaction. A UX audit ensures your website or app meets modern UI/UX design standards.",
+      "We serve a wide range of industries including FinTech, HealthTech, E-commerce, SaaS platforms, and enterprise solutions. Our research-driven approach is sector-agnostic, allowing us to quickly adapt and apply best practices regardless of the specific Canadian market segment.",
   },
   {
-    question: "How can responsive web design improve user experience?",
+    question: "How much does a UI/UX design project cost in Canada?",
     answer:
-      "Whether the screen of any device is little or large, responsive web design will make your site seem fantastic. An integral component of user interface and user experience design services, this approach guarantees consistent appearance and operation across all devices, therefore enhancing the user&#39;s experience.",
+      "Project costs are highly dependent on scope, complexity, and timeline. Factors include the number of unique screens, the need for custom illustrations, user research depth, and whether we are designing an app, website, or enterprise dashboard. We provide a detailed proposal after a discovery session to give clients a clear, fixed price estimate.",
   },
   {
     question:
-      "What is a design system audit, and why is it essential for consistent branding?",
+      "What industries do you specialize in?",
     answer:
-      "Design system audits of all your present design components help to ensure excellent brand recognition and usability. It looks for issues, streamlines procedures, and helps to maintain the visual language of your digital assets consistent—all of which are crucial for credibility and acknowledgement.",
+      "While we are equipped to serve all industries, we have deep specialization in designing for highly regulated sectors like FinTech (due to complex compliance needs) and B2B SaaS (due to the high demand for usable, efficient dashboards and complex workflow management).",
   },
   {
-    question: "How do UI/UX design services impact e-commerce success?",
+    question: "Do you offer bilingual designs?",
     answer:
-      "Effective UI/UX design services play a major role in e-commerce success by Simplifying navigation and checkout processes. Enhancing product presentation. Building trust through intuitive interfaces. By keeping an eye on the user needs, UI/UX designers help increase conversions along with ensuring customer loyalty in online stores.",
+      "Yes, offering bilingual design (English and French, and other languages upon request) is a core aspect of serving the Canadian market effectively. We ensure all design components, including microcopy and navigation, are culturally appropriate and functionally sound in both official languages.",
   },
 ];
 
@@ -100,28 +92,28 @@ const cards = [
 const defaultServices: Service[] = [
   {
     imgSrc: "/service-inner/c5.png",
-    title: "Product Design for SaaS & Dashboards ",
-    description: " Interfaces for software, CRMs, internal tools.",
+    title: "Product Design for SaaS & Dashboards",
+    description: "We design high-utility interfaces for complex software, CRMs, and internal tools.",
   },
   {
     imgSrc: "/service-inner/c3.png",
     title: "Website UX & Conversion Design ",
-    description: "Landing pages and marketing sites focused on performance. ",
+    description: "We create high-performance landing pages and marketing sites. Our team optimizes every element to maximize conversion rates ",
   },
   {
     imgSrc: "/service-inner/c4.png",
     title: "Mobile App UX Design",
-    description: "Screen flows and UI kits for Android/iOS apps.",
+    description: "We deliver comprehensive screen flows, interaction models, and UI kits for Android/iOS apps.",
   },
   {
     imgSrc: "/service-inner/c3.png",
     title: "Design Sprints for MVPs",
-    description: " 1-2 week design projects to validate an idea",
+    description: " Need fast validation? We run 1-2 week design projects to rapidly prototype and test (MVPs),",
   },
   {
     imgSrc: "/service-inner/c1.png",
     title: "UX Improvement Audits ",
-    description: "Review and fix issues on existing websites or apps.",
+    description: "Review and fix costly usability issues on existing websites or apps.",
   },
 ];
 
@@ -192,35 +184,35 @@ function page() {
           title="While deeply honored by industry recognition, we remain grounded in our core principles and research-driven approach"
         />
         <DigitalProducts
-          leftText="Too many digital products rely on trends, not truths. We go beyond the surface every pixel, flow, and feature is grounded in real user research and rigorous testing. No more wasted effort on what “might” work. We validate, refine, and build experiences that solve real problems and drive measurable growth."
-          mainHeading="Crafting Experiences with a 360° Lens Research Backed Digital Products"
-          highlightWords={["360° Lens"]}
+          leftText="We validate, refine, and build experiences that solve real problems and drive measurable growth for products in Canada and globally. Behind every pixel lies powerful data driving engagement, satisfaction, and retention. We don’t just design. We engineer intuitive journeys proven to boost user metrics and business growth."
+          mainHeading="The 360° Advantage: Our Research-Backed Design Methodology"
+          highlightWords={["360° Advantage:"]}
           buttonText="LET'S TALK"
         />
         <ScrollCardsSection
           cardsData={cards}
-          heading="Turning Complex Data Into <span style='color: #00AA71'>Seamless User Experiences</span>"
+          heading="From Raw Data to <span style='color: #00AA71'>Seamless User Journeys</span>"
           headingClassName="max-w-[80%]"
-          text="Behind every pixel lies powerful data driving engagement, satisfaction, and retention. We don’t just design. We engineer intuitive journeys proven to boost user metrics and business growth. "
+          text="Forget guesswork. Behind every pixel we create is powerful, strategic data driving performance. We are a UX UI Design agency Canada that translates complex metrics into clear, intuitive user experiences. We optimize every flow to guarantee higher engagement, satisfaction, and measurable growth specifically within the Canadian market."
         />
-        <SolutionCarousel />
+        <SolutionCarousel  para="We say yes to each project with a holistic mindset combining creative thinking, human-centered design, and technical excellence, the essential pillars of any great UI UX design company in Canada." />
         <NewGreen
           isPopupOpen={true}
-          text="Get Data-Driven <span style='color: #00AA71'>UX Insights</span> Start Your Free Audit Today! "
+          text="Claim Your Free, Zero-Obligation UX Audit Right Away! "
           bg={false}
           buttonText="Book your Free audit"
         />
-        <ServicesOffer services={defaultServices} />
+        <ServicesOffer services={defaultServices} subtext="From frontend finesse to backend brains, we provide end-to-end ui ux design services to build robust, secure, and scalable digital products tailored for Canadian enterprises and startups." />
         <TechStackCarousel />
         <NewOurProcess steps={steps8} />
         <NewGreen
           isPopupOpen={true}
-          text="Your Users Deserve the Best Experience. Let Us Show You How with a Free UI/UX Audit. "
+          text="Maximize Conversions. Get Your Free Audit "
           buttonText="Book your Free audit"
         />
-        <NewFaqs faqs={faqItems} />
-        <BigIdeas />
-        <ContactForm />
+        <NewFaqs faqs={faqItems}  />
+        <BigIdeas mainText="Ready to Launch Your Next Big Idea in Canada?" />
+        <ContactForm  />
       </div>
     </>
   );

@@ -146,7 +146,7 @@ export const steps5 = [
   {
     number: "01",
     title: " Channel Strategy",
-    description: "Audience research, platform selection, content pillars.",
+    description: "We identify the right platforms based on your audience and objectives.",
     icon: "/service-inner/process-icon-1.svg",
     bgImage: "/service-inner/process-1.svg",
     bgColor: "bg-gray-900",
@@ -155,7 +155,7 @@ export const steps5 = [
     number: "02",
     title: "Content Planning",
     description:
-      "Calendars, visual templates, caption writing.",
+      "We develop monthly calendars, visual themes, and messaging pillars.",
     icon: "/service-inner/process-icon-2.svg",
     bgImage: "/service-inner/process-2.svg",
     bgColor: "bg-gray-800",
@@ -163,7 +163,7 @@ export const steps5 = [
   {
     number: "03",
     title: "Posting & Engagement",
-    description: "Scheduling, community management, influencer coordination. ",
+    description: "We manage publishing, respond to community interactions, and coordinate influencer campaigns.",
     icon: "/service-inner/process-icon-3.svg",
     bgImage: "/service-inner/process-3.svg",
     bgColor: "bg-gray-700",
@@ -171,7 +171,7 @@ export const steps5 = [
   {
     number: "04",
     title: "Reporting & Optimization",
-    description: "Engagement metrics, trend adjustments, hashtag audits.",
+    description: "We analyze performance data, adjust strategies, and scale winning content formats.",
     icon: "/service-inner/process-icon-4.svg",
     bgImage: "/service-inner/process-4.svg",
     bgColor: "bg-emerald-500",

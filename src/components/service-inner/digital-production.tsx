@@ -19,10 +19,8 @@ export default function DigitalProducts({
   isWidth = false,
   // onButtonClick,
 }: DigitalProductsSectionProps) {
-
   const escapeRegExp = (str: string) =>
-    str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-
+    str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
   const renderHighlightedText = (text: string, highlights: string[]) => {
     let result = text;
@@ -30,7 +28,7 @@ export default function DigitalProducts({
       const safeHighlight = escapeRegExp(highlight);
       result = result.replace(
         new RegExp(safeHighlight, "g"),
-        `<span class="text-[#00AA71]">${highlight}</span>`
+        `<span class="text-[#00AA71]">${highlight}</span>`,
       );
     });
     return result;
@@ -41,8 +39,10 @@ export default function DigitalProducts({
       <div className="mx-auto px-3 lg:px-8 relative z-10">
         <div className="flex lg:flex-row flex-col-reverse gap-6 lg:gap-12 xl:gap-16 lg:items-center">
           {/* Left Content - Bordered Card */}
-          <div className={`border-2 border-[#3C3C3C] rounded-[8px] py-10 px-3 2xl:ml-10 5xl:ml-0 lg:p-12 bg-[#3C3C3C]/30 backdrop-blur-md min-h-[210px] md:min-h-[330px] 2xl:min-h-[420px] flex items-center md:w-[480px] ${isWidth ? "lg:w-[110%] 2xl:w-[1300px]" : "lg:w-auto 2xl:w-[1600px] 5xl:w-[1600px]"}   `}>
-            <p className="text-white text-[16px] lg:text-[28px] 2xl:text-[32px] leading-[25px] md:leading-[35px] text-center font-medium tracking-wider font-futuru lg:max-w-[100%] 2xl:max-w-[100]">
+          <div
+            className={`border-2 border-[#3C3C3C] rounded-[8px] py-10 px-3 2xl:ml-10 5xl:ml-0 lg:p-12 bg-[#3C3C3C]/30 backdrop-blur-md min-h-[210px] md:min-h-[330px] 2xl:min-h-[420px] flex items-center md:w-[480px] ${isWidth ? "lg:w-[110%] 2xl:w-[1300px]" : "lg:w-auto 2xl:w-[1600px] 5xl:w-[1600px]"}   `}
+          >
+            <p className="text-white text-[16px] lg:text-[28px] 2xl:text-[32px] leading-[25px] md:leading-[35px] text-center font-medium tracking-wider font-futuru lg:max-w-[100%] ">
               {leftText}
             </p>
           </div>

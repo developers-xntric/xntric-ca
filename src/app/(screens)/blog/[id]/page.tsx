@@ -7,11 +7,7 @@ import dynamicImport from "next/dynamic";
 import Script from "next/script";
 import BlogListingCards from "@/components/common/blog-listing-card";
 import { getBlogBySlug, getRelatedBlogs, blogs } from "../data";
-
-const FormSection = dynamicImport(
-  () => import("@/components/common/contact-form"),
-  { ssr: false }
-);
+import FormSection from "@/components/common/contact-form";
 
 // Generate static params for all blogs
 export async function generateStaticParams() {

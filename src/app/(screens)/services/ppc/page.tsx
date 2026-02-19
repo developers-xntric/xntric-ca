@@ -166,6 +166,7 @@ function page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
+          <h1 className="hidden">Our PPC Services in Canada</h1>
         <ServiceInnerHero
           imageclassName="xl:w-[740px] 2xl:w-[850px] xl:right-12 2xl:right-[12%]"
           rightImage="/service-inner/s8.png"

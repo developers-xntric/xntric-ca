@@ -68,7 +68,7 @@ export default function ServiceInnerHero({
                 : "sm:max-w-[75%] w-[100%] md:max-w-[50%] lg:max-w-[73%] 2xl:max-w-[65%]"
                 }`}
             >
-              <h1>{heading}</h1>
+              <h2>{heading}</h2>
             </div>
 
             {/* Paragraph with Star */}

@@ -89,9 +89,10 @@ export default function Services() {
             <div className="2xl:max-w-[1740px] w-[90%] mx-auto px-4 space-y-8 lg:space-y-48">
               {/* 1st */}
               <div className="relative space-y-[-10px]">
-                <h1 className="text-4xl lg:text-7xl xl:text-[100px] 2xl:text-[90px] 5xl:text-[120px] font-bold text-white uppercase leading-10">
+                <h1 className="hidden">Your Partner for Full-Spectrum Digital Marketing Services in Canada</h1>
+                <h2 className="text-4xl lg:text-7xl xl:text-[100px] 2xl:text-[90px] 5xl:text-[120px] font-bold text-white uppercase leading-10">
                   360° Digital
-                </h1>
+                </h2>
                 <h2 className="text-4xl lg:text-7xl xl:text-[100px] 2xl:text-[90px] 5xl:text-[120px] font-bold text-white uppercase leading-10 relative -mt-5 ">
                   Solutions
                 </h2>

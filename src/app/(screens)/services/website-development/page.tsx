@@ -73,6 +73,7 @@ function page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru font-semibold">
+          <h1 className="hidden">Website Development Services in Canada We Offer</h1>
         <ServiceInnerHero
           isPopup={true}
           imageclassName="xl:w-[700px] 2xl:w-[1150px] xl:right-5 2xl:right-[23%]"

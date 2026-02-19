@@ -104,6 +104,7 @@ export default function Home() {
       />
       <div className=" overflow-hidden">
         {/* Hero Section */}
+        <h1 className="hidden">Digital Marketing Agency in Canada</h1>
         <Hero />
         <YearsAwwards
           awwards={Awwards}

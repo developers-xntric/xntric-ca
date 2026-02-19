@@ -911,6 +911,7 @@ function page() {
       />
 
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
+        <h1 className="hidden">AI SEO Services We Offer</h1>
         <ServiceInnerHero
           isPopup={true}
           buttonText="Start Audit"

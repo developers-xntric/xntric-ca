@@ -73,37 +73,38 @@ export const steps2 = [
 export const steps3 = [
   {
     number: "01",
-    title: "Discovery Workshop ",
-    description: "In-depth brand strategy sessions, competitive audits, target audience profiling, and defining your unique tone of voice and market positioning.",
+    title: "AI Discovery & Audit",
+    description: "We identify answer gaps, search intent clusters, and AI visibility barriers.",
     icon: "/service-inner/process-icon-1.svg",
     bgImage: "/service-inner/process-1.svg",
     bgColor: "bg-gray-900",
   },
   {
     number: "02",
-    title: "Concept \nExploration",
+    title: "Strategy \nMapping",
     description:
-      " Developing mood boards, sketching, naming exploration, and presenting initial logo and visual direction concepts. ",
+      " We develop an AI SEO Canada roadmap aligned with your industry and competitors. ",
     icon: "/service-inner/process-icon-2.svg",
     bgImage: "/service-inner/process-2.svg",
     bgColor: "bg-gray-800",
   },
   {
     number: "03",
-    title: "Identity \nDesign ",
-    description: "Finalizing the logo, defining the color palette, establishing typography, and building the complete visual language.",
+    title: "Content \nStructuring",
+    description: "We create optimized answer hubs, semantic content clusters, and AI-readable formatting.",
     icon: "/service-inner/process-icon-3.svg",
     bgImage: "/service-inner/process-3.svg",
     bgColor: "bg-gray-700",
   },
   {
     number: "04",
-    title: "Brand Guidelines & Assets",
-    description: "Delivering the comprehensive brand book (governance), final asset files, stationary mockups, and digital templates for immediate use.",
+    title: "Technical Deployment",
+    description: "Schema markup, structured data, and performance enhancements are implemented.",
     icon: "/service-inner/process-icon-4.svg",
     bgImage: "/service-inner/process-4.svg",
     bgColor: "bg-emerald-500",
   },
+ 
 ];
 
 export const steps4 = [

@@ -11,7 +11,7 @@ export const links = [
     "/about",
     "/blog",  // Changed "/Blog" → "/blog"
     '/game-marketing',
-    
+
 ];
 
 export const titles = [
@@ -21,7 +21,7 @@ export const titles = [
     "About",
     "Blog",
     "Game Marketing",
-    
+
 ];
 
 export const services: Navbar[] = [
@@ -55,15 +55,15 @@ export const services: Navbar[] = [
     // },
     {
         name: "UI/UX Design",
-        link: "/UI-UX-Design"  // Changed "/UI-UX-Design" → "/ui-ux-design"
+        link: "/ui-ux-design"
     },
     {
         name: "Social Media Marketing",
-        link: "/SMM"  // Changed "/SMM" → "/smm"
+        link: "/social-media-marketing"
     },
     {
         name: "Search Engine Optimization",
-        link: "/seo"  // Changed "/SMM" → "/smm"
+        link: "/search-engine-optimization"
     },
     {
         name: "Production",
@@ -71,7 +71,7 @@ export const services: Navbar[] = [
     },
     {
         name: "Search Engine Marketing",
-        link: "/SEM"  // Changed "/SMM" → "/smm"
+        link: "/ppc"
     },
     {
         name: "AI",

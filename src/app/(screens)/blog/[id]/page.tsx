@@ -19,29 +19,29 @@ export async function generateStaticParams() {
 // ----------------------
 // Schema (same as Plenum)
 // ----------------------
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  name: "Blogs",
-  description: "Blogs from Xntric",
-  provider: {
-    "@type": "Organization",
-    name: "Xntric",
-    url: "https://xntric.me",
-  },
-  serviceType: "Digital Consulting",
-  areaServed: {
-    "@type": "Place",
-    name: "Global",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "53",
-    bestRating: "5",
-    worstRating: "1",
-  },
-};
+// const schemaData = {
+//   "@context": "https://schema.org",
+//   "@type": "Blog",
+//   name: "Blogs",
+//   description: "Blogs from Xntric",
+//   provider: {
+//     "@type": "Organization",
+//     name: "Xntric",
+//     url: "https://xntric.me",
+//   },
+//   serviceType: "Digital Consulting",
+//   areaServed: {
+//     "@type": "Place",
+//     name: "Global",
+//   },
+//   aggregateRating: {
+//     "@type": "AggregateRating",
+//     ratingValue: "4.8",
+//     reviewCount: "53",
+//     bestRating: "5",
+//     worstRating: "1",
+//   },
+// };
 
 // ----------------------
 // Blog Details Page
@@ -84,12 +84,12 @@ const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
   return (
     <main className="font-futuru">
       {/* Schema Scripts */}
-      <Script
+      {/* <Script
         id="schema-service"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      /> */}
       <Script
         id="schema-author"
         type="application/ld+json"

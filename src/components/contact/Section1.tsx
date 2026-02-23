@@ -12,17 +12,7 @@ function Section1() {
             Let&apos;s create something amazing together!
           </h2>
           {/* CARD 1 */}
-          <div className="flex lg:w-[80%] 2xl:w-[80%] flex-col gap-5 rounded-[26px] p-5 bg-white bg-opacity-10  outline outline-[0.80px] outline-offset-[-0.40px] outline-[#fffcfc]/25 backdrop-blur-[22.05px]">
-            <h1 className="font-semibold text-lg sm:text-3xl text-white">
-              Connect
-            </h1>
-            <div className="flex justify-between gap-2 text-white font-futuru">
-              <p className="text-[12px] sm:text-[15px] tracking-widest">FACEBOOK</p>
-              <p className="text-[12px] sm:text-[15px] tracking-widest">TWITTER</p>
-              <p className="text-[12px] sm:text-[15px] tracking-widest">INSTAGRAM</p>
-              <p className="text-[12px] sm:text-[15px]  tracking-widest">LINKEDIN</p>
-            </div>
-          </div>
+         
           {/* CARD 2 */}
           <div className="flex lg:w-[80%] 2xl:w-[80%] flex-col gap-3 rounded-[26px] p-5  bg-white bg-opacity-10  outline outline-[0.80px] outline-offset-[-0.40px] outline-[#fffcfc]/25 backdrop-blur-[22.05px]">
             <h1 className="text-[13px] sm:text-[15px] text-white">Email</h1>
@@ -31,7 +21,7 @@ function Section1() {
                 href="mailto:info@xntric.com"
                 className="text-lg sm:text-3xl"
               >
-                info@xntric.com
+                info@xntric.me
               </a>
             </div>
           </div>
@@ -72,10 +62,10 @@ function Section1() {
           muted
           width={500}
           height={500}
-          className="absolute -z-20 -left-20 lg:-left-24 xl:-left-40 top-[80px] sm:top-[0px] w-[250px] sm:w-[200px] md:w-[300px] lg:w-[500px]"
+          className="absolute -z-20 -left-20 lg:-left-24 xl:-left-40 top-[80px] sm:top-[-80px] w-[250px] sm:w-[200px] md:w-[300px] lg:w-[500px]"
         ></video>
       </div>
-      <div className="2xl:w-[60] w-full">
+      <div className="2xl:w-[100%] w-full">
         {
           isSubmitted ? <Thanks setIsSubmitted={setIsSubmitted} /> :
             <Form setIsSubmitted={setIsSubmitted} />

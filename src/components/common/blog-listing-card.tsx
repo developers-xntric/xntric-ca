@@ -71,9 +71,7 @@ export default function BlogListingCards({
               year: "numeric",
             })}
           </div>
-          <div className="text-white text-[10px] md:text-sm 2xl:text-[16px] tracking-wider font-light font-futuru uppercase leading-tight">
-            {min}
-          </div>
+          
         </div>
       </div>
     </Link>

@@ -42,15 +42,11 @@ export default function BlogCards({ title, desc, date, min, image, id, border, i
         </div>
         <div className=" flex-col md:pt-4 justify-end items-start inline-flex">
           <div className="justify-start items-center inline-flex">
-            <div className="text-white text-[10px] md:text-sm 2xl:text-[16px] tracking-wider font-light font-futuru uppercase leading-tight">
+            <div className="text-white text-[10px] md:text-sm 2xl:text-[16px] tracking-wider font-light font-futuru uppercase leading-tight ">
               {date}
             </div>
           </div>
-          <div className="justify-start items-start inline-flex">
-            <div className="text-white text-[10px] md:text-sm 2xl:text-[16px] tracking-wider font-light font-futuru uppercase leading-tight">
-              {min}
-            </div>
-          </div>
+          
         </div>
       </div>
     </Link>

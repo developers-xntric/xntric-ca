@@ -14,7 +14,6 @@ import NewOurProcess from "@/components/services/new-our-process";
 import TechStackCarousel from "@/components/services/techstacks";
 import { Awwards } from "@/data/awwards";
 import { steps10 } from "@/data/our-process";
-import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -115,59 +114,59 @@ const defaultServices: Service[] = [
   },
 ];
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Xntric",
-  url: "https://xntric.me",
-  logo: "https://xntric.me/HomePage/X-Logo.png",
-  image: "https://xntric.me/HomePage/X-Logo.png",
-  description:
-    "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Office F11, First Floor, IT Plaza,",
-    addressLocality: "Dubai Silicon Oasis, Dubai",
-    addressRegion: "UAE",
-    postalCode: "00000",
-    addressCountry: "UAE",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "00971 054 308 9222",
-    contactType: "Customer Service",
-    areaServed: "UAE",
-    availableLanguage: "English",
-  },
-  // "sameAs": [
-  //   "https://www.facebook.com/PlenumTech",
-  //   "https://twitter.com/PlenumTech",
-  //   "https://www.linkedin.com/company/plenum-tech-solutions",
-  // ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.5",
-    reviewCount: "30",
-    bestRating: "5",
-    worstRating: "2",
-  },
-  priceRange: "$$",
-  openingHours: "Mo-Fr 09:00-18:00",
-  additionalType: "https://schema.org/TechnologyBusiness",
-};
+// const schemaData = {
+//   "@context": "https://schema.org",
+//   "@type": "LocalBusiness",
+//   name: "Xntric",
+//   url: "https://xntric.me",
+//   logo: "https://xntric.me/HomePage/X-Logo.png",
+//   image: "https://xntric.me/HomePage/X-Logo.png",
+//   description:
+//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
+//
+//   address: {
+//     "@type": "PostalAddress",
+//     streetAddress: "Office F11, First Floor, IT Plaza,",
+//     addressLocality: "Dubai Silicon Oasis, Dubai",
+//     addressRegion: "UAE",
+//     postalCode: "00000",
+//     addressCountry: "UAE",
+//   },
+//   contactPoint: {
+//     "@type": "ContactPoint",
+//     telephone: "00971 054 308 9222",
+//     contactType: "Customer Service",
+//     areaServed: "UAE",
+//     availableLanguage: "English",
+//   },
+//   // "sameAs": [
+//   //   "https://www.facebook.com/PlenumTech",
+//   //   "https://twitter.com/PlenumTech",
+//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
+//   // ],
+//   aggregateRating: {
+//     "@type": "AggregateRating",
+//     ratingValue: "4.5",
+//     reviewCount: "30",
+//     bestRating: "5",
+//     worstRating: "2",
+//   },
+//   priceRange: "$$",
+//   openingHours: "Mo-Fr 09:00-18:00",
+//   additionalType: "https://schema.org/TechnologyBusiness",
+// };
 
 function page() {
   return (
     <>
-      <Script
+      {/* <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      /> */}
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
-          <h1 className="hidden">Our Mobile App Development Services in Canada</h1>
+        <h1 className="hidden">Our Mobile App Development Services in Canada</h1>
         <ServiceInnerHero
           imageclassName="xl:w-[700px] 2xl:w-[1150px] xl:right-5 2xl:right-[23%]"
           rightImage="/service-inner/s4.png"

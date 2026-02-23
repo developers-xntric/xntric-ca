@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer
       className=" text-white relative py-14 2xl:bg-cover font-futuru border-t bg-no-repeat overflow-hidden flex flex-col md:items-center items-start"
-      
+
     >
       <Image
         src="/HomePage/footer-mob.svg"
@@ -39,13 +39,13 @@ const Footer: React.FC = () => {
               </h3>
             </div>
             <address className="not-italic text-[16px] font-light tracking-widest xl:leading-[24px] leading-[22px] space-y-6 xl:space-y-8">
-              <div>
+              {/* <div>
                 <p>Costra Business park - G47</p>
                 <p>Sheikh mohammed min zayed rd</p>
                 <p>Dubai production city - Dubai</p>
                 <p>Dubai - UAE</p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <p>
                   <a
                     href="tel:+9710569280670"
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
                     +971 4 546 4465
                   </a>
                 </p>
-              </div>
+              </div> */}
             </address>
           </div>
 
@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
-                  href="/services/UI-UX-Design"
+                  href="/services/ui-ux-design"
                   className="hover:text-[#00AA71]"
                 >
                   UI/UX design
@@ -179,18 +179,18 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/services/seo" className="hover:text-[#00AA71]">
+                <Link href="/services/search-engine-optimization" className="hover:text-[#00AA71]">
                   Search Engine Optimization
                 </Link>
               </li>
               <li>
-                <Link href="/services/SMM" className="hover:text-[#00AA71]">
+                <Link href="/services/social-media-marketing" className="hover:text-[#00AA71]">
                   Social Media Marketing
                 </Link>
               </li>
               <li>
-                <Link href="/services/SEM" className="hover:text-[#00AA71]">
-                  SEM
+                <Link href="/services/ppc" className="hover:text-[#00AA71]">
+                  Search Engine Marketing
                 </Link>
               </li>
               <li>
@@ -216,7 +216,7 @@ const Footer: React.FC = () => {
                 Contact us
               </h3>
             </div>
-            <address className="not-italic text-[16px] font-light tracking-widest xl:leading-[24px] leading-[22px] space-y-4 xl:space-y-8">
+            <address className="not-italic hidden text-[16px] font-light tracking-widest xl:leading-[24px] leading-[22px] space-y-4 xl:space-y-8">
               <div>
                 <p>
                   Costra Business park - G47 Sheikh mohammed min zayed rd Dubai
@@ -343,7 +343,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    href="/services/UI-UX-Design"
+                    href="/services/ui-ux-design"
                     className="hover:text-[#00AA71]"
                   >
                     UI/UX design
@@ -396,18 +396,18 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/services/seo" className="hover:text-[#00AA71]">
+                <Link href="/services/search-engine-optimization" className="hover:text-[#00AA71]">
                   Search Engine Optimization
                 </Link>
               </li>
               <li>
-                <Link href="/services/SMM" className="hover:text-[#00AA71]">
+                <Link href="/services/social-media-marketing" className="hover:text-[#00AA71]">
                   Social Media Marketing
                 </Link>
               </li>
               <li>
-                <Link href="/services/SEM" className="hover:text-[#00AA71]">
-                  SEM
+                <Link href="/services/ppc" className="hover:text-[#00AA71]">
+                  Search Engine Marketing
                 </Link>
               </li>
               <li>
@@ -424,7 +424,7 @@ const Footer: React.FC = () => {
 
         {/* Footer for mobile screens */}
 
-          {/* Footer Bottom */}
+        {/* Footer Bottom */}
         <div className="mt-4 md:mt-10 w-[95%] flex flex-col-reverse flex-col xl:flex-row xl:justify-between items-start text-[13px] md:text-[15px] text-[#FFF]">
           <p className="text-center lg:text-left tracking-widest mt-10 md:mt-0">
             © ALL RIGHTS RESERVED,{" "}
@@ -443,7 +443,7 @@ const Footer: React.FC = () => {
                 width={35}
                 height={35}
                 className="rounded-[10px] hover:scale-125 transition-all duration-200"
-                
+
               />
             </a>
             <a

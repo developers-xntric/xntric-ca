@@ -15,7 +15,6 @@ import TechStackCarousel from "@/components/services/techstacks";
 import { Awwards } from "@/data/awwards";
 import { steps8 } from "@/data/our-process";
 import { Metadata } from "next";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "UI UX Design Services in Canada for Digital Products",
@@ -117,57 +116,57 @@ const defaultServices: Service[] = [
   },
 ];
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Xntric",
-  url: "https://xntric.me",
-  logo: "https://xntric.me/HomePage/X-Logo.png",
-  image: "https://xntric.me/HomePage/X-Logo.png",
-  description:
-    "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Office F11, First Floor, IT Plaza,",
-    addressLocality: "Dubai Silicon Oasis, Dubai",
-    addressRegion: "UAE",
-    postalCode: "00000",
-    addressCountry: "UAE",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "00971 054 308 9222",
-    contactType: "Customer Service",
-    areaServed: "UAE",
-    availableLanguage: "English",
-  },
-  // "sameAs": [
-  //   "https://www.facebook.com/PlenumTech",
-  //   "https://twitter.com/PlenumTech",
-  //   "https://www.linkedin.com/company/plenum-tech-solutions",
-  // ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.5",
-    reviewCount: "30",
-    bestRating: "5",
-    worstRating: "2",
-  },
-  priceRange: "$$",
-  openingHours: "Mo-Fr 09:00-18:00",
-  additionalType: "https://schema.org/TechnologyBusiness",
-};
+// const schemaData = {
+//   "@context": "https://schema.org",
+//   "@type": "LocalBusiness",
+//   name: "Xntric",
+//   url: "https://xntric.me",
+//   logo: "https://xntric.me/HomePage/X-Logo.png",
+//   image: "https://xntric.me/HomePage/X-Logo.png",
+//   description:
+//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
+//
+//   address: {
+//     "@type": "PostalAddress",
+//     streetAddress: "Office F11, First Floor, IT Plaza,",
+//     addressLocality: "Dubai Silicon Oasis, Dubai",
+//     addressRegion: "UAE",
+//     postalCode: "00000",
+//     addressCountry: "UAE",
+//   },
+//   contactPoint: {
+//     "@type": "ContactPoint",
+//     telephone: "00971 054 308 9222",
+//     contactType: "Customer Service",
+//     areaServed: "UAE",
+//     availableLanguage: "English",
+//   },
+//   // "sameAs": [
+//   //   "https://www.facebook.com/PlenumTech",
+//   //   "https://twitter.com/PlenumTech",
+//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
+//   // ],
+//   aggregateRating: {
+//     "@type": "AggregateRating",
+//     ratingValue: "4.5",
+//     reviewCount: "30",
+//     bestRating: "5",
+//     worstRating: "2",
+//   },
+//   priceRange: "$$",
+//   openingHours: "Mo-Fr 09:00-18:00",
+//   additionalType: "https://schema.org/TechnologyBusiness",
+// };
 
 function page() {
   return (
     <>
-      <Script
+      {/* <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      /> */}
       <div className="max-w-screen pt-8 font-futuru overflow-x-hidden">
         <h1 className="hidden">UI/UX Design Services in Canada</h1>
         <ServiceInnerHero
@@ -196,7 +195,7 @@ function page() {
           headingClassName="max-w-[80%]"
           text="Forget guesswork. Behind every pixel we create is powerful, strategic data driving performance. We are a UX UI Design agency Canada that translates complex metrics into clear, intuitive user experiences. We optimize every flow to guarantee higher engagement, satisfaction, and measurable growth specifically within the Canadian market."
         />
-        <SolutionCarousel  para="We say yes to each project with a holistic mindset combining creative thinking, human-centered design, and technical excellence, the essential pillars of any great UI UX design company in Canada." />
+        <SolutionCarousel para="We say yes to each project with a holistic mindset combining creative thinking, human-centered design, and technical excellence, the essential pillars of any great UI UX design company in Canada." />
         <NewGreen
           isPopupOpen={true}
           text="Claim Your Free, Zero-Obligation UX Audit Right Away! "
@@ -211,9 +210,9 @@ function page() {
           text="Maximize Conversions. Get Your Free Audit "
           buttonText="Book your Free audit"
         />
-        <NewFaqs faqs={faqItems}  />
+        <NewFaqs faqs={faqItems} />
         <BigIdeas mainText="Ready to Launch Your Next Big Idea in Canada?" />
-        <ContactForm  />
+        <ContactForm />
       </div>
     </>
   );

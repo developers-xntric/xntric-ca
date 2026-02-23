@@ -12,64 +12,63 @@ import {
   CardsData8,
   CardsData9,
 } from "../../../data/services-card";
-import Script from "next/script";
 export const metadata: Metadata = {
   title: "All Services – Marketing, Branding & Development",
   description:
     "Discover Xntric’s full suite of services, from marketing and branding to app development, UI/UX, SEO, and more, tailored to your business goals.",
 };
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Xntric",
-  url: "https://xntric.me",
-  logo: "https://xntric.me/HomePage/X-Logo.png",
-  image: "https://xntric.me/HomePage/X-Logo.png",
-  description:
-    "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Office F11, First Floor, IT Plaza,",
-    addressLocality: "Dubai Silicon Oasis, Dubai",
-    addressRegion: "UAE",
-    postalCode: "00000",
-    addressCountry: "UAE",
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "00971 054 308 9222",
-    contactType: "Customer Service",
-    areaServed: "UAE",
-    availableLanguage: "English",
-  },
-  // "sameAs": [
-  //   "https://www.facebook.com/PlenumTech",
-  //   "https://twitter.com/PlenumTech",
-  //   "https://www.linkedin.com/company/plenum-tech-solutions",
-  // ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.5",
-    reviewCount: "30",
-    bestRating: "5",
-    worstRating: "2",
-  },
-  priceRange: "$$",
-  openingHours: "Mo-Fr 09:00-18:00",
-  additionalType: "https://schema.org/TechnologyBusiness",
-};
+// const schemaData = {
+//   "@context": "https://schema.org",
+//   "@type": "LocalBusiness",
+//   name: "Xntric",
+//   url: "https://xntric.me",
+//   logo: "https://xntric.me/HomePage/X-Logo.png",
+//   image: "https://xntric.me/HomePage/X-Logo.png",
+//   description:
+//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
+//
+//   address: {
+//     "@type": "PostalAddress",
+//     streetAddress: "Office F11, First Floor, IT Plaza,",
+//     addressLocality: "Dubai Silicon Oasis, Dubai",
+//     addressRegion: "UAE",
+//     postalCode: "00000",
+//     addressCountry: "UAE",
+//   },
+//   contactPoint: {
+//     "@type": "ContactPoint",
+//     telephone: "00971 054 308 9222",
+//     contactType: "Customer Service",
+//     areaServed: "UAE",
+//     availableLanguage: "English",
+//   },
+//   // "sameAs": [
+//   //   "https://www.facebook.com/PlenumTech",
+//   //   "https://twitter.com/PlenumTech",
+//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
+//   // ],
+//   aggregateRating: {
+//     "@type": "AggregateRating",
+//     ratingValue: "4.5",
+//     reviewCount: "30",
+//     bestRating: "5",
+//     worstRating: "2",
+//   },
+//   priceRange: "$$",
+//   openingHours: "Mo-Fr 09:00-18:00",
+//   additionalType: "https://schema.org/TechnologyBusiness",
+// };
 
 export default function Services() {
   return (
     <>
-      <Script
+      {/* <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      /> */}
       <div className="max-w-screen overflow-hidden font-futuru">
         <section className="relative w-full  font-futuru">
           {/* Background Video Container */}
@@ -121,7 +120,7 @@ export default function Services() {
             bgImage="/service/1.png"
           />
           <DevelopmentCard
-            href="/services/UI-UX-Design/"
+            href="/services/ui-ux-design/"
             title="UI/UX Design"
             subHeading="FROM <span style='color: #00AA71'>SURFACE DESIGN</span> TO CALCULATED SURFACE"
             description="Digital products fail without user insights and testing. Our Canadian digital marketing services help with user research, usability testing, and behavioral analytics to identify the right experiences that convert."
@@ -153,7 +152,7 @@ export default function Services() {
             bgImage="/service/4.png"
           />
           <DevelopmentCard
-            href="/services/seo/"
+            href="/services/search-engine-optimization/"
             title="Search Engine Optimization"
             subHeading="FROM <span style='color: #00AA71'>DATA DEPTHS</span> TO SEO Performance"
             description="SEO campaigns are typically trial and error, but our digital marketing services in Canada focus on clever keyword research, technical audits, and content strategy for long-term SEO success. "
@@ -163,7 +162,7 @@ export default function Services() {
             bgImage="/service/5.png"
           />
           <DevelopmentCard
-            href="/services/SEM/"
+            href="/services/ppc/"
             title="Search Engine Marketing"
             subHeading="FROM <span style='color: #00AA71'>AD SPEND</span> TO SMART RETURNS"
             imageUrl="/Careers/careers.webm"
@@ -195,7 +194,7 @@ export default function Services() {
             bgImage="/service/8.png"
           />
           <DevelopmentCard
-            href="/services/SMM/"
+            href="/services/social-media-marketing/"
             title="Social Media Marketing"
             subHeading="FROM <span style='color: #00AA71'>SOCIAL COMPLEXITY</span> TO CLEAR RESULTS "
             description="Random posting won't cut it! Our social media experts create engagement-driven plans to improve conversions and ROI. Explore our digital marketing services in Canada."

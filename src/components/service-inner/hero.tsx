@@ -63,7 +63,7 @@ export default function ServiceInnerHero({
           <div className="space-y-8 lg:space-y-12">
             {/* Main Heading */}
             <div
-              className={`gradient-text-service-inner text-[50px] md:text-[60px] xl:leading-[68px] leading-[47px] lg:leading-[53px] ${pathName === "/services/seo" ? "xl:text-[75px]" : "xl:text-[82px]"} ${headingClassName
+              className={`gradient-text-service-inner text-[50px] md:text-[60px] xl:leading-[68px] leading-[47px] lg:leading-[53px] ${pathName === "/services/search-engine-optimization" ? "xl:text-[75px]" : "xl:text-[82px]"} ${headingClassName
                 ? headingClassName
                 : "sm:max-w-[75%] w-[100%] md:max-w-[50%] lg:max-w-[73%] 2xl:max-w-[65%]"
                 }`}

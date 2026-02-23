@@ -21,7 +21,7 @@ const services = [
     description:
       "Human-centered digital experiences that enhance usability, engagement, and conversion.",
     image: "/HomePage/service-ui-ux.svg",
-    link: "/services/UI-UX-Design",
+    link: "/services/ui-ux-design",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const services = [
     description:
       "Data-backed SEO strategies that increase visibility, authority, and sustainable organic growth.",
     image: "/HomePage/service-seo.svg",
-    link: "/services/seo",
+    link: "/services/search-engine-optimization",
   },
 ];
 

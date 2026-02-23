@@ -169,6 +169,7 @@ function page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <div className="max-w-screen pt-8 font-futuru overflow-x-hidden">
+        <h1 className="hidden">UI/UX Design Services in Canada</h1>
         <ServiceInnerHero
           isPopup={true}
           imageclassName="xl:w-[740px] 2xl:w-[850px] xl:right-12 2xl:right-[12%]"

@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 const GameMarketing = () => {
   return (
     <div className="">
+      <h1 className="hidden">Game Marketing Services in Canada</h1>
       <GameHero />
       <GamingSection2 />
       <TunnelEffect />

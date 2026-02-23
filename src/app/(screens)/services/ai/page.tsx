@@ -69,7 +69,9 @@ const AIPage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <div className="font-futuru">
+
         <div className=" -space-y-60 md:-space-y-[25%] lg:-space-y-[10%] 2xl:-space-y-52">
+          <h1 className="hidden">Our AI-Powered Solutions in Canada</h1>
           <AINewHero />
           {/* AI Chatbot Component */}
           <div className="relative md:bottom-10 2xl:bottom-32">

@@ -168,6 +168,7 @@ function page() {
       />
 
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
+        <h1 className="hidden">Our Branding Services in Canada </h1>
         <ServiceInnerHero
           imageclassName="xl:w-[700px] 2xl:w-[1150px] xl:right-5 2xl:right-[23%]"
           rightImage="/service-inner/branding.png"

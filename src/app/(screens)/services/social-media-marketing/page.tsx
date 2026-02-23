@@ -169,6 +169,7 @@ function page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
+        <h1 className="hidden">Our Social Media Marketing Services in Canada</h1>
         <ServiceInnerHero
           isPopup={true}
           socialLinks={true}

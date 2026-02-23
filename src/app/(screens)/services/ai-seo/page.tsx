@@ -18,47 +18,47 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "AI SEO & AEO: Smarter Answers, Faster Search Results",
+  title: "AI SEO in Canada | AI SEO Canada & AEO Services",
   description:
-    "Achieve smarter, faster search results with our AI SEO and Answer Engine Optimization (AEO) services. Boost organic traffic and dominate visibility for AI and voice search.",
+    "Dominate search with AI SEO in Canada. Xntric delivers AI SEO Canada and Answer Engine Optimization (AEO) strategies to rank in AI Overviews, voice search, and zero-click results.",
     alternates: {
     canonical: "https://xntric.ae/ai-seo", 
   },
 };
 const faqItems: { question: string; answer: string }[] = [
   {
-    question: "Do you provide end-to-end branding solutions in the Dubai?",
+    question: "What is AI SEO (and how is it different from traditional SEO)?",
     answer:
-      "Yes, we handle everything from brand strategy, logo design, and visual identity to marketing collateral and digital presence for UAE businesses.",
+      "AI search engine optimization in Canada involves optimizing websites for AI search results, conversational search, and structured results, beyond just competitive keyword rankings․",
   },
   {
-    question: "How much does branding cost in Dubai?",
-    answer: `Depending on scope, complete brand identity projects can range from AED 15,000 to over AED 100,000 for large-scale corporate rebrands.`,
+    question: "Is traditional SEO dead because of AI?",
+    answer: `No․ Customary SEO factors still apply․ AI SEO Canada focuses more on semantic structure, schema, and conversational intent optimization․`,
   },
   {
-    question: "How much does an agency charge for branding?",
-    answer: `Agency fees vary based on complexity, deliverables, and industry, typically falling between AED 10,000 and AED 50,000.`,
+    question: "How do you get my business mentioned in Google’s AI Overviews?",
+    answer: `This can be done through schema markup, conversational responses, authority signals, and semantic clustering, all of which help AI systems pull your brand as a trusted resource․`,
   },
   {
-    question: "How much does a marketing agency cost in Dubai?",
+    question: "Can AI SEO help with local customers in Canada?",
     answer:
-      "Monthly retainers start around AED 8,000 for focused campaigns and scale with multi-channel strategies.",
+      "Yes․ AI SEO in Canada involves implementing structured data, optimizing Google Business, and using localized conversational terms for local intent visibility․",
   },
   {
-    question: "What are the branding agencies in GCC?",
+    question: "Does Xntric CA use AI to write my content?",
     answer:
-      "The GCC hosts numerous agencies, but Xntric distinguishes itself with research-led creative execution and region-specific expertise.",
+      "All generated content is overseen and edited by a human, and we only leverage AI to analyze data and provide insights, not to publish․",
   },
   {
-    question: "How to choose a branding agency in Dubai?",
+    question: "How long does it take to see results with AI SEO?",
     answer:
-      "Select a partner with a proven track record, an understanding of local market dynamics, and the ability to deliver measurable growth, all of which define Xntric.",
+      "Most clients see some results within 3 to 6 months, depending on the competition and the domain's authority․",
   },
   {
     question:
-      "How do you ensure our brand stands out in Dubai’s competitive market?",
+      " What is “Zero-Click” search, and how do we beat it?",
     answer:
-      "We combine market research, competitor analysis, and creative storytelling to craft distinctive brands that resonate and differentiate in Dubai’s vibrant business landscape.",
+      "Zero-click search shows users the answer within the AI-generated summary․ You need to implement strategies that promote your brand in the zero-click search summary if you want to make zero-click a brand builder․",
   },
   
  
@@ -69,7 +69,7 @@ const cards = [
     id: "01",
     title: "95%",
     description:
-      "Identify 95% of Answer Engine Barriers Limiting Your AI Search Reach.",
+      "Identify 95% of barriers to AI answers visibility",
     bgColor: "bg-black",
     textColor: "text-white",
   },
@@ -77,7 +77,7 @@ const cards = [
     id: "02",
     title: "2X",
     description:
-      "Leverage User Behavior Data to Uncover Critical AI Answer Insights",
+      "Double user-intent insights using behavioral data",
     bgColor: "bg-[#00AA71]",
     textColor: "text-white",
   },
@@ -85,7 +85,7 @@ const cards = [
     id: "03",
     title: "RANKINGS ",
     description:
-      "Enhance visibility with optimized answers tailored for AI and voice search",
+      "Positioning of ranks within AI-generated summaries",
     bgColor: "bg-black",
     textColor: "text-white",
   },
@@ -93,7 +93,7 @@ const cards = [
     id: "04",
     title: "300% ",
     description:
-      "Boost organic traffic by up to 300% through strategic Answer Engine Optimization",
+      "Grow organic traffic as much as 300% with structured AEO strategies",
     bgColor: "bg-[#00AA71]",
     textColor: "text-white",
   },
@@ -102,27 +102,27 @@ const cards = [
 const defaultServices: Service[] = [
   {
     imgSrc: "/service-inner/c5.png",
-    title: "Corporate Branding",
+    title: "Answer Engine Optimization (AEO)",
     description:
-      "We define corporate identities to reflect values and leadership. From multinational enterprises to regional leaders, we create brand systems that build credibility.",
+      "We write conversational, structured content designed to rank in AI-generated summaries․ like faq optimization, Conversational search mapping, Featured snippet targeting and Schema implementation",
   },
   {
     imgSrc: "/service-inner/c3.png",
-    title: "Startup & Product Branding",
+    title: "Conversational Search Optimization",
     description:
-      "For businesses ready to make a bold market entry, we deliver full-spectrum brand creation, from logo design to positioning and launch campaigns.",
+      "Since voice searches and AI assistants use natural language, we optimize our AI SEO Canada strategies for: questions-based queries, long-tail search patterns, and Local conversational intent",
   },
   {
     imgSrc: "/service-inner/c4.png",
-    title: "Personal Branding",
+    title: "Technical AI SEO",
     description:
-      "For executives, founders, and thought leaders, we craft powerful personal brands that communicate authority, authenticity",
+      "Strong technical foundation fuels AI visibility including Schema markup implementation, Page speed optimization, Core Web Vitals improvements, AI crawler accessibility audits",
   },
   {
     imgSrc: "/service-inner/c3.png",
-    title: "Event & Campaign Branding",
+    title: "Local AI SEO Canada",
     description:
-      "Whether it’s a landmark event or a high-stakes product launch, our branding captures attention and amplifies impact.",
+      "AI search is especially important for location-based intent, so we optimize for: Google Business Profile, Local conversational keywords, Structured location data, Review signals",
   },
   {
     imgSrc: "/service-inner/c1.png",
@@ -927,14 +927,14 @@ function page() {
         />
         <DigitalProducts
           isWidth={true}
-          leftText="Beyond keywords, we craft intelligent answer strategies that power your presence at every touchpoint driving traffic, engagement, and conversions. "
-          mainHeading="AI-Driven Answer Engine Optimization That Works Across Every Channel "
-          highlightWords={["Optimization", "Channel "]}
+          leftText="As search engines evolve into answer engines, brands must adapt. Our AI SEO Canada strategies are built to capture attention at the exact moment of intent before your competitors do. "
+          mainHeading="Rank Beyond Keywords with AI SEO in Canada"
+          highlightWords={["AI SEO"]}
         />
         <ScrollCardsSection
-          heading="Data-Driven <h5 style='color:#00AA71'>AEO</h5> That Transforms <h5 style='color:#00AA71'>Visibility</h5> and Growth  "
+          heading="Data-Driven <h5 style='color:#00AA71'>AEO</h5> Improving <h5 style='color:#00AA71'>Visibility</h5> & Driving Growth  "
           headingClassName="max-w-[100%] tracking-wide"
-          text="From identifying key answer gaps to boosting conversational search traffic, our data-driven AEO strategies deliver measurable impact and competitive advantage. "
+          text="With AI SEO Canada, we pinpoint content gaps and conversational search barriers that limit your search visibility․ Measurable Impact:"
           cardsData={cards}
         />
 
@@ -944,23 +944,24 @@ function page() {
         />
         <NewGreen
           bg={false}
-          text="Build a Strong <span style='color: #00AA71'>Online Foundation</span>. Book Your Free AEO Audit   "
+          text="Strengthen Your <span style='color: #00AA71'>Digital Presence.</span>Schedule Your Complimentary AEO Audit Today. "
           buttonText="start audit"
           isPopupOpen={true}
         />
         <ServicesOffer
           subtext="From frontend finesse to backend brains—we build robust, secure, and scalable digital products"
+          heading={"Our AI SEO Services"}
           services={defaultServices}
         />
         <TechStackCarousel tech={technologies} />
-        <NewOurProcess steps={steps3} />
+        <NewOurProcess steps={steps3}  />
         <NewGreen
           isPopupOpen={true}
           text="Driven by AI and research, our AEO strategies connect your brand at the exact moment of search intent."
           buttonText="Let’s talk"
         />
-        <NewFaqs faqs={faqItems} />
-        <BigIdeas mainText="Find your perfect fit" line={false} />
+        <NewFaqs faqs={faqItems}  />
+        <BigIdeas mainText="Step Ahead in Search" line={false} />
         <ContactForm />
       </div>
     </>

@@ -17,7 +17,7 @@ function Hero() {
         </h1>
         <ul className="text-white font-['Futuru'] font-normal absolute top-[80%] xs:top-[85%] z-40 md:top-[25%] text-[6px] md:text-[8px] tracking-[2px] md:left-8 xl:left-12 left-1/2 -translate-x-1/2 hidden md:flex flex-row md:flex-col gap-6 2xl:text-[12px] 4xl:text-[20px] gap-y-24 2xl:gap-y-32 items-center uppercase cursor-pointer">
           <li className="md:rotate-[270deg] hover:text-[#3BE29A]">
-            <a
+            {/* <a
               href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
                 typeof window !== 'undefined' ? window.location.href : ''
               )}`}
@@ -25,7 +25,7 @@ function Hero() {
               rel="noopener noreferrer"
             >
               Facebook
-            </a>
+            </a> */}
           </li>
           <li className="md:rotate-[270deg] hover:text-[#3BE29A]">
             <a

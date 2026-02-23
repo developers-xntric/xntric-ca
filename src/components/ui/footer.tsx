@@ -424,12 +424,57 @@ const Footer: React.FC = () => {
 
         {/* Footer for mobile screens */}
 
-        {/* Footer Bottom */}
-        <div className="mt-10 w-[92%] flex flex-col xl:flex-row xl:justify-between items-start text-[13px] md:text-[15px] text-[#FFF]">
-          <p className="text-center lg:text-left tracking-widest">
+          {/* Footer Bottom */}
+        <div className="mt-4 md:mt-10 w-[95%] flex flex-col-reverse flex-col xl:flex-row xl:justify-between items-start text-[13px] md:text-[15px] text-[#FFF]">
+          <p className="text-center lg:text-left tracking-widest mt-10 md:mt-0">
             © ALL RIGHTS RESERVED,{" "}
-            <span className="text-[#00AA71]">XNTRIC</span> 2025
+            <span className="text-[#00AA71]">XNTRIC</span> {new Date().getFullYear()}
           </p>
+          <div className="flex space-x-4 mt-4 xl:mt-0">
+            <a
+              href="https://www.instagram.com/xntric_global/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#00AA71]"
+            >
+              <Image
+                src="/HomePage/instagram.png"
+                alt="Instagram"
+                width={35}
+                height={35}
+                className="rounded-[10px] hover:scale-125 transition-all duration-200"
+                
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/xntric"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#00AA71]"
+            >
+              <Image
+                src="/HomePage/linkedin.png"
+                alt="Linkedin"
+                width={35}
+                height={35}
+                className="rounded-[10px] hover:scale-125 transition-all duration-200"
+              />
+            </a>
+            <a
+              href="https://www.tiktok.com/@xntric_global"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#00AA71]"
+            >
+              <Image
+                src="/HomePage/tiktok-1.png"
+                alt="Tiktok"
+                width={35}
+                height={35}
+                className="rounded-[10px] hover:scale-125 transition-all duration-200"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

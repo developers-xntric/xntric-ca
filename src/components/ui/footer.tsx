@@ -39,30 +39,20 @@ const Footer: React.FC = () => {
               </h3>
             </div>
             <address className="not-italic text-[16px] font-light tracking-widest xl:leading-[24px] leading-[22px] space-y-6 xl:space-y-8">
-              {/* <div>
-                <p>Costra Business park - G47</p>
-                <p>Sheikh mohammed min zayed rd</p>
-                <p>Dubai production city - Dubai</p>
-                <p>Dubai - UAE</p>
-              </div> */}
-              {/* <div>
+              <div>
+                <p>3895 Manatee way, Mississauga, Ontario L5M6P7</p>
+                <p>Canada</p>
+              </div>
+              <div>
                 <p>
                   <a
                     href="tel:+9710569280670"
                     className="text-[13px] sm:text-[16px] font-light tracking-widest"
                   >
-                    +971 (0) 569280670
+                    +1 437 860 1095
                   </a>
                 </p>
-                <p>
-                  <a
-                    href="tel:+97145464465"
-                    className="text-[13px] sm:text-[16px] font-light tracking-widest"
-                  >
-                    +971 4 546 4465
-                  </a>
-                </p>
-              </div> */}
+              </div>
             </address>
           </div>
 
@@ -425,7 +415,7 @@ const Footer: React.FC = () => {
         {/* Footer for mobile screens */}
 
         {/* Footer Bottom */}
-        <div className="mt-4 md:mt-10 w-[95%] flex flex-col-reverse flex-col xl:flex-row xl:justify-between items-start text-[13px] md:text-[15px] text-[#FFF]">
+        <div className="mt-4 md:mt-10 w-[95%] flex flex-col-reverse xl:flex-row xl:justify-between items-start text-[13px] md:text-[15px] text-[#FFF]">
           <p className="text-center lg:text-left tracking-widest mt-10 md:mt-0">
             © ALL RIGHTS RESERVED,{" "}
             <span className="text-[#00AA71]">XNTRIC</span> {new Date().getFullYear()}

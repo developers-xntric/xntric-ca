@@ -11,6 +11,9 @@ import React from "react";
 export const metadata: Metadata = {
   title: "About Xntric – Creative Digital Marketing Solutions",
   description: "Learn about Xntric, your trusted partner in marketing, branding, and technology, delivering creative, data-driven solutions to help your business thrive online.",
+  alternates: {
+    canonical: "https://xntric.ca/about",
+  },
 };
 function About() {
   return (

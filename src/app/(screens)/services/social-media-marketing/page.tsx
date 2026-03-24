@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: "Social Media Marketing Services Canada | Grow Your Community",
   description:
     "Transform your social presence with expert services in Canada. We specialize in high-impact video, social search optimization, and data-driven community growth.",
+  alternates: {
+    canonical: "https://xntric.ca/services/social-media-marketing",
+  },
 };
 
 const faqItems: { question: string; answer: string }[] = [
@@ -120,9 +123,9 @@ const defaultServices: Service[] = [
 //   "@context": "https://schema.org",
 //   "@type": "LocalBusiness",
 //   name: "Xntric",
-//   url: "https://xntric.me",
-//   logo: "https://xntric.me/HomePage/X-Logo.png",
-//   image: "https://xntric.me/HomePage/X-Logo.png",
+//   url: "https://xntric.ca",
+//   logo: "https://xntric.ca/HomePage/X-Logo.png",
+//   image: "https://xntric.ca/HomePage/X-Logo.png",
 //   description:
 //     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
 //

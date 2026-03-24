@@ -14,15 +14,18 @@ export const metadata: Metadata = {
   title: "Digital Marketing Agency in Canada | Data-Driven Growth",
   description:
     " Partner with a top digital marketing agency in Canada. We scale brands through AI-powered SEO, performance PPC, and custom digital strategies. Book a free audit!",
+  alternates: {
+    canonical: "https://xntric.ca",
+  },
 };
 
 // const schemaData = {
 //   "@context": "https://schema.org",
 //   "@type": "LocalBusiness",
 //   name: "Xntric Tech",
-//   url: "https://xntric.me/",
-//   logo: "https://xntric.me/HomePage/X-Logo.png",
-//   image: "https://xntric.me/HomePage/X-Logo.png",
+//   url: "https://xntric.ca/",
+//   logo: "https://xntric.ca/HomePage/X-Logo.png",
+//   image: "https://xntric.ca/HomePage/X-Logo.png",
 //   description:
 //     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
 //

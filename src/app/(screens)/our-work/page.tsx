@@ -6,6 +6,9 @@ import OurWorkSections from "../../../components/our-work/our-work-section";
 export const metadata: Metadata = {
   title: "Our Work – Portfolio of Creative Projects | Xntric",
   description: "Explore Xntric’s portfolio of successful projects across marketing, branding, design, and technology, delivering exceptional results for global brands.",
+  alternates: {
+    canonical: "https://xntric.ca/our-work",
+  },
 };
  function OurWork() {
   return (

@@ -12,6 +12,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Game Marketing Services in Canada | Video Game Marketing Agency",
   description: "Xntric is a leading video game marketing agency that delivers influencer strategy, community growth, and performance-driven results, based on its past successes.",
+  alternates: {
+    canonical: "https://xntric.ca/game-marketing",
+  },
 };
 const GameMarketing = () => {
   return (

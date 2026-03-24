@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://xntric.me',
+    siteUrl: 'https://xntric.ca',
     generateRobotsTxt: true,
     changefreq: 'daily',
     priority: 0.7,

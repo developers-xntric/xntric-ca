@@ -10,6 +10,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Careers at Xntric – Join Our Creative Team",
   description: "Join the creative, dynamic Xntric team and grow your career in digital marketing, branding, design, and technology with exciting opportunities.",
+  alternates: {
+    canonical: "https://xntric.ca/careers",
+  },
 };
 const CareersPage = () => {
   return (

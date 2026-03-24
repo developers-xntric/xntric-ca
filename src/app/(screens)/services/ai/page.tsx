@@ -14,15 +14,18 @@ export const metadata: Metadata = {
   title: "AI Integration Services Canada | Automate & Scale with AI ",
   description:
     "Transform your operations with expert AI integration services in Canada. We embed custom AI agents and machine learning into your workflows for maximum ROI.",
+  alternates: {
+    canonical: "https://xntric.ca/services/ai",
+  },
 };
 
 // const schemaData = {
 //   "@context": "https://schema.org",
 //   "@type": "LocalBusiness",
 //   name: "Xntric",
-//   url: "https://xntric.me",
-//   logo: "https://xntric.me/HomePage/X-Logo.png",
-//   image: "https://xntric.me/HomePage/X-Logo.png",
+//   url: "https://xntric.ca",
+//   logo: "https://xntric.ca/HomePage/X-Logo.png",
+//   image: "https://xntric.ca/HomePage/X-Logo.png",
 //   description:
 //     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
 //
@@ -74,7 +77,7 @@ const AIPage = () => {
           <AINewHero />
           {/* AI Chatbot Component */}
           <div className="relative md:bottom-10 2xl:bottom-32">
-            <AIChatbot apiEndpoint="https://api-chat.xntric.me/chat" />
+            <AIChatbot apiEndpoint="https://api-chat.xntric.ca/chat" />
           </div>
         </div>
         <YearsAwwards

@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   title: "AI SEO in Canada | AI SEO Canada & AEO Services",
   description:
     "Dominate search with AI SEO in Canada. Xntric delivers AI SEO Canada and Answer Engine Optimization (AEO) strategies to rank in AI Overviews, voice search, and zero-click results.",
-    alternates: {
-    canonical: "https://xntric.ae/ai-seo", 
+  alternates: {
+    canonical: "https://xntric.ca/services/ai-seo", 
   },
 };
 const faqItems: { question: string; answer: string }[] = [

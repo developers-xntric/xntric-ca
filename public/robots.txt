@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://xntric.me
+Host: https://xntric.ca
 
 # Sitemaps
-Sitemap: https://xntric.me/sitemap.xml
+Sitemap: https://xntric.ca/sitemap.xml

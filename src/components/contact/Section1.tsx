@@ -21,7 +21,7 @@ function Section1() {
                 href="mailto:info@xntric.com"
                 className="text-lg sm:text-3xl"
               >
-                info@xntric.me
+                info@xntric.ca
               </a>
             </div>
           </div>

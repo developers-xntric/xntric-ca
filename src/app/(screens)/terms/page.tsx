@@ -1,5 +1,14 @@
 import BlogHeader from '@/components/blog/blog-header'
 import React from 'react'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions | Xntric",
+  description: "Read Xntric’s terms and conditions to understand the rules and guidelines for using our services and website.",
+  alternates: {
+    canonical: "https://xntric.ca/terms",
+  },
+};
 
 const TermsAndConditions = () => {
     return (

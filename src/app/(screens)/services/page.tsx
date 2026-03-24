@@ -16,15 +16,18 @@ export const metadata: Metadata = {
   title: "All Services – Marketing, Branding & Development",
   description:
     "Discover Xntric’s full suite of services, from marketing and branding to app development, UI/UX, SEO, and more, tailored to your business goals.",
+  alternates: {
+    canonical: "https://xntric.ca/services",
+  },
 };
 
 // const schemaData = {
 //   "@context": "https://schema.org",
 //   "@type": "LocalBusiness",
 //   name: "Xntric",
-//   url: "https://xntric.me",
-//   logo: "https://xntric.me/HomePage/X-Logo.png",
-//   image: "https://xntric.me/HomePage/X-Logo.png",
+//   url: "https://xntric.ca",
+//   logo: "https://xntric.ca/HomePage/X-Logo.png",
+//   image: "https://xntric.ca/HomePage/X-Logo.png",
 //   description:
 //     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
 //

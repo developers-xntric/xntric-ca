@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: "App Store Optimization (ASO) Services Canada | Boost Downloads ",
   description:
     "Maximize your app's organic growth with expert ASO services in Canada. We optimize for iOS & Android to improve rankings, conversion, and user retention in 2026. ",
+  alternates: {
+    canonical: "https://xntric.ca/services/app-store-optimization",
+  },
 };
 const faqItems: { question: string; answer: string }[] = [
   {
@@ -110,9 +113,9 @@ const defaultServices: Service[] = [
 //   "@context": "https://schema.org",
 //   "@type": "LocalBusiness",
 //   name: "Xntric",
-//   url: "https://xntric.me",
-//   logo: "https://xntric.me/HomePage/X-Logo.png",
-//   image: "https://xntric.me/HomePage/X-Logo.png",
+//   url: "https://xntric.ca",
+//   logo: "https://xntric.ca/HomePage/X-Logo.png",
+//   image: "https://xntric.ca/HomePage/X-Logo.png",
 //   description:
 //     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
 //

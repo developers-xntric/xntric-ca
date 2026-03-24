@@ -27,7 +27,7 @@ export async function generateStaticParams() {
 //   provider: {
 //     "@type": "Organization",
 //     name: "Xntric",
-//     url: "https://xntric.me",
+//     url: "https://xntric.ca",
 //   },
 //   serviceType: "Digital Consulting",
 //   areaServed: {

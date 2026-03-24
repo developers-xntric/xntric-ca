@@ -36,7 +36,7 @@ interface AIChatbotProps {
 }
 
 export default function AIChatbot({
-  apiEndpoint = "https://api-chat.xntric.me/chat",
+  apiEndpoint = "https://api-chat.xntric.ca/chat",
 }: AIChatbotProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");

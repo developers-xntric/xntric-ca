@@ -4,6 +4,9 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Privacy Policy – How Xntric Protects Your Data",
   description: "Read Xntric’s privacy policy to learn how we responsibly collect, store, and safeguard your personal data while delivering our digital services.",
+  alternates: {
+    canonical: "https://xntric.ca/privacy",
+  },
 };
 const PrivcayPage = () => {
   return (

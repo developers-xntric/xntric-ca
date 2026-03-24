@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: "Branding Services in Canada | Strategic Brand Identity ",
   description:
     "Elevate your business with the leading branding services in Canada. From logo design to full brand strategy, we build identities that drive growth and loyalty.",
+  alternates: {
+    canonical: "https://xntric.ca/services/branding",
+  },
 };
 const faqItems: { question: string; answer: string }[] = [
   {
@@ -118,9 +121,9 @@ const defaultServices: Service[] = [
 //   "@context": "https://schema.org",
 //   "@type": "LocalBusiness",
 //   name: "Xntric",
-//   url: "https://xntric.me",
-//   logo: "https://xntric.me/HomePage/X-Logo.png",
-//   image: "https://xntric.me/HomePage/X-Logo.png",
+//   url: "https://xntric.ca",
+//   logo: "https://xntric.ca/HomePage/X-Logo.png",
+//   image: "https://xntric.ca/HomePage/X-Logo.png",
 //   description:
 //     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
 //

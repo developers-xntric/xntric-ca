@@ -38,16 +38,6 @@ export default function Blog() {
 
   return (
     <div className="max-w-screen overflow-x-hidden flex justify-center items-center flex-col">
-      {/* SEO Head */}
-      <Head>
-        <title>Blogs | Xntric</title>
-        <meta
-          name="description"
-          content="Explore the latest insights, ideas, and updates from Xntric on AI, design, technology, and innovation."
-        />
-        <link rel="canonical" href="https://xntric.me/blog" />
-      </Head>
-
       {/* Blog Hero Header */}
       <div className="w-screen p-4 rounded-[10px] mb-16 md:mb-2">
         <BlogHeader

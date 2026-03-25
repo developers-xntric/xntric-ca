@@ -150,24 +150,6 @@ function FeaturedBlogs({ isHome = false }: { isHome?: boolean }) {
                       (slideIndex + 1) * slidesToShow
                     )
                     .map((blog) => {
-                      const imageSchema = {
-                        "@context": "https://schema.org",
-                        "@type": "ImageObject",
-                        url: blog.bannerImageURL,
-                        name: blog.title,
-                        caption: blog.title,
-                        contentUrl: blog.bannerImageURL,
-                        thumbnailUrl: blog.bannerImageURL,
-                        description:
-                          blog.description ||
-                          `Image about ${blog.title} from Xntric.`,
-                        uploadDate:
-                          blog.publishedDate || "2025-08-18T12:00:00+00:00",
-                        author: {
-                          "@type": "Organization",
-                          name: "Xntric",
-                        },
-                      };
 
                       return (
                         <div
@@ -186,12 +168,7 @@ function FeaturedBlogs({ isHome = false }: { isHome?: boolean }) {
                               image={blog.bannerImageURL}
                             />
                           </div>
-                          <script
-                            type="application/ld+json"
-                            dangerouslySetInnerHTML={{
-                              __html: JSON.stringify(imageSchema),
-                            }}
-                          />
+                         
                         </div>
                       );
                     })}

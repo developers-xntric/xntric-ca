@@ -126,6 +126,8 @@ function FeaturedBlogs({ isHome = false }: { isHome?: boolean }) {
           </div>
         </div>
 
+        
+
         {/* Carousel / Empty state */}
         {blogs.length > 0 ? (
           <div className="overflow-hidden">

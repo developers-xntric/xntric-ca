@@ -15,6 +15,7 @@ import TechStackCarousel from "@/components/services/techstacks";
 import { Awwards } from "@/data/awwards";
 import { steps4 } from "@/data/our-process";
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Digital Marketing Services in Canada | AI-Driven Growth ",
@@ -122,57 +123,120 @@ const faqItems: { question: string; answer: string }[] = [
 
 ];
 
-// const schemaData = {
-//   "@context": "https://schema.org",
-//   "@type": "LocalBusiness",
-//   name: "Xntric",
-//   url: "https://xntric.ca",
-//   logo: "https://xntric.ca/HomePage/X-Logo.png",
-//   image: "https://xntric.ca/HomePage/X-Logo.png",
-//   description:
-//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-//
-//   address: {
-//     "@type": "PostalAddress",
-//     streetAddress: "Office F11, First Floor, IT Plaza,",
-//     addressLocality: "Dubai Silicon Oasis, Dubai",
-//     addressRegion: "UAE",
-//     postalCode: "00000",
-//     addressCountry: "UAE",
-//   },
-//   contactPoint: {
-//     "@type": "ContactPoint",
-//     telephone: "00971 054 308 9222",
-//     contactType: "Customer Service",
-//     areaServed: "UAE",
-//     availableLanguage: "English",
-//   },
-//   // "sameAs": [
-//   //   "https://www.facebook.com/PlenumTech",
-//   //   "https://twitter.com/PlenumTech",
-//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
-//   // ],
-//   aggregateRating: {
-//     "@type": "AggregateRating",
-//     ratingValue: "4.5",
-//     reviewCount: "30",
-//     bestRating: "5",
-//     worstRating: "2",
-//   },
-//   priceRange: "$$",
-//   openingHours: "Mo-Fr 09:00-18:00",
-//   additionalType: "https://schema.org/TechnologyBusiness",
-// };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "Full-Service Digital Marketing in Canada",
+      "url": "https://xntric.ca/services/digital-marketing",
+      "image": "https://xntric.ca/HomePage/X-Logo.png",
+      "description": "Transform your brand with expert digital marketing services in Canada. We specialize in AI-powered SEO, performance PPC, and user-centric web design. Get a free audit!",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3895 Manatee way, Mississauga, Ontario L5M6P7",
+        "addressLocality": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "telephone": "+1 437 860 1095",
+      "priceRange": "$ 500 - $ 5000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "48",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://xntric.ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://xntric.ca/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Digital Marketing",
+          "item": "https://xntric.ca/services/digital-marketing"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What exactly is a digital marketing service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A digital marketing service is a professional strategy used to reach your customers through online channels. At Xntric, this includes everything from appearing at the top of Google searches (SEO) and running targeted social media ads, to creating high-converting websites that turn Canadian browsers into buyers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I identify a successful digital marketing agency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A great agency doesn't just promise likes they promise growth. Look for Clear reporting on lead costs and conversions, An understanding of the Canadian consumer landscape, They don't offer 'cookie - cutter' packages but instead build a strategy around your specific business goals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Would my business actually benefit from digital marketing? If your customers use a smartphone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your customers use a smartphone or a computer to find services, the answer is yes. Whether you are a local service provider in Ontario or a national B2B firm, digital marketing allows you to target specific demographics, track every dollar spent, and compete with much larger companies on a level playing field."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the most effective types of digital marketing for Canadian businesses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While there are many methods, we focus on the the most ROI in the North American market like Search Engine Optimization, Pay-Per-Click, Social Media Marketing, Content & Email Marketing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to see results from these services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the service. Paid Ads (PPC) can generate leads within 24 to 48 hours of launching. SEO and Organic Social are long-term investments that typically show significant momentum within 3 to 6 months. We provide a roadmap so you know exactly when to expect a return on your investment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can digital marketing help with local lead generation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We specialize in Local SEO and Geo-targeted Ads. This means we can ensure your business shows up specifically for people in your city or province (e.g., 'Digital Marketing Toronto' or 'Best Plumber in Vancouver'), ensuring you don't waste your budget on audiences that can't visit your location."
+          }
+        }
+      ]
+    }
+  ]
+}
+
 
 function page() {
   return (
     <>
-      {/* <Script
+      <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      /> */}
+      />
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
         <h1 className="hidden">Our Digital Marketing Services in Canada</h1>
         <ServiceInnerHero

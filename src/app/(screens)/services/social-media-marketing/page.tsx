@@ -15,6 +15,7 @@ import TechStackCarousel from "@/components/services/techstacks";
 import { Awwards } from "@/data/awwards";
 import { steps5 } from "@/data/our-process";
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Social Media Marketing Services Canada | Grow Your Community",
@@ -119,57 +120,121 @@ const defaultServices: Service[] = [
   },
 ];
 
-// const schemaData = {
-//   "@context": "https://schema.org",
-//   "@type": "LocalBusiness",
-//   name: "Xntric",
-//   url: "https://xntric.ca",
-//   logo: "https://xntric.ca/HomePage/X-Logo.png",
-//   image: "https://xntric.ca/HomePage/X-Logo.png",
-//   description:
-//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-//
-//   address: {
-//     "@type": "PostalAddress",
-//     streetAddress: "Office F11, First Floor, IT Plaza,",
-//     addressLocality: "Dubai Silicon Oasis, Dubai",
-//     addressRegion: "UAE",
-//     postalCode: "00000",
-//     addressCountry: "UAE",
-//   },
-//   contactPoint: {
-//     "@type": "ContactPoint",
-//     telephone: "00971 054 308 9222",
-//     contactType: "Customer Service",
-//     areaServed: "UAE",
-//     availableLanguage: "English",
-//   },
-//   // "sameAs": [
-//   //   "https://www.facebook.com/PlenumTech",
-//   //   "https://twitter.com/PlenumTech",
-//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
-//   // ],
-//   aggregateRating: {
-//     "@type": "AggregateRating",
-//     ratingValue: "4.5",
-//     reviewCount: "30",
-//     bestRating: "5",
-//     worstRating: "2",
-//   },
-//   priceRange: "$$",
-//   openingHours: "Mo-Fr 09:00-18:00",
-//   additionalType: "https://schema.org/TechnologyBusiness",
-// };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "Social Media Marketing Services in Canada",
+      "url": "https://xntric.ca/services/social-media-marketing",
+      "image": "https://xntric.ca/HomePage/X-Logo.png",
+      "description": "Transform your social presence with expert services in Canada. We specialize in high-impact video, social search optimization, and data-driven community growth..",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3895 Manatee way, Mississauga, Ontario L5M6P7 Canada",
+        "addressLocality": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "telephone": "+1 437 860 1095",
+      "priceRange": "$ 500 - $ 5000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "44",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://xntric.ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://xntric.ca/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Social Media Marketing",
+          "item": "https://xntric.ca/services/social-media-marketing"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which social media platform is popular in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Popular social media platforms in Canada include Instagram, Facebook, TikTok, LinkedIn, and YouTube. Platforms most relevant to your target audience and sector should be considered."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the 5-3-2 rule for social media?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 5-3-2 rule recommends a sharing ratio of five curated posts, three original posts, and two personal or engaging posts to maintain a balance in the content shared with the audience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does social media handling cost in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depending on campaign size, platforms, and the level of service, Canadian social media marketing companies typically charge between CAD 1,500 and CAD 10,000+ per month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do social media consultants cost??",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fees for consultants may be hourly rates of between CAD 75-250 or monthly retainers based on their experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are SMO services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Social Media Optimization (SMO) is the act of optimizing social media profiles, pages, hashtags, content, and engagement to increase visibility and authority."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of SMO??",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SMO improves brand visibility, increases user engagement, builds online reputation, and drives website traffic."
+          }
+        }
+      ]
+    }
+  ]
+}
+
+
 
 function page() {
   return (
     <>
-      {/* <Script
+      <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      /> */}
+      />
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
         <h1 className="hidden">Our Social Media Marketing Services in Canada</h1>
         <ServiceInnerHero

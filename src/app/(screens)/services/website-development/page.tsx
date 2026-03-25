@@ -14,6 +14,7 @@ import { faqItems } from "@/data/service-inner-faqs";
 import NewOurProcess from "@/components/services/new-our-process";
 import NewFaqs from "@/components/services/new-faqs";
 import { Metadata } from "next";
+import Script from "next/script";
 export const metadata: Metadata = {
   title: "Website Development Services in Canada | Custom Web Design",
   description:
@@ -23,57 +24,120 @@ export const metadata: Metadata = {
   },
 };
 
-// const schemaData = {
-//   "@context": "https://schema.org",
-//   "@type": "LocalBusiness",
-//   name: "Xntric",
-//   url: "https://xntric.ca",
-//   logo: "https://xntric.ca/HomePage/X-Logo.png",
-//   image: "https://xntric.ca/HomePage/X-Logo.png",
-//   description:
-//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-//
-//   address: {
-//     "@type": "PostalAddress",
-//     streetAddress: "Office F11, First Floor, IT Plaza,",
-//     addressLocality: "Dubai Silicon Oasis, Dubai",
-//     addressRegion: "UAE",
-//     postalCode: "00000",
-//     addressCountry: "UAE",
-//   },
-//   contactPoint: {
-//     "@type": "ContactPoint",
-//     telephone: "00971 054 308 9222",
-//     contactType: "Customer Service",
-//     areaServed: "UAE",
-//     availableLanguage: "English",
-//   },
-//   // "sameAs": [
-//   //   "https://www.facebook.com/PlenumTech",
-//   //   "https://twitter.com/PlenumTech",
-//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
-//   // ],
-//   aggregateRating: {
-//     "@type": "AggregateRating",
-//     ratingValue: "4.5",
-//     reviewCount: "30",
-//     bestRating: "5",
-//     worstRating: "2",
-//   },
-//   priceRange: "$$",
-//   openingHours: "Mo-Fr 09:00-18:00",
-//   additionalType: "https://schema.org/TechnologyBusiness",
-// };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "Professional Web Development Services in Canada",
+      "url": "https://xntric.ca/services/website-development",
+      "image": "https://xntric.ca/HomePage/X-Logo.png",
+      "description": "Leading website development services in Canada. We build fast, accessible, and high-converting websites tailored to grow your business. Get a free quote today!",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3895 Manatee way, Mississauga, Ontario L5M6P7 Canada",
+        "addressLocality": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "telephone": "+1 437 860 1095",
+      "priceRange": "$ 500 - $ 5000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "42",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://xntric.ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://xntric.ca/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Website Development",
+          "item": "https://xntric.ca/services/website-development"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How big is your web development company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We’re a full-scale website development agency with a diverse team of designers, developers, and digital strategists delivering projects across Canada and beyond."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do wireframing and prototyping enhance the UI/UX design process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prototyping and wireframing provide much of the basis for the user experience design process. Prototypes provide interactive elements to designs produced from wireframes, therefore illustrating the structure of the product. Participating in this process enables stakeholders to see the final result and verify if the design satisfies user expectations before to start of development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your website development process like?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our headquarters are in Canada, but we also collaborate with clients worldwide, including the UAE and Europe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a website cost in Toronto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost varies depending on project scope. A simple website may start around CAD 2,000, while custom and eCommerce projects can go higher."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What eCommerce development platforms do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We specialize in Shopify, WooCommerce, Magento, and custom PHP-based platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer website maintenance plans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer tailored maintenance plans to ensure your website remains updated, secure, and optimized."
+          }
+        }
+      ]
+    }
+  ]
+}
+
 
 function page() {
   return (
     <>
-      {/* <Script
+      <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      /> */}
+      />
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru font-semibold">
         <h1 className="hidden">Website Development Services in Canada We Offer</h1>
         <ServiceInnerHero

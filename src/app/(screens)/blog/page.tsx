@@ -9,6 +9,7 @@ import dynamicImport from "next/dynamic";
 import Head from "next/head";
 import BlogListingCards from "@/components/common/blog-listing-card";
 import { blogs } from "./data";
+import Script from "next/script";
 
 const ContactForm = dynamicImport(
   () => import("@/components/common/contact-form"),
@@ -36,6 +37,46 @@ export default function Blog() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "name": "Xntric Digital Marketing & Technology Blog",
+        "url": "https://xntric.ca/blog",
+        "description": "Stay updated with the latest trends in digital marketing, SEO, AI integration, and branding. Expert insights from Xntric, Canada leading digital agency.",
+        "publisher": {
+          "@type": "LocalBusiness",
+          "name": "Xntric",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://xntric.ca/HomePage/X-Logo.png"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://xntric.ca"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://xntric.ca/blog"
+          }
+        ]
+      }
+    ]
+  }
+
+
+
+
   return (
     <div className="max-w-screen overflow-x-hidden flex justify-center items-center flex-col">
       {/* Blog Hero Header */}
@@ -47,7 +88,14 @@ export default function Blog() {
         />
       </div>
 
-      {/* Category Buttons (Static) */}, 
+      <Script
+        id="schema-script"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+
+      {/* Category Buttons (Static) */},
       {/* {currentBlogs.filter(
         (blog) => blog.blogCategory.toLowerCase() == "xntric"
       ).length > 0 && (
@@ -68,50 +116,50 @@ export default function Blog() {
       {currentBlogs.length > 0 ? (
         <div className="w-[90%] lg:w-[90%] sm:pt-14 md:pt-10 lg:pt-24 xl:pt-0 grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-4 2xl:gap-x-4 xl:mt-16 mb-20">
           {currentBlogs.map((blog, index) => {
-              // Schema for each blog image
-              const imageSchema = {
-                "@context": "https://schema.org",
-                "@type": "ImageObject",
-                url: blog.bannerImageURL,
-                name: blog.title,
-                caption: blog.title,
-                contentUrl: blog.bannerImageURL,
-                thumbnailUrl: blog.bannerImageURL,
-                description:
-                  blog.description || `Image about ${blog.title} from Xntric.`,
-                uploadDate: blog.publishedDate || "2025-08-18T12:00:00+00:00",
-                author: {
-                  "@type": "Organization",
-                  name: "Xntric",
-                },
-              };
+            // Schema for each blog image
+            const imageSchema = {
+              "@context": "https://schema.org",
+              "@type": "ImageObject",
+              url: blog.bannerImageURL,
+              name: blog.title,
+              caption: blog.title,
+              contentUrl: blog.bannerImageURL,
+              thumbnailUrl: blog.bannerImageURL,
+              description:
+                blog.description || `Image about ${blog.title} from Xntric.`,
+              uploadDate: blog.publishedDate || "2025-08-18T12:00:00+00:00",
+              author: {
+                "@type": "Organization",
+                name: "Xntric",
+              },
+            };
 
-              return (
-                <div
-                  key={index}
-                  className=" hover:opacity-75 transition-opacity ease-in duration-500"
-                >
-                  <BlogListingCards
-                    title={blog.title}
-                    desc={blog.description}
-                    date={blog.publishedDate?.slice(0, 10)}
-                    min={blog.readTime}
-                    image={blog.bannerImageURL}
-                    id={blog.slug}
-                    blog={blog}
-                    border={true}
-                    isBlog={true}
-                  />
-                  {/* JSON-LD schema */}
-                  <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                      __html: JSON.stringify(imageSchema),
-                    }}
-                  />
-                </div>
-              );
-            })}
+            return (
+              <div
+                key={index}
+                className=" hover:opacity-75 transition-opacity ease-in duration-500"
+              >
+                <BlogListingCards
+                  title={blog.title}
+                  desc={blog.description}
+                  date={blog.publishedDate?.slice(0, 10)}
+                  min={blog.readTime}
+                  image={blog.bannerImageURL}
+                  id={blog.slug}
+                  blog={blog}
+                  border={true}
+                  isBlog={true}
+                />
+                {/* JSON-LD schema */}
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(imageSchema),
+                  }}
+                />
+              </div>
+            );
+          })}
         </div>
       ) : (
         <p className="text-red-500 text-xl py-20 text-center">No Blogs Found</p>
@@ -119,16 +167,16 @@ export default function Blog() {
 
       {/* Pagination */}
       {totalPages > 1 && currentBlogs.length > 0 && (
-          <div className="flex gap-4 xl:mb-32">
-            <Pagination
-              currentPage={currentPage}
-              totalPages={totalPages}
-              onPageChange={handlePageChange}
-              showPrevNext={false}
-              maxVisiblePages={5}
-            />
-          </div>
-        )}
+        <div className="flex gap-4 xl:mb-32">
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+            showPrevNext={false}
+            maxVisiblePages={5}
+          />
+        </div>
+      )}
 
       {/* Footer Sections */}
       <BigIdeas isBlogPage={true} />

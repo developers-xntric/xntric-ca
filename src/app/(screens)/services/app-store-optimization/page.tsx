@@ -15,6 +15,7 @@ import TechStackCarousel from "@/components/services/techstacks";
 import { Awwards } from "@/data/awwards";
 import { steps7 } from "@/data/our-process";
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "App Store Optimization (ASO) Services Canada | Boost Downloads ",
@@ -109,57 +110,104 @@ const defaultServices: Service[] = [
   },
 ];
 
-// const schemaData = {
-//   "@context": "https://schema.org",
-//   "@type": "LocalBusiness",
-//   name: "Xntric",
-//   url: "https://xntric.ca",
-//   logo: "https://xntric.ca/HomePage/X-Logo.png",
-//   image: "https://xntric.ca/HomePage/X-Logo.png",
-//   description:
-//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-//
-//   address: {
-//     "@type": "PostalAddress",
-//     streetAddress: "Office F11, First Floor, IT Plaza,",
-//     addressLocality: "Dubai Silicon Oasis, Dubai",
-//     addressRegion: "UAE",
-//     postalCode: "00000",
-//     addressCountry: "UAE",
-//   },
-//   contactPoint: {
-//     "@type": "ContactPoint",
-//     telephone: "00971 054 308 9222",
-//     contactType: "Customer Service",
-//     areaServed: "UAE",
-//     availableLanguage: "English",
-//   },
-//   // "sameAs": [
-//   //   "https://www.facebook.com/PlenumTech",
-//   //   "https://twitter.com/PlenumTech",
-//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
-//   // ],
-//   aggregateRating: {
-//     "@type": "AggregateRating",
-//     ratingValue: "4.5",
-//     reviewCount: "30",
-//     bestRating: "5",
-//     worstRating: "2",
-//   },
-//   priceRange: "$$",
-//   openingHours: "Mo-Fr 09:00-18:00",
-//   additionalType: "https://schema.org/TechnologyBusiness",
-// };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "Professional App Store Optimization (ASO) Services in Canada",
+      "url": "https://xntric.ca/services/app-store-optimization",
+      "image": "https://xntric.ca/HomePage/X-Logo.png",
+      "description": "Maximize your app's organic growth with expert ASO services in Canada. We optimize for iOS & Android to improve rankings, conversion, and user retention in 2026.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3895 Manatee way, Mississauga, Ontario L5M6P7 Canada",
+        "addressLocality": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "telephone": "+1 437 860 1095",
+      "priceRange": "$ 500 - $ 5000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "39",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://xntric.ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://xntric.ca/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "App Store Optimization",
+          "item": "https://xntric.ca/services/app-store-optimization"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why Do I Need ASO Services??",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Without optimization, even strong apps remain invisible. ASO improves discoverability, rankings, and organic installs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can You Guarantee Top Rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No ethical agency can guarantee rankings. We focus on proven optimization strategies that consistently improve visibility and performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How Long Does ASO Take to Show Results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Initial improvements can appear within weeks, but sustainable growth typically develops over 8–12 weeks, depending on competition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ASO Work for Both iOS and Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We tailor strategies specifically for Apple App Store and Google Play algorithms." 
+          }
+        }
+      ]
+    }
+  ]
+}
+
 
 function page() {
   return (
     <>
-      {/* <Script
+      <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      /> */}
+      />
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
         <h1 className="hidden">Our App Store Optimization Services in Canada</h1>
         <ServiceInnerHero

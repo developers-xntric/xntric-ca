@@ -15,6 +15,7 @@ import TechStackCarousel from "@/components/services/techstacks";
 import { Awwards } from "@/data/awwards";
 import { steps9 } from "@/data/our-process";
 import { Metadata } from "next";
+import Script from "next/script";
 export const metadata: Metadata = {
   title: " PPC Services in Canada | High-ROI Google & Meta Ads",
   description:
@@ -116,57 +117,120 @@ const defaultServices: Service[] = [
   },
 ];
 
-// const schemaData = {
-//   "@context": "https://schema.org",
-//   "@type": "LocalBusiness",
-//   name: "Xntric",
-//   url: "https://xntric.ca",
-//   logo: "https://xntric.ca/HomePage/X-Logo.png",
-//   image: "https://xntric.ca/HomePage/X-Logo.png",
-//   description:
-//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-//
-//   address: {
-//     "@type": "PostalAddress",
-//     streetAddress: "Office F11, First Floor, IT Plaza,",
-//     addressLocality: "Dubai Silicon Oasis, Dubai",
-//     addressRegion: "UAE",
-//     postalCode: "00000",
-//     addressCountry: "UAE",
-//   },
-//   contactPoint: {
-//     "@type": "ContactPoint",
-//     telephone: "00971 054 308 9222",
-//     contactType: "Customer Service",
-//     areaServed: "UAE",
-//     availableLanguage: "English",
-//   },
-//   // "sameAs": [
-//   //   "https://www.facebook.com/PlenumTech",
-//   //   "https://twitter.com/PlenumTech",
-//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
-//   // ],
-//   aggregateRating: {
-//     "@type": "AggregateRating",
-//     ratingValue: "4.5",
-//     reviewCount: "30",
-//     bestRating: "5",
-//     worstRating: "2",
-//   },
-//   priceRange: "$$",
-//   openingHours: "Mo-Fr 09:00-18:00",
-//   additionalType: "https://schema.org/TechnologyBusiness",
-// };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "Expert PPC & Google Ads Services in Canada",
+      "url": "https://xntric.ca/services/ppc",
+      "image": "https://xntric.ca/HomePage/X-Logo.png",
+      "description": "Drive instant leads with expert PPC services in Canada. We specialize in AI-powered Google Ads, Meta Ads, and LinkedIn campaigns with transparent ROI reporting.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3895 Manatee way, Mississauga, Ontario L5M6P7 Canada",
+        "addressLocality": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "telephone": "+1 437 860 1095",
+      "priceRange": "$ 2000 - $ 10000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "40",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://xntric.ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://xntric.ca/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "PPC",
+          "item": "https://xntric.ca/services/ppc"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who Owns Our Ad Accounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You do. We ensure full ownership and administrative access to your Google Ads account at all times."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who Pays the Media Fees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You pay Google directly for media spend. We charge a separate management fee for our services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do You Have a Minimum Term?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We typically recommend a 3-month engagement to allow proper optimization, but we remain flexible based on client needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How Much Do You Charge to Be Our PPC Agency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing depends on ad spend, campaign complexity, and business objectives. We provide customized proposals after an initial consultation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do You Offer Free Audits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer complimentary PPC audits to identify performance gaps and growth opportunities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do You Guarantee Results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We guarantee strategic execution, transparency, and data-driven optimization."
+          }
+        }
+      ]
+    }
+  ]
+}
+
 
 function page() {
   return (
     <>
-      {/* <Script
+      <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      /> */}
+      />
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
         <h1 className="hidden">Our PPC Services in Canada</h1>
         <ServiceInnerHero

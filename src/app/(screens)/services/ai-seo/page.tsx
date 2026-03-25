@@ -136,100 +136,114 @@ const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      name: "Xntric",
-      url: "https://xntric.ae",
-      logo: "https://xntric.ae/HomePage/X-Logo.png",
-      image: "https://xntric.ae/HomePage/X-Logo.png",
-      description:
-        "XNTRIC specializes in performance-focused digital marketing for Dubai businesses. From SEO and paid media to social campaigns and conversion optimization, we design bilingual, culturally relevant campaigns that deliver measurable leads and revenue. Our in-house team blends creative storytelling, branding and technical delivery to launch and scale campaigns across the UAE and GCC. Request a free audit and discover how we can accelerate growth for your Dubai business.",
-      address: {
+      "@type": "ProfessionalService",
+      "name": "AI SEO & Integration Services in Canada",
+      "url": "https://xntric.ca/services/ai-seo",
+      "image": "https://xntric.ca/HomePage/X-Logo.png",
+      "description": "Dominate search with AI SEO in Canada. Xntric delivers AI SEO Canada and Answer Engine Optimization (AEO) strategies to rank in AI Overviews, voice search, and zero-click results.",
+      "address": {
         "@type": "PostalAddress",
-        streetAddress: "Costra Business park - G47",
-        addressLocality: "Dubai Silicon Oasis, Dubai",
-        addressRegion: "Dubai production city - Dubai",
-        postalCode: "00000",
-        addressCountry: "Dubai - UAE",
+        "streetAddress": "3895 Manatee way, Mississauga, Ontario L5M6P7 Canada",
+        "addressLocality": "Ontario",
+        "addressCountry": "Canada"
       },
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "00971 054 308 9222",
-        contactType: "Customer Service",
-        areaServed: "UAE",
-        availableLanguage: "English",
-      },
-      aggregateRating: {
+      "telephone": "+1 437 860 1095",
+      "priceRange": "$ 300 -$ 1500",
+      "aggregateRating": {
         "@type": "AggregateRating",
-        ratingValue: "4.5",
-        reviewCount: "30",
-        bestRating: "5",
-        worstRating: "2",
-      },
-      priceRange: "$$",
-      openingHours: "Mo-Fr 09:00-18:00",
-      additionalType: "https://schema.org/TechnologyBusiness",
+        "ratingValue": "4.0",
+        "reviewCount": "40",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://xntric.ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://xntric.ca/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AI SEO",
+          "item": "https://xntric.ca/services/ai-seo"
+        }
+      ]
     },
     {
       "@type": "FAQPage",
-      mainEntity: [
-        ...[
-          {
-            question:
-              "Do you provide end-to-end branding solutions in the Dubai?",
-            answer:
-              "Yes, we handle everything from brand strategy, logo design, and visual identity to marketing collateral and digital presence for UAE businesses.",
-          },
-          {
-            question: "How much does branding cost in Dubai?",
-            answer: `Depending on scope, complete brand identity projects can range from AED 15,000 to over AED 100,000 for large-scale corporate rebrands.`,
-          },
-          {
-            question: "How much does an agency charge for branding?",
-            answer: `Agency fees vary based on complexity, deliverables, and industry, typically falling between AED 10,000 and AED 50,000.`,
-          },
-          {
-            question: "How much does a marketing agency cost in Dubai?",
-            answer:
-              "Monthly retainers start around AED 8,000 for focused campaigns and scale with multi-channel strategies.",
-          },
-          {
-            question: "What are the branding agencies in GCC?",
-            answer:
-              "The GCC hosts numerous agencies, but Xntric distinguishes itself with research-led creative execution and region-specific expertise.",
-          },
-          {
-            question: "How to choose a branding agency in Dubai?",
-            answer:
-              "Select a partner with a proven track record, an understanding of local market dynamics, and the ability to deliver measurable growth, all of which define Xntric.",
-          },
-          {
-            question:
-              "How do you ensure our brand stands out in Dubai’s competitive market?",
-            answer:
-              "We combine market research, competitor analysis, and creative storytelling to craft distinctive brands that resonate and differentiate in Dubai’s vibrant business landscape.",
-          },
-          {
-            question: "Do you work exclusively with UAE-based companies?",
-            answer:
-              "Yes, our expertise is tailored to the UAE market, understanding local business culture, consumer behavior, and industry regulations.",
-          },
-          {
-            question: "Do you help with UAE branding or bilingual identity?",
-            answer:
-              "Yes, we create bilingual brand identities and marketing assets to ensure effective communication with UAE and international audiences.",
-          },
-        ].map((faq) => ({
+      "mainEntity": [
+        {
           "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: {
+          "name": "What is AI SEO (and how is it different from traditional SEO)?",
+          "acceptedAnswer": {
             "@type": "Answer",
-            text: faq.answer,
-          },
-        })),
-      ],
-    },
-  ],
-};
+            "text": "AI search engine optimization in Canada involves optimizing websites for AI search results, conversational search, and structured results, beyond just competitive keyword rankings․"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is traditional SEO dead because of AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No․ Customary SEO factors still apply․ AI SEO Canada focuses more on semantic structure, schema, and conversational intent optimization․"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you get my business mentioned in Google’s AI Overviews?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This can be done through schema markup, conversational responses, authority signals, and semantic clustering, all of which help AI systems pull your brand as a trusted resource."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI SEO help with local customers in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes․ AI SEO in Canada involves implementing structured data, optimizing Google Business, and using localized conversational terms for local intent visibility․"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Xntric CA use AI to write my content?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All generated content is overseen and edited by a human, and we only leverage AI to analyze data and provide insights, not to publish."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to see results with AI SEO??",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most clients see some results within 3 to 6 months, depending on the competition and the domain's authority․"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is “Zero-Click” search, and how do we beat it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Zero-click search shows users the answer within the AI-generated summary․ You need to implement strategies that promote your brand in the zero-click search summary if you want to make zero-click a brand builder."
+          }
+        }
+      ]
+    }
+  ]
+}
+
 
 // const cardSets: CardSet[] = [
 //   {

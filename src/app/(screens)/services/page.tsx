@@ -12,6 +12,7 @@ import {
   CardsData8,
   CardsData9,
 } from "../../../data/services-card";
+import Script from "next/script";
 export const metadata: Metadata = {
   title: "All Services – Marketing, Branding & Development",
   description:
@@ -21,57 +22,131 @@ export const metadata: Metadata = {
   },
 };
 
-// const schemaData = {
-//   "@context": "https://schema.org",
-//   "@type": "LocalBusiness",
-//   name: "Xntric",
-//   url: "https://xntric.ca",
-//   logo: "https://xntric.ca/HomePage/X-Logo.png",
-//   image: "https://xntric.ca/HomePage/X-Logo.png",
-//   description:
-//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-//
-//   address: {
-//     "@type": "PostalAddress",
-//     streetAddress: "Office F11, First Floor, IT Plaza,",
-//     addressLocality: "Dubai Silicon Oasis, Dubai",
-//     addressRegion: "UAE",
-//     postalCode: "00000",
-//     addressCountry: "UAE",
-//   },
-//   contactPoint: {
-//     "@type": "ContactPoint",
-//     telephone: "00971 054 308 9222",
-//     contactType: "Customer Service",
-//     areaServed: "UAE",
-//     availableLanguage: "English",
-//   },
-//   // "sameAs": [
-//   //   "https://www.facebook.com/PlenumTech",
-//   //   "https://twitter.com/PlenumTech",
-//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
-//   // ],
-//   aggregateRating: {
-//     "@type": "AggregateRating",
-//     ratingValue: "4.5",
-//     reviewCount: "30",
-//     bestRating: "5",
-//     worstRating: "2",
-//   },
-//   priceRange: "$$",
-//   openingHours: "Mo-Fr 09:00-18:00",
-//   additionalType: "https://schema.org/TechnologyBusiness",
-// };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://xntric.ca/services/#main-service",
+      "name": "360 Digital Marketing Services in Canada",
+      "url": "https://xntric.ca/services",
+      "image": "https://xntric.ca/HomePage/X-Logo.png",
+      "description": "Discover Xntric’s full suite of services, from marketing and branding to app development, UI/UX, SEO, and more, tailored to your business goals.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3895 Manatee way, Mississauga, Ontario L5M6P7 Canada",
+        "addressLocality": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "telephone": "+1 437 860 1095",
+      "priceRange": "$ 5000 - $ 100000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "54",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://xntric.ca/services/#itemlist",
+      "name": "Xntric Digital Marketing Services List",
+      "description": "A comprehensive list of professional digital services provided by Xntric in Canada.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://xntric.ca/services/digital-marketing",
+          "name": "Digital Marketing"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://xntric.ca/services/search-engine-optimization",
+          "name": "Search Engine Optimization (SEO)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://xntric.ca/services/ppc",
+          "name": "PPC & Google Ads"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://xntric.ca/services/website-development",
+          "name": "Website Development"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://xntric.ca/services/branding",
+          "name": "Branding & Identity"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://xntric.ca/services/video-production",
+          "name": "Video Production"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "url": "https://xntric.ca/services/ui-ux-design",
+          "name": "UI/UX Design"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "url": "https://xntric.ca/services/game-marketing",
+          "name": "Game Marketing"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "url": "https://xntric.ca/services/app-store-optimization",
+          "name": "App Store Optimization (ASO)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "url": "https://xntric.ca/services/ai-seo",
+          "name": "AI SEO & Integration"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://xntric.ca/services/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://xntric.ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://xntric.ca/services"
+        }
+      ]
+    }
+  ]
+}
+
 
 export default function Services() {
   return (
     <>
-      {/* <Script
+      <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      /> */}
+      />
       <div className="max-w-screen overflow-hidden font-futuru">
         <section className="relative w-full  font-futuru">
           {/* Background Video Container */}

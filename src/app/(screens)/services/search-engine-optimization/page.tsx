@@ -15,6 +15,7 @@ import NewOurProcess from "@/components/services/new-our-process";
 import { Awwards } from "@/data/awwards";
 import { steps2 } from "@/data/our-process";
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "SEO Services in Canada | Rank on Google & AI Engines",
@@ -118,52 +119,120 @@ const defaultServices: Service[] = [
   },
 ];
 
-// const schemaData = {
-//   "@context": "https://schema.org",
-//   "@type": "LocalBusiness",
-//   name: "Xntric",
-//   url: "https://xntric.ca",
-//   logo: "https://xntric.ca/HomePage/X-Logo.png",
-//   image: "https://xntric.ca/HomePage/X-Logo.png",
-//   description:
-//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-//
-//   address: {
-//     "@type": "PostalAddress",
-//     streetAddress: "Office F11, First Floor, IT Plaza,",
-//     addressLocality: "Dubai Silicon Oasis, Dubai",
-//     addressRegion: "UAE",
-//     postalCode: "00000",
-//     addressCountry: "UAE",
-//   },
-//   contactPoint: {
-//     "@type": "ContactPoint",
-//     telephone: "00971 054 308 9222",
-//     contactType: "Customer Service",
-//     areaServed: "UAE",
-//     availableLanguage: "English",
-//   },
-//   aggregateRating: {
-//     "@type": "AggregateRating",
-//     ratingValue: "4.5",
-//     reviewCount: "30",
-//     bestRating: "5",
-//     worstRating: "2",
-//   },
-//   priceRange: "$$",
-//   openingHours: "Mo-Fr 09:00-18:00",
-//   additionalType: "https://schema.org/TechnologyBusiness",
-// };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "Professional SEO Services in Canada",
+      "url": "https://xntric.ca/services/search-engine-optimization",
+      "image": "https://xntric.ca/HomePage/X-Logo.png",
+      "description": "Drive growth with performance-led SEO services in Canada. We optimize for traditional search & AI overviews to increase your visibility and ROI. Get a free audit!",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3895 Manatee way, Mississauga, Ontario L5M6P7 Canada",
+        "addressLocality": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "telephone": "+1 437 860 1095",
+      "priceRange": "$ 300 - $ 5000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "48",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://xntric.ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://xntric.ca/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SEO",
+          "item": "https://xntric.ca/services/search-engine-optimization"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an SEO service and what does SEO actually do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An SEO service is a professional offering that helps businesses improve their visibility in organic (non-paid) search engine results pages (SERPs). SEO actually does two main things: it makes your website easily discoverable and intelligible to search engine bots (like Googlebot), and it ensures the content is relevant and high-quality for human users, driving targeted traffic to your site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the three types of SEO services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The three primary types of seo services are: 1. Technical SEO, 2. On-Page SEO, 3. Off-Page SEO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does SEO increase traffic and conversion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO increases traffic by improving your website's ranking for relevant keywords, meaning more users see your link and click on it. It increases conversion by ensuring the traffic you receive is highly qualified (users searching specifically for your product/service) and by optimizing the landing pages for user experience (UX) to guide them toward a desired action (e.g., purchase, inquiry)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How Does SEO Help Your Business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO is one of the most cost-effective and sustainable digital marketing channels. It helps your business by: increasing brand awareness and authority, generating higher quality leads, reducing reliance on paid advertising, and establishing long-term organic growth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do SEO services typically cost? / How much does SEO cost in Canada? / How much does it cost for SEO services in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost for SEO services in Canada varies widely based on the scope, scale, and competitiveness of your industry. Packages can range from $500 CAD per month for basic local optimization to $5,000+ CAD per month for enterprise-level or highly competitive national campaigns. We offer custom pricing after a free initial audit to ensure you only pay for the services your business truly needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How soon can I see results for SEO services in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO is a marathon, not a sprint. While technical and on-page fixes can show improvement in rankings within 4–8 weeks, meaningful, sustained results like significant traffic increases and higher-value keyword rankings typically take 4 to 6 months or longer. Our long-term strategies deliver lasting growth."
+        }
+        }
+      ]
+    }
+  ]
+}
+
 
 function page() {
   return (
     <>
-      {/* <Script
+      <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      /> */}
+      />
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
         <h1 className="hidden">Our SEO Services in Canada</h1>
         <ServiceInnerHero

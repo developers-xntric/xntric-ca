@@ -15,6 +15,7 @@ import TechStackCarousel from "@/components/services/techstacks";
 import { Awwards } from "@/data/awwards";
 import { steps8 } from "@/data/our-process";
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "UI UX Design Services in Canada for Digital Products",
@@ -119,57 +120,120 @@ const defaultServices: Service[] = [
   },
 ];
 
-// const schemaData = {
-//   "@context": "https://schema.org",
-//   "@type": "LocalBusiness",
-//   name: "Xntric",
-//   url: "https://xntric.ca",
-//   logo: "https://xntric.ca/HomePage/X-Logo.png",
-//   image: "https://xntric.ca/HomePage/X-Logo.png",
-//   description:
-//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-//
-//   address: {
-//     "@type": "PostalAddress",
-//     streetAddress: "Office F11, First Floor, IT Plaza,",
-//     addressLocality: "Dubai Silicon Oasis, Dubai",
-//     addressRegion: "UAE",
-//     postalCode: "00000",
-//     addressCountry: "UAE",
-//   },
-//   contactPoint: {
-//     "@type": "ContactPoint",
-//     telephone: "00971 054 308 9222",
-//     contactType: "Customer Service",
-//     areaServed: "UAE",
-//     availableLanguage: "English",
-//   },
-//   // "sameAs": [
-//   //   "https://www.facebook.com/PlenumTech",
-//   //   "https://twitter.com/PlenumTech",
-//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
-//   // ],
-//   aggregateRating: {
-//     "@type": "AggregateRating",
-//     ratingValue: "4.5",
-//     reviewCount: "30",
-//     bestRating: "5",
-//     worstRating: "2",
-//   },
-//   priceRange: "$$",
-//   openingHours: "Mo-Fr 09:00-18:00",
-//   additionalType: "https://schema.org/TechnologyBusiness",
-// };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "Professional UI/UX Design Services in Canada",
+      "url": "https://xntric.ca/services/ui-ux-design",
+      "image": "https://xntric.ca/HomePage/X-Logo.png",
+      "description": "Elevate your digital presence with expert UI UX design services in Canada. Xntric delivers high-conversion, user-centric interfaces. Start your project today!",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3895 Manatee way, Mississauga, Ontario L5M6P7 Canada",
+        "addressLocality": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "telephone": "+1 437 860 1095",
+      "priceRange": "$ 500 - $ 5000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "30",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://xntric.ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://xntric.ca/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "UI/UX Design",
+          "item": "https://xntric.ca/services/ui-ux-design"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you handle designs for Canada’s bilingual audience?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer a strategic approach to bilingual design, primarily focusing on English and French user interfaces. This includes accommodating differences in content length (French content often requires more space), ensuring accurate translation and localization of interface elements, and maintaining visual consistency across both language versions within the user experience (UX) and user interface (UI)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with startups in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We have specialized services, including Design Sprints for MVPs and foundational UI/UX design services, tailored specifically to help Canadian startups validate their concepts quickly, attract early investment, and launch with a strong, user-centric product."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What industries do you serve in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve a wide range of industries including FinTech, HealthTech, E-commerce, SaaS platforms, and enterprise solutions. Our research-driven approach is sector-agnostic, allowing us to quickly adapt and apply best practices regardless of the specific Canadian market segment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a UI/UX design project cost in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Project costs are highly dependent on scope, complexity, and timeline. Factors include the number of unique screens, the need for custom illustrations, user research depth, and whether we are designing an app, website, or enterprise dashboard. We provide a detailed proposal after a discovery session to give clients a clear, fixed price estimate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What industries do you specialize in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While we are equipped to serve all industries, we have deep specialization in designing for highly regulated sectors like FinTech (due to complex compliance needs) and B2B SaaS (due to the high demand for usable, efficient dashboards and complex workflow management)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer bilingual designs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, offering bilingual design (English and French, and other languages upon request) is a core aspect of serving the Canadian market effectively. We ensure all design components, including microcopy and navigation, are culturally appropriate and functionally sound in both official languages."
+          }
+        }
+      ]
+    }
+  ]
+}
+
 
 function page() {
   return (
     <>
-      {/* <Script
+      <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      /> */}
+      />
       <div className="max-w-screen pt-8 font-futuru overflow-x-hidden">
         <h1 className="hidden">UI/UX Design Services in Canada</h1>
         <ServiceInnerHero

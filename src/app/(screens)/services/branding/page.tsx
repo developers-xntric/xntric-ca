@@ -15,6 +15,7 @@ import TechStackCarousel from "@/components/services/techstacks";
 import { Awwards } from "@/data/awwards";
 import { steps3 } from "@/data/our-process";
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Branding Services in Canada | Strategic Brand Identity ",
@@ -117,57 +118,120 @@ const defaultServices: Service[] = [
   },
 ];
 
-// const schemaData = {
-//   "@context": "https://schema.org",
-//   "@type": "LocalBusiness",
-//   name: "Xntric",
-//   url: "https://xntric.ca",
-//   logo: "https://xntric.ca/HomePage/X-Logo.png",
-//   image: "https://xntric.ca/HomePage/X-Logo.png",
-//   description:
-//     "Xntric Tech is a technology solutions provider specializing in innovative software development, digital transformation, and IT consulting to help businesses scale and succeed.",
-//
-//   address: {
-//     "@type": "PostalAddress",
-//     streetAddress: "Office F11, First Floor, IT Plaza,",
-//     addressLocality: "Dubai Silicon Oasis, Dubai",
-//     addressRegion: "UAE",
-//     postalCode: "00000",
-//     addressCountry: "UAE",
-//   },
-//   contactPoint: {
-//     "@type": "ContactPoint",
-//     telephone: "00971 054 308 9222",
-//     contactType: "Customer Service",
-//     areaServed: "UAE",
-//     availableLanguage: "English",
-//   },
-//   // "sameAs": [
-//   //   "https://www.facebook.com/PlenumTech",
-//   //   "https://twitter.com/PlenumTech",
-//   //   "https://www.linkedin.com/company/plenum-tech-solutions",
-//   // ],
-//   aggregateRating: {
-//     "@type": "AggregateRating",
-//     ratingValue: "4.5",
-//     reviewCount: "30",
-//     bestRating: "5",
-//     worstRating: "2",
-//   },
-//   priceRange: "$$",
-//   openingHours: "Mo-Fr 09:00-18:00",
-//   additionalType: "https://schema.org/TechnologyBusiness",
-// };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "Professional Branding & Visual Identity Services in Canada",
+      "url": "https://xntric.ca/services/branding",
+      "image": "https://xntric.ca/HomePage/X-Logo.png",
+      "description": "Elevate your business with the leading branding services in Canada. From logo design to full brand strategy, we build identities that drive growth and loyalty.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3895 Manatee way, Mississauga, Ontario L5M6P7 Canada",
+        "addressLocality": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "telephone": "+1 437 860 1095",
+      "priceRange": "$ 1000 - $ 10000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "46",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://xntric.ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://xntric.ca/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Branding",
+          "item": "https://xntric.ca/services/branding"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does branding cost in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Branding costs in Canada vary widely depending on the project's scope. A foundational identity project (logo, color, typography) for a startup might range from $5,000 to $15,000. A full-scale project involving deep market research, verbal strategy, and comprehensive brand guidelines for a mid-sized company often falls between $25,000 and $75,000+."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the branding agencies in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The landscape of branding companies in Canada includes boutique design studios, large integrated marketing firms, and specialized strategy agencies. Xntric falls into the specialized strategy category, focusing on data-driven design and measurable business results over pure creative volume."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to choose a branding agency in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To choose the right agency, look for three things: A Proven Process (Do they prioritize research?) Relevant Portfolio (Have they succeeded in a similar challenge?) Cultural Fit (Do they understand the nuances of the Canadian market?). Price should be secondary to the quality of the strategic process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your agency's step-by-step branding process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Whether the screen of any device is little or large, responsive web design will make your site seem fantastic. An integral component of user interface and user experience design services, this approach guarantees consistent appearance and operation across all devices, therefore enhancing the users experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a design system audit, and why is it essential for consistent branding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design system audits of all your present design components help to ensure excellent brand recognition and usability. It looks for issues, streamlines procedures, and helps to maintain the visual language of your digital assets consistent—all of which are crucial for credibility and acknowledgement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical full-scale branding project take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A typical, full-scale branding project usually takes between 8 to 14 weeks. This timeline accounts for crucial phases like market research (4 weeks), concept exploration and client feedback (4 weeks), and final asset creation/governance documentation (2-4 weeks)."
+          }
+        }
+      ]
+    }
+  ]
+}
+
 
 function page() {
   return (
     <>
-      {/* <Script
+      <Script
         id="schema-script"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      /> */}
+      />
 
       <div className="max-w-screen pt-8 overflow-x-hidden font-futuru ">
         <h1 className="hidden">Our Branding Services in Canada </h1>

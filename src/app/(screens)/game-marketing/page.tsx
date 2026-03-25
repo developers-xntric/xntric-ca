@@ -8,7 +8,7 @@ import SolutionCarousel from "@/components/common/solution-carousel";
 import NewGreen from "@/components/service-inner/new-green";
 import React from "react";
 import { Metadata } from "next";
-
+// This is a placeholder page for the game marketing services. You can replace the content with your actual game marketing services information and design.
 export const metadata: Metadata = {
   title: "Game Marketing Services in Canada | Video Game Marketing Agency",
   description: "Xntric is a leading video game marketing agency that delivers influencer strategy, community growth, and performance-driven results, based on its past successes.",

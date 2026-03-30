@@ -56,13 +56,14 @@ const AIPage = () => {
       />
       <div className="font-futuru">
 
-        <div className=" -space-y-60 md:-space-y-[25%] lg:-space-y-[10%] 2xl:-space-y-52">
+        {/* className="-space-y-60 md:-space-y-[25%] lg:-space-y-[10%] 2xl:-space-y-52" */}
+        <div>
           <h1 className="hidden">Our AI-Powered Solutions in Canada</h1>
           <AINewHero />
           {/* AI Chatbot Component */}
-          <div className="relative md:bottom-10 2xl:bottom-32">
+          {/* <div className="relative md:bottom-10 2xl:bottom-32">
             <AIChatbot apiEndpoint="https://api-chat.xntric.ca/chat" />
-          </div>
+          </div> */}
         </div>
         <YearsAwwards
           awwards={Awwards}

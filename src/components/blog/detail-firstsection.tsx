@@ -1,7 +1,38 @@
-import { Blog } from "@/app/(screens)/blog/data";
 import Image from "next/image";
+import PortableTextRenderer from "./portable-text-renderer";
+
+export interface Blog {
+  _id: string;
+  title: string;
+  description: string | any[];
+  metaDescription?: string;
+  publishedDate: string;
+  readTime?: string;
+  bannerImageURL: string;
+  slug: string;
+  blogCategory: string;
+  category: string;
+  subsections?: any[];
+  conclusion?: string;
+  faqs?: any[];
+}
 
 const FirstSection = ({ data }: { data: Blog }) => {
+  // Handle both string and PortableText array for description
+  const getDescription = (desc: string | any[]) => {
+    if (typeof desc === "string") return desc;
+    if (Array.isArray(desc)) {
+      // Extract text from PortableText blocks
+      return desc
+        .filter((block) => block._type === "block")
+        .map((block) =>
+          block.children?.map((child: any) => child.text).join(""),
+        )
+        .join(" ");
+    }
+    return "";
+  };
+
   return (
     <section className="sm:pt-40 lg:pt-60 xl:pt-40 2xl:pt-32 mb-10 font-futuru tracking-widest">
       <div className="max-w-[90%] mx-auto">
@@ -18,15 +49,10 @@ const FirstSection = ({ data }: { data: Blog }) => {
               <span className="text-gray-400 text-sm">Written By</span>
               <div className="flex gap-4 items-center text-white">
                 <span>Tehreem</span>
-                <span>{data.publishedDate}</span>
+                <span>{new Date(data.publishedDate).toDateString()}</span>
                 <span>{data.readTime}</span>
               </div>
             </div>
-          </div>
-          <div className="lg:w-[60%] w-[96%]">
-            <p className="xl:text-4xl text-2xl text-white">
-              {data.metaDescription || data.description}
-            </p>
           </div>
         </div>
         <Image
@@ -36,11 +62,14 @@ const FirstSection = ({ data }: { data: Blog }) => {
           height={1200}
           className="object-contain w-full h-full"
         />
-        <div className="mt-10">
+        <div className="mt-10 mb-10">
           <span className="bg-[#ffffff1a] p-2 rounded-3xl text-sm text-white">
             {data.category || "Development"}
           </span>
         </div>
+        {data.description && (
+          <PortableTextRenderer content={data.description} />
+        )}
       </div>
     </section>
   );

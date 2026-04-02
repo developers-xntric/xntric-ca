@@ -2,16 +2,41 @@
 
 import React, { useState, useEffect } from "react";
 import BlogCards from "../common/blog-cards";
-import { blogs as blogData, Blog } from "@/app/(screens)/blog/data";
+import { getAllBlogs } from "@/lib/sanity";
+
+export interface Blog {
+  _id: string;
+  title: string;
+  description: string;
+  publishedDate: string;
+  readTime?: string;
+  bannerImageURL: string;
+  slug: string;
+  blogCategory: string;
+  category: string;
+}
 
 function FeaturedBlogs({ isHome = false }: { isHome?: boolean }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slidesToShow, setSlidesToShow] = useState(2);
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  // Filter blogs by xntric category
-  const blogs = blogData.filter(
-    (blog: Blog) => blog.blogCategory.toLowerCase() === "xntric"
-  );
+  // Filter blogs by xntric ca category
+  useEffect(() => {
+    async function fetchBlogs() {
+      try {
+        const data = await getAllBlogs();
+        setBlogs(data);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+        setBlogs([]);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchBlogs();
+  }, []);
 
   // Handle responsive slides
   useEffect(() => {
@@ -48,7 +73,7 @@ function FeaturedBlogs({ isHome = false }: { isHome?: boolean }) {
 
   return (
     <section
-      className={`min-h-[600px] xl:min-h-[600px] 2xl:min-h-[850px] ${
+      className={`min-h-[600px] xl:min-h-[600px] 2xl:min-h-[830px] ${
         isHome ? "pb-20" : "pb-16 md:py-16"
       }`}
     >
@@ -166,11 +191,11 @@ function FeaturedBlogs({ isHome = false }: { isHome?: boolean }) {
                               id={blog.slug}
                               desc={blog.title}
                               date={blog.publishedDate?.slice(0, 10)}
-                              min={blog.readTime}
+                              min={blog.readTime || ''}
                               image={blog.bannerImageURL}
                             />
                           </div>
-                         
+
                         </div>
                       );
                     })}

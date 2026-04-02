@@ -6,13 +6,15 @@ import React from "react";
 import dynamicImport from "next/dynamic";
 import Script from "next/script";
 import BlogListingCards from "@/components/common/blog-listing-card";
-import { getBlogBySlug, getRelatedBlogs, blogs } from "../data";
+import { getBlogBySlug, getRelatedBlogs, getAllBlogSlugs } from "@/lib/sanity";
 import FormSection from "@/components/common/contact-form";
+import PortableTextRenderer from "@/components/blog/portable-text-renderer";
 
 // Generate static params for all blogs
 export async function generateStaticParams() {
-  return blogs.map((blog) => ({
-    id: blog.slug,
+  const slugs = await getAllBlogSlugs();
+  return slugs.map((item: { slug: string }) => ({
+    id: item.slug,
   }));
 }
 
@@ -46,11 +48,11 @@ export async function generateStaticParams() {
 // ----------------------
 // Blog Details Page
 // ----------------------
-const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
-  const { id } = params;
+const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id } = await params;
 
-  const blog = getBlogBySlug(id);
-  const relatedBlogs = getRelatedBlogs(id, 2);
+  const blog = await getBlogBySlug(id);
+  const relatedBlogs = await getRelatedBlogs(id, 2);
 
   if (!blog) {
     return (
@@ -65,7 +67,7 @@ const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
     tableOfContents.push({ id: "main-title", title: blog.title });
   }
   if (blog.subsections && blog.subsections.length > 0) {
-    blog.subsections.forEach((sub, index) => {
+    blog.subsections.forEach((sub: any, index: number) => {
       if (sub.subtitle) {
         tableOfContents.push({
           id: `subsection-${index}`,
@@ -80,6 +82,8 @@ const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
   if (blog.faqs && blog.faqs.length > 0) {
     tableOfContents.push({ id: "faqs", title: "Frequently Asked Questions" });
   }
+
+  console.log(blog)
 
   return (
     <main className="font-futuru">
@@ -111,12 +115,12 @@ const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              mainEntity: blog.faqs.map((faq) => ({
+              mainEntity: blog.faqs.map((faq: any) => ({
                 "@type": "Question",
                 name: faq.question,
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: faq.answer,
+                  text: typeof faq.answer === 'string' ? faq.answer : Array.isArray(faq.answer) ? faq.answer.map((a: any) => a.children?.map((c: any) => c.text).join('')).join(' ') : '',
                 },
               })),
             }),
@@ -128,24 +132,15 @@ const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
       <div className="w-screen p-4 rounded-[10px]">
         <BlogHeader
           title={blog.title}
-          description={blog.metaDescription || blog.description}
+          description={typeof blog.metaDescription === 'string' ? blog.metaDescription : (typeof blog.description === 'string' ? blog.description : '')}
           videoSrc="/Blog/hero-video.webm"
         />
       </div>
 
       {/* First Section */}
       <FirstSection data={blog} />
-      {/* Banner Image */}
-      {blog.bannerImageURL && (
-        <Image
-          src={blog.bannerImageURL || ""}
-          alt={blog.title}
-          title={blog.title}
-          width={1200}
-          height={600}
-          className="w-full h-60 md:h-full"
-        />
-      )}
+      
+      
 
       <div className="lg:w-[90%] relative mx-auto flex flex-col lg:flex-row gap-8 pt-12 ">
         {/* Table of Contents */}
@@ -171,14 +166,8 @@ const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
 
         {/* Main Content */}
         <div className="lg:w-[70%] space-y-12">
-          {blog.description && (
-            <div
-              className="text-lg text-white blog-content [&>a]:text-[#00aa71] "
-              dangerouslySetInnerHTML={{ __html: blog.description }}
-            />
-          )}
 
-          {blog.subsections?.map((sub, i) => (
+          {blog.subsections?.map((sub: any, i: number) => (
             <div key={i} className="space-y-6">
               {sub.subtitle && (
                 <h2
@@ -188,12 +177,44 @@ const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
                   {sub.subtitle}
                 </h2>
               )}
-              {sub.subdescription?.map((desc, j) => (
+              {sub.subdescription?.map((desc: any, j: number) => (
                 <div
                   key={j}
                   className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71] "
-                  dangerouslySetInnerHTML={{ __html: desc }}
+                  dangerouslySetInnerHTML={{ __html: typeof desc === 'string' ? desc : Array.isArray(desc) ? desc.map((d: any) => d.children?.map((c: any) => c.text).join('')).join(' ') : '' }}
                 />
+              ))}
+              {/* Render Lists */}
+              {sub.lists?.map((list: any, listIdx: number) => (
+                <div key={listIdx} className="space-y-4 mt-6">
+                  {list.listTitle && (
+                    <h3 className="text-xl font-semibold text-white [&>a]:text-[#00aa71]">
+                      {list.listTitle}
+                    </h3>
+                  )}
+                  {list.listDescription && (
+                    <div
+                      className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71] "
+                      dangerouslySetInnerHTML={{ __html: typeof list.listDescription === 'string' ? list.listDescription : Array.isArray(list.listDescription) ? list.listDescription.map((d: any) => d.children?.map((c: any) => c.text).join('')).join(' ') : '' }}
+                    />
+                  )}
+                  {/* Render List Items */}
+                  {list.items?.map((item: any, itemIdx: number) => (
+                    <div key={itemIdx} className="ml-4 space-y-2">
+                      {item.title && (
+                        <h4 className="text-lg font-medium text-white [&>a]:text-[#00aa71]">
+                          • {item.title}
+                        </h4>
+                      )}
+                      {item.description && (
+                        <div
+                          className="text-base text-gray-300 blog-content tracking-wider [&>a]:text-[#00aa71] ml-6"
+                          dangerouslySetInnerHTML={{ __html: typeof item.description === 'string' ? item.description : Array.isArray(item.description) ? item.description.map((d: any) => d.children?.map((c: any) => c.text).join('')).join(' ') : '' }}
+                        />
+                      )}
+                    </div>
+                  ))}
+                </div>
               ))}
             </div>
           ))}
@@ -206,10 +227,7 @@ const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
               >
                 Conclusion
               </h2>
-              <div
-                className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71]"
-                dangerouslySetInnerHTML={{ __html: blog.conclusion }}
-              />
+              <PortableTextRenderer content={blog.conclusion} className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71]" />
             </div>
           )}
 
@@ -221,19 +239,55 @@ const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
               >
                 Frequently Asked Questions
               </h2>
-              {blog.faqs.map((faq, i) => (
+              {blog.faqs.map((faq: any, i: number) => (
                 <div key={i} className="space-y-2">
-                  <h3 className="text-xl font-medium text-white tracking-wider ">
+                  <h3 className="text-xl md:text-[22px] font-bold text-white tracking-wider ">
                     {i + 1}. {faq.question}
                   </h3>
                   <div
                     className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71] "
-                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                    dangerouslySetInnerHTML={{ __html: typeof faq.answer === 'string' ? faq.answer : Array.isArray(faq.answer) ? faq.answer.map((a: any) => a.children?.map((c: any) => c.text).join('')).join(' ') : '' }}
                   />
                 </div>
               ))}
             </div>
           )}
+
+          {/* Author Section */}
+          <div className="w-full border-t border-gray-700 pt-6 mt-10">
+            <div className="flex justify-between items-center mb-4">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/tehreem-pic.jpeg"
+                  alt="Tehreem"
+                  width={55}
+                  height={55}
+                  className="rounded-full"
+                />
+                <h4 className="text-lg font-medium text-white">Tehreem Fazal Qureshi</h4>
+              </div>
+              <div className="bg-black p-1 rounded-md">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/tehreem-fazal-592902192/"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                  >
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <p className="text-sm md:text-base text-justify text-white">
+              Tehreem Fazal is a creative strategist, content marketer, and freelance writer with over six years of experience crafting impactful stories for local and international brands. She specializes in content strategy, brand storytelling, and SEO-driven writing across industries like fashion, real estate, food, digital marketing, lifestyle, and automotive etc. Her words have shaped the voice of leading names including Master Group, LUMS, Metropolitan Properties UAE, and more. With a background in English Literature, Tehreem blends creativity with strategy to make every piece of content resonate and convert. When she's not writing, she's exploring new ideas, brands, and narratives that inspire.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -252,7 +306,7 @@ const BlogDetailsPage = async ({ params }: { params: { id: string } }) => {
             Related posts
           </span>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-0">
-            {relatedBlogs.map((related, i) => (
+            {relatedBlogs.map((related: any, i: number) => (
               <BlogListingCards
                 key={related.slug || i}
                 title={related.title}

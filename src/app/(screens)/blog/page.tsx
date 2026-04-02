@@ -1,15 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BlogHeader from "@/components/blog/blog-header";
 import Pagination from "./pagination";
-// import { buttonTexts } from "../../../data/blogs-hero-buttons";
 import dynamicImport from "next/dynamic";
-// import AnimatedButtons from "@/components/ui/AnimatedButton";
-import Head from "next/head";
 import BlogListingCards from "@/components/common/blog-listing-card";
-import { blogs } from "./data";
 import Script from "next/script";
+import { getAllBlogs } from "@/lib/sanity";
 
 const ContactForm = dynamicImport(
   () => import("@/components/common/contact-form"),
@@ -21,12 +18,43 @@ const BigIdeas = dynamicImport(() => import("@/components/common/big-ideas"), {
 
 const BLOGS_PER_PAGE = 6;
 
+export interface Blog {
+  _id: string;
+  title: string;
+  description: string;
+  metaDescription?: string;
+  publishedDate: string;
+  readTime?: string;
+  bannerImageURL: string;
+  slug: string;
+  blogCategory: string;
+  category: string;
+  subsections?: any[];
+  conclusion?: string;
+  faqs?: any[];
+}
+
 export default function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const xntricBlogs = blogs.filter(
-    (blog) => blog.blogCategory.toLowerCase() === "xntric"
-  );
+  useEffect(() => {
+    async function fetchBlogs() {
+      try {
+        const data = await getAllBlogs();
+        setBlogs(data);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+        setBlogs([]);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchBlogs();
+  }, []);
+
+  const xntricBlogs = blogs;
   const totalPages = Math.ceil(xntricBlogs.length / BLOGS_PER_PAGE);
   const startIndex = (currentPage - 1) * BLOGS_PER_PAGE;
   const endIndex = startIndex + BLOGS_PER_PAGE;
@@ -143,7 +171,7 @@ export default function Blog() {
                   title={blog.title}
                   desc={blog.description}
                   date={blog.publishedDate?.slice(0, 10)}
-                  min={blog.readTime}
+                  min={blog.readTime || ''}
                   image={blog.bannerImageURL}
                   id={blog.slug}
                   blog={blog}

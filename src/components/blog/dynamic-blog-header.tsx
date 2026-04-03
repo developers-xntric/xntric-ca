@@ -43,7 +43,7 @@ export default function DynamicBlogHeader({
         <h1
           className={` ${
             join ? "text-[42px] " : "text-[55px] "
-          } md:text-5xl lg:text-[70.789px] 2xl:text-[90.789px] font-semibold  text-white md:mb-4 uppercase max-lg-w-[300px]`}
+          } md:text-5xl lg:text-[65.789px] 2xl:text-[80.789px] font-semibold  text-white md:mb-4 uppercase max-lg-w-[300px]`}
         >
           <span className="block md:mt-4 lg:mt-7 2xl:mt-12 2xl:mb-6">
             {title.split(" ").slice(2).join(" ")}

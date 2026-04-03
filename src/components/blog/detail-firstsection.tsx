@@ -34,7 +34,7 @@ const FirstSection = ({ data }: { data: Blog }) => {
   };
 
   return (
-    <section className="sm:pt-40 lg:pt-60 xl:pt-40 2xl:pt-32 mb-10 font-futuru tracking-widest">
+    <section className="sm:pt-40 lg:pt-28 xl:pt-20 2xl:pt-20 mb-10 font-futuru tracking-widest">
       <div className="max-w-[90%] mx-auto">
         <div className="flex justify-between items-center mb-20 gap-10 xl:gap-0 flex-col lg:flex-row">
           <div className="flex items-center gap-6 md:w-[40%]">

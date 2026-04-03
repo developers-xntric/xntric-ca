@@ -48,7 +48,11 @@ export async function generateStaticParams() {
 // ----------------------
 // Blog Details Page
 // ----------------------
-const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) => {
+const BlogDetailsPage = async ({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) => {
   const { id } = await params;
 
   const blog = await getBlogBySlug(id);
@@ -83,7 +87,7 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
     tableOfContents.push({ id: "faqs", title: "Frequently Asked Questions" });
   }
 
-  console.log(blog)
+  console.log(blog);
 
   return (
     <main className="font-futuru">
@@ -102,7 +106,12 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
           __html: JSON.stringify({
             "@context": "http://schema.org",
             "@type": "Person",
-            name: "Shaikh Zubaer Aasim",
+            "@id": "https://xntric.ae/#person",
+            name: "Tehreem Fazal Qureshi",
+            description:
+              "Tehreem Fazal is a creative strategist and content marketer with over six years of experience crafting impactful stories for leading brands like Master Group and Metropolitan Properties UAE.",
+            url: "https://www.linkedin.com/in/tehreem-fazal-592902192/",
+            jobTitle: "Creative Strategist & Content Marketer",
           }),
         }}
       />
@@ -120,7 +129,16 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
                 name: faq.question,
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: typeof faq.answer === 'string' ? faq.answer : Array.isArray(faq.answer) ? faq.answer.map((a: any) => a.children?.map((c: any) => c.text).join('')).join(' ') : '',
+                  text:
+                    typeof faq.answer === "string"
+                      ? faq.answer
+                      : Array.isArray(faq.answer)
+                        ? faq.answer
+                            .map((a: any) =>
+                              a.children?.map((c: any) => c.text).join(""),
+                            )
+                            .join(" ")
+                        : "",
                 },
               })),
             }),
@@ -132,15 +150,13 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
       <div className="w-screen p-4 rounded-[10px]">
         <BlogHeader
           title={blog.title}
-          description={''}
+          description={""}
           videoSrc="/Blog/hero-video.webm"
         />
       </div>
 
       {/* First Section */}
       <FirstSection data={blog} />
-      
-      
 
       <div className="lg:w-[90%] relative mx-auto flex flex-col lg:flex-row gap-8 pt-12 ">
         {/* Table of Contents */}
@@ -166,7 +182,6 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
 
         {/* Main Content */}
         <div className="lg:w-[70%] space-y-12">
-
           {blog.subsections?.map((sub: any, i: number) => (
             <div key={i} className="space-y-6">
               {sub.subtitle && (
@@ -181,7 +196,18 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
                 <div
                   key={j}
                   className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71] "
-                  dangerouslySetInnerHTML={{ __html: typeof desc === 'string' ? desc : Array.isArray(desc) ? desc.map((d: any) => d.children?.map((c: any) => c.text).join('')).join(' ') : '' }}
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      typeof desc === "string"
+                        ? desc
+                        : Array.isArray(desc)
+                          ? desc
+                              .map((d: any) =>
+                                d.children?.map((c: any) => c.text).join(""),
+                              )
+                              .join(" ")
+                          : "",
+                  }}
                 />
               ))}
               {/* Render Lists */}
@@ -195,7 +221,20 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
                   {list.listDescription && (
                     <div
                       className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71] "
-                      dangerouslySetInnerHTML={{ __html: typeof list.listDescription === 'string' ? list.listDescription : Array.isArray(list.listDescription) ? list.listDescription.map((d: any) => d.children?.map((c: any) => c.text).join('')).join(' ') : '' }}
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          typeof list.listDescription === "string"
+                            ? list.listDescription
+                            : Array.isArray(list.listDescription)
+                              ? list.listDescription
+                                  .map((d: any) =>
+                                    d.children
+                                      ?.map((c: any) => c.text)
+                                      .join(""),
+                                  )
+                                  .join(" ")
+                              : "",
+                      }}
                     />
                   )}
                   {/* Render List Items */}
@@ -209,7 +248,20 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
                       {item.description && (
                         <div
                           className="text-base text-gray-300 blog-content tracking-wider [&>a]:text-[#00aa71] ml-6"
-                          dangerouslySetInnerHTML={{ __html: typeof item.description === 'string' ? item.description : Array.isArray(item.description) ? item.description.map((d: any) => d.children?.map((c: any) => c.text).join('')).join(' ') : '' }}
+                          dangerouslySetInnerHTML={{
+                            __html:
+                              typeof item.description === "string"
+                                ? item.description
+                                : Array.isArray(item.description)
+                                  ? item.description
+                                      .map((d: any) =>
+                                        d.children
+                                          ?.map((c: any) => c.text)
+                                          .join(""),
+                                      )
+                                      .join(" ")
+                                  : "",
+                          }}
                         />
                       )}
                     </div>
@@ -227,7 +279,10 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
               >
                 Conclusion
               </h2>
-              <PortableTextRenderer content={blog.conclusion} className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71]" />
+              <PortableTextRenderer
+                content={blog.conclusion}
+                className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71]"
+              />
             </div>
           )}
 
@@ -246,7 +301,18 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
                   </h3>
                   <div
                     className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71] "
-                    dangerouslySetInnerHTML={{ __html: typeof faq.answer === 'string' ? faq.answer : Array.isArray(faq.answer) ? faq.answer.map((a: any) => a.children?.map((c: any) => c.text).join('')).join(' ') : '' }}
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        typeof faq.answer === "string"
+                          ? faq.answer
+                          : Array.isArray(faq.answer)
+                            ? faq.answer
+                                .map((a: any) =>
+                                  a.children?.map((c: any) => c.text).join(""),
+                                )
+                                .join(" ")
+                            : "",
+                    }}
                   />
                 </div>
               ))}
@@ -264,7 +330,9 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
                   height={55}
                   className="rounded-full"
                 />
-                <h4 className="text-lg font-medium text-white">Tehreem Fazal Qureshi</h4>
+                <h4 className="text-lg font-medium text-white">
+                  Tehreem Fazal Qureshi
+                </h4>
               </div>
               <div className="bg-black p-1 rounded-md">
                 <a
@@ -279,13 +347,24 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
                     viewBox="0 0 24 24"
                     fill="white"
                   >
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
                 </a>
               </div>
             </div>
             <p className="text-sm md:text-base text-justify text-white">
-              Tehreem Fazal is a creative strategist, content marketer, and freelance writer with over six years of experience crafting impactful stories for local and international brands. She specializes in content strategy, brand storytelling, and SEO-driven writing across industries like fashion, real estate, food, digital marketing, lifestyle, and automotive etc. Her words have shaped the voice of leading names including Master Group, LUMS, Metropolitan Properties UAE, and more. With a background in English Literature, Tehreem blends creativity with strategy to make every piece of content resonate and convert. When she's not writing, she's exploring new ideas, brands, and narratives that inspire.
+              Tehreem Fazal is a creative strategist, content marketer, and
+              freelance writer with over six years of experience crafting
+              impactful stories for local and international brands. She
+              specializes in content strategy, brand storytelling, and
+              SEO-driven writing across industries like fashion, real estate,
+              food, digital marketing, lifestyle, and automotive etc. Her words
+              have shaped the voice of leading names including Master Group,
+              LUMS, Metropolitan Properties UAE, and more. With a background in
+              English Literature, Tehreem blends creativity with strategy to
+              make every piece of content resonate and convert. When she's not
+              writing, she's exploring new ideas, brands, and narratives that
+              inspire.
             </p>
           </div>
         </div>

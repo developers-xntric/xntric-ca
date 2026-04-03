@@ -132,7 +132,7 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ id: string }> }) 
       <div className="w-screen p-4 rounded-[10px]">
         <BlogHeader
           title={blog.title}
-          description={typeof blog.metaDescription === 'string' ? blog.metaDescription : (typeof blog.description === 'string' ? blog.description : '')}
+          description={''}
           videoSrc="/Blog/hero-video.webm"
         />
       </div>

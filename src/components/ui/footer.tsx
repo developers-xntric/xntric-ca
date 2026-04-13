@@ -46,10 +46,10 @@ const Footer: React.FC = () => {
               <div>
                 <p>
                   <a
-                    href="tel:+9710569280670"
+                    href="tel:+14378307059"
                     className="text-[13px] sm:text-[16px] font-light tracking-widest"
                   >
-                    +1 437 860 1095
+                    +1 437 830 7059
                   </a>
                 </p>
               </div>
@@ -216,18 +216,10 @@ const Footer: React.FC = () => {
               <div className="flex gap-6">
                 <p>
                   <a
-                    href="tel:+9710569280670"
+                    href="tel:+14378307059"
                     className="text-[13px] sm:text-[16px] font-light tracking-widest"
                   >
-                    +971 (0) 569280670
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href="tel:+97145464465"
-                    className="text-[13px] sm:text-[16px] font-light tracking-widest"
-                  >
-                    +971 4 546 4465
+                    +1 437 830 7059
                   </a>
                 </p>
               </div>

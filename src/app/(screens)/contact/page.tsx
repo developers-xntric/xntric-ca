@@ -34,7 +34,7 @@ const schemaData = {
       "@type": "LocalBusiness",
       "name": "Xntric",
       "image": "https://xntric.ca/HomePage/X-Logo.png",
-      "telephone": "+1 437 860 1095",
+      "telephone": "+1 437 830 7059",
       "email": "info@xntric.ca",
       "address": {
         "@type": "PostalAddress",

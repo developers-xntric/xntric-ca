@@ -132,7 +132,7 @@ const schemaData = {
         "addressLocality": "Ontario",
         "addressCountry": "Canada"
       },
-      "telephone": "+1 437 860 1095",
+      "telephone": "+1 437 830 7059",
       "priceRange": "$ 2000 - $ 10000",
       "aggregateRating": {
         "@type": "AggregateRating",

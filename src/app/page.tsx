@@ -39,7 +39,7 @@ const schemaData = {
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+1 437 860 1095",
+        "telephone": "+1 437 830 7059",
         "contactType": "service",
         "areaServed": "CA",
         "availableLanguage": "en"
@@ -105,7 +105,7 @@ const schemaData = {
       "image": "https://xntric.ca/HomePage/X-Logo.png",
       "@id": "https://xntric.ca/",
       "url": "https://xntric.ca/",
-      "telephone": "+1 437 860 1095",
+      "telephone": "+1 437 830 7059",
       "priceRange": "$ 5000 - $ 100000",
       "address": {
         "@type": "PostalAddress",

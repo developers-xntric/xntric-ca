@@ -46,7 +46,7 @@ export default function DynamicBlogHeader({
           } md:text-5xl lg:text-[65.789px] 2xl:text-[80.789px] font-semibold  text-white md:mb-4 uppercase max-lg-w-[300px]`}
         >
           <span className="block md:mt-4 lg:mt-7 2xl:mt-12 2xl:mb-6">
-            {title.split(" ").slice(2).join(" ")}
+            {title}
           </span>
         </h1>
         <p className="text-[17px] md:text-[23.263px] tracking-wider font-light text-white max-w-[700px]  lg:leading-7 leading-6 2xl:leading-9">

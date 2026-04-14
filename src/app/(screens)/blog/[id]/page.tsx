@@ -162,14 +162,14 @@ const BlogDetailsPage = async ({
         {/* Table of Contents */}
         {tableOfContents.length > 0 && (
           <div className="lg:w-[30%] lg:sticky lg:top-20 lg:self-start">
-            <div className="table-of-contents bg-gray-100 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Table of Content</h3>
+            <div className="table-of-contents p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-white">Table of Content</h3>
               <ul className="toc-list border-l-2 border-[#00AA71] pl-4 space-y-2">
                 {tableOfContents.map((item) => (
                   <li key={item.id}>
                     <a
                       href={`#${item.id}`}
-                      className="toc-link text-gray-700 hover:text-white hover:bg-[#00AA71] px-2 py-1 rounded block"
+                      className="toc-link text-white hover:text-[#fff] hover:bg-[#00AA71] px-2 py-1 rounded block tracking-wide"
                     >
                       {item.title}
                     </a>
@@ -195,7 +195,7 @@ const BlogDetailsPage = async ({
               {sub.subdescription?.map((desc: any, j: number) => (
                 <div
                   key={j}
-                  className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71] "
+                  className="text-lg text-white blog-content tracking-wider [&_a]:text-[#00aa71] [&_a:hover]:text-[#008855]"
                   dangerouslySetInnerHTML={{
                     __html:
                       typeof desc === "string"
@@ -220,7 +220,7 @@ const BlogDetailsPage = async ({
                   )}
                   {list.listDescription && (
                     <div
-                      className="text-lg text-white blog-content tracking-wider [&>a]:text-[#00aa71] "
+                      className="text-lg text-white blog-content tracking-wider [&_a]:text-[#00aa71] [&_a:hover]:text-[#008855]"
                       dangerouslySetInnerHTML={{
                         __html:
                           typeof list.listDescription === "string"

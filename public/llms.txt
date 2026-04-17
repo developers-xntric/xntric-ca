@@ -1,0 +1,30 @@
+# Xntric — Digital Marketing Agency Canada
+# https://xntric.ca
+
+> Xntric is an award-winning digital marketing agency based in Mississauga, Ontario, Canada, offering 360-degree services including SEO, Social Media Marketing, Web Development, UI/UX Design, Mobile App Development, Branding, Video Production, Game Marketing, and AI Integration. We serve businesses across Canada including Toronto, Vancouver, Calgary, and the GTA with data-driven, performance-focused strategies.
+
+## Company
+- About: https://xntric.ca/about
+- Services: https://xntric.ca/services
+- Our Work: https://xntric.ca/our-work
+- Blog: https://xntric.ca/blog
+- Careers: https://xntric.ca/careers
+- Game Marketing: https://xntric.ca/game-marketing
+- Contact: https://xntric.ca/contact
+
+## Services
+- Digital Marketing: https://xntric.ca/services/digital-marketing
+- SEO: https://xntric.ca/services/search-engine-optimization
+- Social Media Marketing: https://xntric.ca/services/social-media-marketing
+- Search Engine Marketing: https://xntric.ca/services/ppc
+- App Store Optimization: https://xntric.ca/services/app-store-optimization
+- Web Development: https://xntric.ca/services/website-development
+- UI/UX Design: https://xntric.ca/services/ui-ux-design
+- Mobile App Development: https://xntric.ca/services/mobile-application
+- Branding: https://xntric.ca/services/branding
+- Video Production: https://xntric.ca/services/video-production
+- Game Marketing: https://xntric.ca/game-marketing
+
+## Contact
+- Phone: +1 437 830 7059
+- Address: 3895 Manatee Way, Mississauga, Ontario L5M6P7, Canada

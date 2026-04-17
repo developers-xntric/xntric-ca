@@ -1,9 +1,68 @@
-# *
-User-agent: *
+User-agent: Googlebot
 Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ChatGPT-User/2.0
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: claude-web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: *
+Allow: /_next/static/
+Allow: /_next/image*
+Allow: /HomePage/*.svg
+Allow: /HomePage/*.png
+Allow: /HomePage/*.jpg
+Allow: /Careers/*.svg
+Allow: /Careers/*.png
+Allow: /Careers/*.jpg
+Allow: /CaseStudies/*.svg
+Allow: /CaseStudies/*.png
+Allow: /CaseStudies/*.jpg
+Disallow: /_next/
+Disallow: /api/
+Disallow: /search?*
+Disallow: /*?s=
+Disallow: /*.webm$
+Disallow: /*.mp4$
 
 # Host
 Host: https://xntric.ca
 
-# Sitemaps
 Sitemap: https://xntric.ca/sitemap.xml

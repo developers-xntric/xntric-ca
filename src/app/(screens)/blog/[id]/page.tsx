@@ -210,6 +210,25 @@ const BlogDetailsPage = async ({
                   }}
                 />
               ))}
+              {/* Table */}
+              {sub.table?.rows?.length > 0 && (
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse text-white text-sm">
+                    <tbody>
+                      {sub.table.rows.map((row: any, ri: number) => (
+                        <tr key={ri} className={ri === 0 ? "bg-[#045732]" : "border-b border-gray-700"}>
+                          {row.cells?.map((cell: string, ci: number) => (
+                            ri === 0
+                              ? <th key={ci} className="border border-gray-600 px-4 py-2 text-left font-semibold">{cell}</th>
+                              : <td key={ci} className="border border-gray-600 px-4 py-2">{cell}</td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
               {/* Render Lists */}
               {sub.lists?.map((list: any, listIdx: number) => (
                 <div key={listIdx} className="space-y-4 mt-6">

@@ -127,6 +127,11 @@ export const blogType = defineType({
               of: [{ type: 'text' }],
             }),
             defineField({
+              name: 'table',
+              title: 'Table',
+              type: 'table',
+            }),
+            defineField({
               name: 'lists',
               title: 'Lists',
               type: 'array',

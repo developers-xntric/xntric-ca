@@ -7,6 +7,13 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Xntric",
   description: "The Leading Tech Company",
+  alternates: {
+    canonical: 'https://xntric.ca',
+    languages: {
+      'en-AE': 'https://xntric.ae',
+      'en-CA': 'https://xntric.ca',
+    },
+  },
 };
 
 export default function RootLayout({
@@ -17,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta name="robots" content="index, follow"></meta>
+
 
       {/* ✅ Google Tag Manager */}
       <Script

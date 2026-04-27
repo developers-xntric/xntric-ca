@@ -37,6 +37,7 @@ export async function POST(req: NextRequest) {
     await transport.sendMail({
       from: process.env.SMTPEMAIL,
       to: email,
+      cc: "yasir@xntric.ae, ahmed@xntric.ae, farrukh@xntric.ca",
       subject: `CONTACT: Query from ${name}`,
       text: "hello",
       html: `

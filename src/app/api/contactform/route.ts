@@ -3,10 +3,10 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, interests,message,phone } = await req.json();
+    const { name, email, interests, message, phone } = await req.json();
 
     const transport = nodemailer.createTransport({
-      host: "smtp.office365.com",
+      host: "smtp.hostinger.com",
       port: 587,
       auth: {
         user: process.env.SMTPEMAIL,
@@ -16,8 +16,7 @@ export async function POST(req: NextRequest) {
 
     await transport.sendMail({
       from: process.env.SMTPEMAIL,
-      to: email,
-      cc: "yasir@xntric.ae, ahmed@xntric.ae, farrukh@xntric.ca",
+      to: [email, "yasir@xntric.ae, ahmed@xntric.ae, farrukh@xntric.ca"],
       subject: `CONTACT: Query from ${name}`,
       text: "hello",
       html: `
@@ -40,7 +39,7 @@ export async function POST(req: NextRequest) {
 </div>
 
       `,
-      
+
     });
 
 

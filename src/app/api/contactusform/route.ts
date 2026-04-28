@@ -5,7 +5,7 @@ export async function POST(req: NextRequest) {
     const { name, email, aboutProject, number, interests } = await req.json();
 
     const transport = nodemailer.createTransport({
-      host: "smtp.office365.com",
+      host: "smtp.hostinger.com",
       port: 587,
       auth: {
         user: process.env.SMTPEMAIL,
@@ -15,8 +15,7 @@ export async function POST(req: NextRequest) {
 
     await transport.sendMail({
       from: process.env.SMTPEMAIL,
-      to: email,
-      cc: "yasir@xntric.ae, ahmed@xntric.ae, farrukh@xntric.ca",
+      to: [email, "yasir@xntric.ae, ahmed@xntric.ae, farrukh@xntric.ca"],
       subject: `CONTACT: Query from ${name}`,
       text: "hello",
       html: `

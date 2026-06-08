@@ -96,7 +96,7 @@ const Contact: React.FC = () => {
       <div className="w-screen p-3 md:p-4 rounded-[10px]">
         <BlogHeader
           description="Get in touch with Xntric"
-          title="Contact"
+          title="Contact us"
           videoSrc="/Blog/hero-video.webm"
         />
       </div>

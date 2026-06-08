@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     languages: {
       'en-AE': 'https://xntric.ae',
       'en-CA': 'https://xntric.ca',
+      'x-default': 'https://xntric.ca',
     },
   },
 };
@@ -24,12 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta name="robots" content="index, follow"></meta>
-      <head>
-        <link rel="alternate" href="https://xntric.ae" hrefLang="en-AE" />
-<link rel="alternate" href="https://xntric.ca" hrefLang="en-CA" />
-<link rel="alternate" href="https://xntric.ca" hrefLang="x-default" />
-<link rel="canonical" href="https://xntric.ca" />
-      </head>
       {/* ✅ Google Tag Manager */}
       <Script
         id="gtm-head"

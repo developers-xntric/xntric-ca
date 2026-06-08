@@ -20,10 +20,10 @@ const GameHero = () => {
       {/* Foreground Content */}
       <div className="pt-24 h-full">
         <div className="flex flex-col items-center h-full justify-center text-center">
-          <h1 className="lg:text-[190px] md:text-[100px] text-[55px] md:leading-[80px] leading-[45px] lg:leading-[155px] uppercase font-bold text-[#FFFFFF] md:mix-blend-overlay">
+          <h2 className="lg:text-[190px] md:text-[100px] text-[55px] md:leading-[80px] leading-[45px] lg:leading-[155px] uppercase font-bold text-[#FFFFFF] md:mix-blend-overlay">
 
             Game <br /> Marketing
-          </h1>
+          </h2>
           <Link href={"/contact"} className="md:px-[45px] px-4  py-2 md:py-[15px] hover:bg-white hover:text-black transition-all duration-500 bg-[#00AA71] text-center mt-12 md:mt-16 rounded-[8px] md:text-[16px] text-[14px] text-[#FFFFFF] uppercase font-light tracking-widest">
             let&apos;s talk
           </Link>

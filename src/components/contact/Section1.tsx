@@ -15,7 +15,7 @@ function Section1() {
          
           {/* CARD 2 */}
           <div className="flex lg:w-[80%] 2xl:w-[80%] flex-col gap-3 rounded-[26px] p-5  bg-white bg-opacity-10  outline outline-[0.80px] outline-offset-[-0.40px] outline-[#fffcfc]/25 backdrop-blur-[22.05px]">
-            <h1 className="text-[13px] sm:text-[15px] text-white">Email</h1>
+            <h2 className="text-[13px] sm:text-[15px] text-white">Email</h2>
             <div className="flex gap-2 text-white font-futuru">
               <a
                 href="mailto:info@xntric.com"
@@ -27,7 +27,7 @@ function Section1() {
           </div>
           {/* CARD 3 */}
           <div className="flex lg:w-[80%] 2xl:w-[80%] 2xl flex-col gap-3 rounded-[26px] p-5 bg-white bg-opacity-10 outline outline-[0.80px] outline-offset-[-0.40px] outline-[#fffcfc]/25 backdrop-blur-[22.05px]">
-            <h1 className=" text-[13px] sm:text-[15px] text-white">Book a meeting</h1>
+            <h2 className=" text-[13px] sm:text-[15px] text-white">Book a meeting</h2>
             <div className="flex gap-2 text-white font-futuru">
               <p className="text-lg sm:text-2xl tracking-wide">
                 {" "}

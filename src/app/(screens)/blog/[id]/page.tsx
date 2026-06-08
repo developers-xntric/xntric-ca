@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import type { Metadata } from "next";
 import FirstSection from "../../../../components/blog/detail-firstsection";
 import BlogHeader from "@/components/blog/dynamic-blog-header";
 import Image from "next/image";
@@ -9,6 +10,19 @@ import BlogListingCards from "@/components/common/blog-listing-card";
 import { getBlogBySlug, getRelatedBlogs, getAllBlogSlugs } from "@/lib/sanity";
 import FormSection from "@/components/common/contact-form";
 import PortableTextRenderer from "@/components/blog/portable-text-renderer";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  return {
+    alternates: {
+      canonical: `https://xntric.ca/blog/${id}`,
+    },
+  };
+}
 
 // Generate static params for all blogs
 export async function generateStaticParams() {

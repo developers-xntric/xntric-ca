@@ -17,7 +17,10 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
+  const blog = await getBlogBySlug(id);
   return {
+    title: blog?.title ? `${blog.title} | Xntric` : "Blogs | Xntric",
+    description: blog?.metaDescription || blog?.description || "",
     alternates: {
       canonical: `https://xntric.ca/blog/${id}`,
     },

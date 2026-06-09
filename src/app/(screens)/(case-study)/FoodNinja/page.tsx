@@ -7,7 +7,16 @@ import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
 import { foodContent, foodService } from "@/data/Bize-Service";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Food Ninja – Food Delivery App Case Study",
+  description: "Explore how Xntric built Food Ninja, a next-gen food delivery app with AI-powered recommendations and real-time tracking.",
+  alternates: {
+    canonical: 'https://xntric.ca/FoodNinja',
+  },
+};
 
 function Food() {
   return (

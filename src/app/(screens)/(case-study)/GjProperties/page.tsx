@@ -12,6 +12,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "GJ Properties Project – Marketing by Xntric",
   description: "Discover how Xntric’s marketing, branding, and design expertise helped GJ Properties elevate their image and stand out in a competitive market.",
+  alternates: {
+    canonical: 'https://xntric.ca/GjProperties',
+  },
 };
 function GjProperties() {
   return (

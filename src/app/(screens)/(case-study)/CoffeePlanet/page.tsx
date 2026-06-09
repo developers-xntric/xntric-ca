@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Coffee Planet – Brand Transformation Case Study",
+  description: "Explore how Xntric revitalized Coffee Planet's digital presence with dynamic content strategy and influencer collaborations.",
+  alternates: {
+    canonical: 'https://xntric.ca/CoffeePlanet',
+  },
+};
 
 export default function Delmonte() {
   return (

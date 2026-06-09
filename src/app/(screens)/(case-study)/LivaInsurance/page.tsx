@@ -12,6 +12,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Liva Insurance Project – Branding by Xntric",
   description: "See how Xntric partnered with Liva Insurance to create impactful branding, digital marketing, and customer engagement strategies.",
+  alternates: {
+    canonical: 'https://xntric.ca/LivaInsurance',
+  },
 };
 function Crestline() {
   return (

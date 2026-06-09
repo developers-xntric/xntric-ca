@@ -7,7 +7,16 @@ import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
 import { carrefourContent, carrefourService } from "@/data/Bize-Service";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Carrefour KSA – Digital Marketing Case Study",
+  description: "Discover how Xntric enhanced Carrefour KSA's social media presence, brand visibility, and trade marketing across Saudi Arabia.",
+  alternates: {
+    canonical: 'https://xntric.ca/Carrefour',
+  },
+};
 
 function CareerFour() {
   return (

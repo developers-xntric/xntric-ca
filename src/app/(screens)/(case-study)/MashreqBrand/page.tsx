@@ -5,7 +5,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Mashreq – Brand Campaigns Case Study",
+  description: "Discover how Xntric crafted multi-platform brand campaigns and video storytelling for Mashreq, a leading financial institution.",
+  alternates: {
+    canonical: 'https://xntric.ca/MashreqBrand',
+  },
+};
 
 export default function DolbyAtmos() {
   return (

@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Janvier – Luxury Perfume Branding Case Study",
+  description: "Learn how Xntric created the brand identity for Janvier, a French-inspired luxury perfume brand blending elegance with affordability.",
+  alternates: {
+    canonical: 'https://xntric.ca/Janvier',
+  },
+};
 
 function Janvier() {
   return (

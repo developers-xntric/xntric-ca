@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Kamal Insurance – Brand Transformation Case Study",
+  description: "See how Xntric redefined Kamal Insurance's brand with 360-degree marketing, digital transformation, and engaging storytelling.",
+  alternates: {
+    canonical: 'https://xntric.ca/KamalInsurance',
+  },
+};
 
 export default function Kamal() {
   return (

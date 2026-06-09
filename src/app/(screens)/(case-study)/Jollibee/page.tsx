@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Jollibee – Chickenjoy Sauces Campaign Case Study",
+  description: "Discover how Xntric helped Jollibee launch four new Chickenjoy sauces with a creative brand film and engaging storytelling.",
+  alternates: {
+    canonical: 'https://xntric.ca/Jollibee',
+  },
+};
 
 export default function Jollibee() {
   return (

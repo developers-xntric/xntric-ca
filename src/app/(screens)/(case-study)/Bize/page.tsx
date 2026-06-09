@@ -1,4 +1,3 @@
-"use client";
 import BlogHeader from "@/components/blog/blog-header";
 import CaseStudySection2 from "@/components/case-study/Bize-Section-2";
 import CaseStudySection3 from "@/components/case-study/Bize-Section-3";
@@ -8,7 +7,16 @@ import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
 import { bizeContent, bizeService } from "@/data/Bize-Service";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Bize – Productivity App Case Study",
+  description: "Discover how Xntric built Bize, an all-in-one productivity app streamlining task management, team collaboration, and workflow automation.",
+  alternates: {
+    canonical: 'https://xntric.ca/Bize',
+  },
+};
 
 export default function Bize() {
   return (

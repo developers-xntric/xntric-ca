@@ -5,7 +5,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Treva – Saudi Brand Awareness Campaign Case Study",
+  description: "Explore how Xntric engaged Saudi homemakers for Treva with a creative rap song campaign driving 13M+ views and 138% sales growth.",
+  alternates: {
+    canonical: 'https://xntric.ca/Treva',
+  },
+};
 
 function Treva() {
   return (

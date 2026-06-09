@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Abu Dhabi Islamic Bank (ADIB) – Case Study",
+  description: "See how Xntric partnered with ADIB to redefine digital banking for Gen Z through the amwali initiative, blending branding and digital strategy.",
+  alternates: {
+    canonical: 'https://xntric.ca/AbuDhabiIslamic',
+  },
+};
 
 export default function AbuDhabi() {
   return (

@@ -7,7 +7,16 @@ import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
 import { revoultContent, revoultService } from "@/data/Bize-Service";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Revoult – FinTech Mobile App Case Study",
+  description: "Explore how Xntric designed a secure FinTech mobile app for Revoult with AI-driven budgeting and global money transfers.",
+  alternates: {
+    canonical: 'https://xntric.ca/Revoult',
+  },
+};
 
 function Revolut() {
   return (

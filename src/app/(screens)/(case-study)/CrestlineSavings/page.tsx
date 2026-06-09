@@ -7,7 +7,16 @@ import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
 import { crestlineContent, crestlineService } from "@/data/Bize-Service";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Crestline Savings – FinTech Web App Case Study",
+  description: "Learn how Xntric built a FinTech web application for Crestline Credit with dynamic dashboards and real-time financial data.",
+  alternates: {
+    canonical: 'https://xntric.ca/CrestlineSavings',
+  },
+};
 
 function Crestline() {
   return (

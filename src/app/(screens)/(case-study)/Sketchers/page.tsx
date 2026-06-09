@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Skechers Middle East – Creative Campaigns Case Study",
+  description: "Learn how Xntric executed high-impact creative campaigns and brand films for Skechers Middle East across the Gulf region.",
+  alternates: {
+    canonical: 'https://xntric.ca/Sketchers',
+  },
+};
 
 export default function Sketchers() {
   return (

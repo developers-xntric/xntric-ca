@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Nadwa – Education Platform Digital Transformation Case Study",
+  description: "Learn how Xntric transformed Nadwa's education platform with modern tech, Arabic SEO, and a revamped web application.",
+  alternates: {
+    canonical: 'https://xntric.ca/Nadwa',
+  },
+};
 
 function Nadwa() {
   return (

@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "CSR UAE Fund – Branding Case Study",
+  description: "See how Xntric built a brand identity for CSR UAE Fund, positioning it as the leading authority for corporate social responsibility governance.",
+  alternates: {
+    canonical: 'https://xntric.ca/CSRUAE',
+  },
+};
 
 function CSRUAE() {
   return (

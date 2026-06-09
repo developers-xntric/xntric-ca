@@ -7,7 +7,16 @@ import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
 import { streamContent, streamService } from "@/data/Bize-Service";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "StreamShreek – Gaming Marketing Platform Case Study",
+  description: "See how Xntric developed a high-performance gaming website for StreamShreek connecting brands with game streamers across MENA.",
+  alternates: {
+    canonical: 'https://xntric.ca/StreamShreek',
+  },
+};
 
 function StreamShreek() {
   return (

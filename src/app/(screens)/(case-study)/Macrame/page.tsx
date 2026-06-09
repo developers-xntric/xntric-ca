@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Macramé – Art & Brand Identity Case Study",
+  description: "Learn how Xntric built the Macramé brand from the ground up as a hub for Arab artistry, design, and creative collaboration.",
+  alternates: {
+    canonical: 'https://xntric.ca/Macrame',
+  },
+};
 
 function Plenum() {
   return (

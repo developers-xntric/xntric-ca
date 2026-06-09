@@ -11,6 +11,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Dubai Chambers Digital – A Project by Xntric",
   description: "Learn how Xntric transformed Dubai Chambers’ digital presence with innovative marketing, branding, and cutting-edge tech solutions.",
+  alternates: {
+    canonical: 'https://xntric.ca/DubaiChambersDigital',
+  },
 };
 export default function DubaiChamberDigital() {
   return (

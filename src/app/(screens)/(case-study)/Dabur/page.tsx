@@ -5,7 +5,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Dabur Vatika Fruitamins – TikTok Campaign Case Study",
+  description: "Discover how Xntric launched Dabur's Fruitamins on TikTok with a viral music-driven campaign disrupting the beauty space.",
+  alternates: {
+    canonical: 'https://xntric.ca/Dabur',
+  },
+};
 
 function Dabur() {
   return (

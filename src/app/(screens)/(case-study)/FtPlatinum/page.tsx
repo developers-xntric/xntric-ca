@@ -7,7 +7,16 @@ import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
 import { ftContent, ftService } from "@/data/Bize-Service";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "FT Platinum – Government Services Portal Case Study",
+  description: "See how Xntric developed a user-friendly website and admin portal for FT Platinum streamlining government services in the UAE.",
+  alternates: {
+    canonical: 'https://xntric.ca/FtPlatinum',
+  },
+};
 
 function FtPlatinum() {
   return (

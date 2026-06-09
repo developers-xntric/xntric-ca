@@ -7,7 +7,16 @@ import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
 import { dubaiContent, dubaiService } from "@/data/Bize-Service";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Dubai Economy & Tourism – Social Media Case Study",
+  description: "See how Xntric created trend-driven short-form video content for Visit Dubai across global markets as their social media partner.",
+  alternates: {
+    canonical: 'https://xntric.ca/DubaiEconomy',
+  },
+};
 
 function Crestline() {
   return (

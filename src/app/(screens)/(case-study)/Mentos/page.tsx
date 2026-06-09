@@ -5,7 +5,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Mentos – FIFA World Cup Campaign Case Study",
+  description: "See how Xntric helped Mentos dominate the FIFA World Cup conversation with real-time in-stream advertising via StreamShreek.",
+  alternates: {
+    canonical: 'https://xntric.ca/Mentos',
+  },
+};
 
 function Mentos() {
   return (

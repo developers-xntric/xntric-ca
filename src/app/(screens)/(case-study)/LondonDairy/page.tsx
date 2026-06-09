@@ -5,7 +5,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "London Dairy – Gaming Marketing Case Study",
+  description: "Explore how Xntric launched London Dairy's new flavors through game streamer partnerships across 124 games on Twitch.",
+  alternates: {
+    canonical: 'https://xntric.ca/LondonDairy',
+  },
+};
 
 function London() {
   return (

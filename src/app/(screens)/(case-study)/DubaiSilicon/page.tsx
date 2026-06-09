@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Dubai Silicon Oasis – Brand Repositioning Case Study",
+  description: "Discover how Xntric repositioned Dubai Silicon Oasis Authority from a corporate hub to a dynamic lifestyle destination.",
+  alternates: {
+    canonical: 'https://xntric.ca/DubaiSilicon',
+  },
+};
 
 export default function DubaiSilicon() {
   return (

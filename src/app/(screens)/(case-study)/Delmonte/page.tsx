@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Del Monte – 360 Digital Marketing Case Study",
+  description: "Explore how Xntric executed a 360-degree digital strategy for Del Monte in the Middle East with influencer collaborations and paid campaigns.",
+  alternates: {
+    canonical: 'https://xntric.ca/Delmonte',
+  },
+};
 
 export default function Delmonte() {
   return (

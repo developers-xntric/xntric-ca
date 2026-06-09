@@ -11,6 +11,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Dolby Atmos Project – Creative Campaigns",
   description: "Explore Xntric’s work with Dolby Atmos, delivering innovative campaigns and creative storytelling that amplify sound and brand impact.",
+  alternates: {
+    canonical: 'https://xntric.ca/DolbyAtmos',
+  },
 };
 export default function DolbyAtmos() {
   return (

@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Dubai Chambers – App Olympics Campaign Case Study",
+  description: "Learn how Xntric drove registrations for Dubai Chamber's App Olympics with gaming influencers and multi-channel marketing.",
+  alternates: {
+    canonical: 'https://xntric.ca/DubaiChambers',
+  },
+};
 
 export default function DubaiChambers() {
   return (

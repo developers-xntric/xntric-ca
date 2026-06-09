@@ -12,6 +12,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Ajmal Perfumes Project – Marketing Excellence",
   description: "View Xntric’s creative collaboration with Ajmal Perfumes, crafting elegant branding and marketing campaigns that inspire and captivate.",
+  alternates: {
+    canonical: 'https://xntric.ca/AjmalPerfumes',
+  },
 };
 function AjmalPerfumes() {
   return (

@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Plenum Technologies – IT Brand Rebranding Case Study",
+  description: "See how Xntric rebranded Plenum Technologies as a trusted name in AI, Cloud, and Cybersecurity solutions in the Middle East.",
+  alternates: {
+    canonical: 'https://xntric.ca/Plenum',
+  },
+};
 
 function Plenum() {
   return (

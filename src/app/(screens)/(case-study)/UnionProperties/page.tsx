@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Union Properties – Real Estate Brand Identity Case Study",
+  description: "Learn how Xntric redefined Union Properties' brand identity with a modernized digital strategy for the Dubai real estate market.",
+  alternates: {
+    canonical: 'https://xntric.ca/UnionProperties',
+  },
+};
 
 export default function DolbyAtmos() {
   return (

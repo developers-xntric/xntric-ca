@@ -7,7 +7,16 @@ import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
 import { streamContent, streamService } from "@/data/Bize-Service";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Mojawhraty – Luxury Jewellery E-Commerce Case Study",
+  description: "Explore how Xntric crafted a luxury e-commerce website for Mojawhraty blending Indian craftsmanship with Arabic-inspired design.",
+  alternates: {
+    canonical: 'https://xntric.ca/Mojawhraty',
+  },
+};
 
 function Mojawhraty() {
   return (

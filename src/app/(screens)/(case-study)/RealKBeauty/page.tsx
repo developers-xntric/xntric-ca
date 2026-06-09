@@ -7,7 +7,16 @@ import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
 import { rkContent, rkService } from "@/data/Bize-Service";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "RealKBeauty – Korean Beauty E-Commerce Case Study",
+  description: "Discover how Xntric built a visually stunning e-commerce platform for RealKBeauty with smart product recommendations.",
+  alternates: {
+    canonical: 'https://xntric.ca/RealKBeauty',
+  },
+};
 
 function RealKBeauty() {
   return (

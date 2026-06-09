@@ -6,7 +6,16 @@ import CaseStudySection7 from "@/components/case-study/Bize-Section-7";
 import SecondSectionCase from "@/components/case-study/SecondSectionCase";
 import ServicesLists from "@/components/case-study/ServicesList";
 import ContactForm from "@/components/common/contact-form";
+import type { Metadata } from "next";
 import { CaseData } from "@/data/CaseStudyHero";
+
+export const metadata: Metadata = {
+  title: "Taste Table – UK Café Branding Case Study",
+  description: "Discover how Xntric transformed Taste Table café's brand identity with a modern, sophisticated aesthetic and compelling visual identity.",
+  alternates: {
+    canonical: 'https://xntric.ca/TasteTable',
+  },
+};
 
 function TasteTable() {
   return (

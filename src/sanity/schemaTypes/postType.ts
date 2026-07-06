@@ -98,6 +98,15 @@ export const blogType = defineType({
       type: 'text',
     }),
 
+    // ✅ Key Takeaways (blog-level, after main description)
+    defineField({
+      name: 'keyTakeaways',
+      title: 'Key Takeaways',
+      type: 'array',
+      of: [{ type: 'text' }],
+      description: 'Add bullet points for key takeaways (appears after blog description)',
+    }),
+
     defineField({
       name: 'conclusion',
       title: 'Conclusion',
@@ -125,6 +134,27 @@ export const blogType = defineType({
               title: 'Sub Description',
               type: 'array',
               of: [{ type: 'text' }],
+            }),
+            // ✅ Section Image (optional, 1 per subsection)
+            defineField({
+              name: 'sectionImage',
+              title: 'Section Image',
+              type: 'image',
+              options: { hotspot: true },
+              fields: [
+                {
+                  name: 'alt',
+                  title: 'Alt Text',
+                  type: 'string',
+                },
+              ],
+            }),
+            // ✅ Pro Tip / Key Point Box
+            defineField({
+              name: 'proTip',
+              title: 'Pro Tip',
+              type: 'text',
+              description: 'Highlight an important insight within this section',
             }),
             defineField({
               name: 'table',
@@ -211,6 +241,13 @@ export const blogType = defineType({
       type: 'datetime',
       initialValue: () => new Date().toISOString(),
       validation: (Rule) => Rule.required(),
+    }),
+
+    defineField({
+      name: 'readTime',
+      title: 'Read Time',
+      type: 'string',
+      description: 'e.g. "5 min read"',
     }),
 
     defineField({

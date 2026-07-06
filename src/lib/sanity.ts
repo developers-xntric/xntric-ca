@@ -17,7 +17,7 @@ export async function getAllBlogs() {
 
 // Fetch a single blog by slug
 export async function getBlogBySlug(slug: string) {
-  const query = `*[_type == "blog" && blogCategory == "xntric ca" && slug.current == $slug][0] {_id, title, description, metaDescription, "slug": slug.current, publishedDate, readTime, category, blogCategory, "bannerImageURL": bannerImage.asset->url, "bannerImageAlt": bannerImage.alt, "mainImageURL": image.asset->url, "mainImageAlt": image.alt, subsections, conclusion, faqs, quotes}`
+  const query = `*[_type == "blog" && blogCategory == "xntric ca" && slug.current == $slug][0] {_id, title, description, metaDescription, "slug": slug.current, publishedDate, readTime, category, blogCategory, "bannerImageURL": bannerImage.asset->url, "bannerImageAlt": bannerImage.alt, "mainImageURL": image.asset->url, "mainImageAlt": image.alt, keyTakeaways, subsections, conclusion, faqs, quotes}`
   return serverClient.fetch(query, { slug })
 }
 

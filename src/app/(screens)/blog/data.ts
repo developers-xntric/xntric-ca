@@ -21,6 +21,7 @@ export interface Blog {
   subsections?: Subsection[];
   conclusion?: string;
   faqs?: FAQ[];
+  keyTakeaways?: string[];
 }
 
 export const blogs: Blog[] = [

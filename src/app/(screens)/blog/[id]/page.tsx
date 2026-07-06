@@ -8,6 +8,7 @@ import dynamicImport from "next/dynamic";
 import Script from "next/script";
 import BlogListingCards from "@/components/common/blog-listing-card";
 import { getBlogBySlug, getRelatedBlogs, getAllBlogSlugs } from "@/lib/sanity";
+import { urlFor } from "@/sanity/lib/image";
 import FormSection from "@/components/common/contact-form";
 import PortableTextRenderer from "@/components/blog/portable-text-renderer";
 
@@ -172,10 +173,10 @@ const BlogDetailsPage = async ({
         />
       </div>
 
-      {/* First Section */}
+      {/* First Section: Writer + Banner */}
       <FirstSection data={blog} />
 
-      <div className="lg:w-[90%] relative mx-auto flex flex-col lg:flex-row gap-8 pt-12 ">
+      <div className="lg:w-[90%] relative mx-auto flex flex-col lg:flex-row gap-8 pt-12 lg:pt-20">
         {/* Table of Contents */}
         {tableOfContents.length > 0 && (
           <div className="lg:w-[30%] lg:sticky lg:top-20 lg:self-start">
@@ -198,7 +199,64 @@ const BlogDetailsPage = async ({
         )}
 
         {/* Main Content */}
-        <div className="lg:w-[70%] space-y-12">
+        <div className="lg:w-[70%] space-y-10">
+          {/* Published Date & Read Time */}
+          <div className="flex items-center gap-4 flex-wrap">
+            <span className="bg-[#00AA71] text-white text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full tracking-wider flex items-center gap-1.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Published
+            </span>
+            <span className="text-white text-sm md:text-base tracking-wider flex items-center gap-1.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00AA71" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              {new Date(blog.publishedDate).toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+              })}
+            </span>
+            <span className="text-white/60">|</span>
+            <span className="text-white text-sm md:text-base tracking-wider flex items-center gap-1.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00AA71" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              {blog.readTime || "5 min read"}
+            </span>
+          </div>
+
+          {/* Blog Description */}
+          {blog.description && (
+            <PortableTextRenderer content={blog.description} />
+          )}
+
+          {/* Key Takeaways */}
+          {blog.keyTakeaways?.length > 0 && (
+            <div className="bg-[#045732]/20 border-l-4 border-[#00AA71] p-6 rounded-r-lg">
+              <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00AA71" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 12l2 2 4-4" />
+                  <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
+                </svg>
+                Key Takeaways
+              </h3>
+              <ul className="space-y-3">
+                {blog.keyTakeaways.map((item: string, idx: number) => (
+                  <li key={idx} className="flex items-start gap-3 text-white/90">
+                    <span className="text-[#00AA71] flex-shrink-0">&#x2022;</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {blog.subsections?.map((sub: any, i: number) => (
             <div key={i} className="space-y-6">
               {sub.subtitle && (
@@ -227,6 +285,34 @@ const BlogDetailsPage = async ({
                   }}
                 />
               ))}
+              {/* Section Image */}
+              {sub.sectionImage && (
+                <div className="my-6">
+                  <Image
+                    src={urlFor(sub.sectionImage).url()}
+                    alt={sub.sectionImage.alt || "Section image"}
+                    width={800}
+                    height={500}
+                    className="w-full h-auto rounded-lg object-cover"
+                  />
+                </div>
+              )}
+
+              {/* Pro Tip Box */}
+              {sub.proTip && (
+                <div className="bg-[#045732]/20 border-l-4 border-[#00AA71] p-5 rounded-r-lg">
+                  <div className="flex items-center gap-2 mb-2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00AA71" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M9 18h6" />
+                      <path d="M10 22h4" />
+                      <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14" />
+                    </svg>
+                    <h4 className="text-[#00AA71] font-semibold text-lg">Pro Tip</h4>
+                  </div>
+                  <p className="text-white/90 leading-relaxed">{sub.proTip}</p>
+                </div>
+              )}
+
               {/* Table */}
               {sub.table?.rows?.length > 0 && (
                 <div className="overflow-x-auto">

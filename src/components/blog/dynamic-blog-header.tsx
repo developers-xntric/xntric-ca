@@ -57,7 +57,7 @@ export default function DynamicBlogHeader({
           <span className="text-white/30">/</span>
           <Link href="/blog" className="hover:text-[#00AA71] transition-colors">Blog</Link>
           <span className="text-white/30">/</span>
-          <span className="text-white/90 truncate  md:max-w-[400px]">{title}</span>
+          <span className="text-white/90 truncate ">{title}</span>
         </nav>
 
         <p className="text-[17px] md:text-[23.263px] tracking-wider font-light text-white max-w-[700px]  lg:leading-7 leading-6 2xl:leading-9">

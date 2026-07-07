@@ -176,7 +176,7 @@ const BlogDetailsPage = async ({
       {/* First Section: Writer + Banner */}
       <FirstSection data={blog} />
 
-      <div className="lg:w-[90%] relative mx-auto flex flex-col lg:flex-row gap-8 pt-12 lg:pt-20">
+      <div className="w-[90%] relative mx-auto flex flex-col lg:flex-row gap-8 pt-12 lg:pt-20">
         {/* Table of Contents */}
         {tableOfContents.length > 0 && (
           <div className="lg:w-[30%] lg:sticky lg:top-20 lg:self-start">
@@ -250,7 +250,7 @@ const BlogDetailsPage = async ({
                 {blog.keyTakeaways.map((item: string, idx: number) => (
                   <li key={idx} className="flex items-start gap-3 text-white/90">
                     <span className="text-[#00AA71] flex-shrink-0">&#x2022;</span>
-                    <span>{item}</span>
+                    <span className="text-[15px] md:text-lg blog-content tracking-wider">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -309,7 +309,7 @@ const BlogDetailsPage = async ({
                     </svg>
                     <h4 className="text-[#00AA71] font-semibold text-lg">Pro Tip</h4>
                   </div>
-                  <p className="text-white/90 leading-relaxed">{sub.proTip}</p>
+                  <p className="text-base md:text-lg text-white blog-content tracking-wider leading-relaxed">{sub.proTip}</p>
                 </div>
               )}
 

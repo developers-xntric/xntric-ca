@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/ui/navbar";
-import Footer from "@/components/ui/footer";
+import ConditionalLayout from "@/components/ui/ConditionalLayout";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -59,10 +58,7 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <Navbar />
-        {children}
-        <Navbar position="bottom" />
-        <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );
